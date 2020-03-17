@@ -1,0 +1,129 @@
+version=53;
+center[]={5991.752,83.040001,11488};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.4501953,1.0431671,2.2841797};
+			angles[]={0,5.1929131,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this enableSimulationGlobal false; this allowDamage false; " \n "";
+			name="pantalla";
+		};
+		id=2434;
+		type="Land_TripodScreen_01_large_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.16113281,1.0431671,-0.13671875};
+			angles[]={0,5.5519271,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this enableSimulationGlobal false; this allowDamage false; " \n "";
+			name="pantalla_1";
+		};
+		id=2437;
+		type="Land_TripodScreen_01_large_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.6118164,1.0431671,-2.1474609};
+			angles[]={0,5.9524283,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this enableSimulationGlobal false; this allowDamage false; " \n "";
+			name="pantalla_2";
+		};
+		id=2438;
+		type="Land_TripodScreen_01_large_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

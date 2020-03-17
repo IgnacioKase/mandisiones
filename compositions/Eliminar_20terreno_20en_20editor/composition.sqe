@@ -1,0 +1,13 @@
+version=53;
+center[]={14546.017,17.91,16743.686};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="call{        private _terrainobjects = nearestTerrainObjects [[14601.4,16794,0], [], 50]; " \n "        { " \n "            _x hideObjectGlobal true; " \n "            _x enableSimulationGlobal false; " \n "        } forEach _terrainobjects; }";
+		id=8693;
+		type="Logic";
+	};
+};

@@ -1,0 +1,66 @@
+version=53;
+center[]={9419.5313,134.4713,9356.5498};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.077148438,0.82165527,0.0068359375};
+			angles[]={0.0079935296,0,0.093724519};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="equipo";
+		};
+		id=767;
+		type="B_CargoNet_01_ammo_F";
+		atlOffset=-0.082244873;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""30Rnd_556x45_Stanag_Tracer_Green"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_200rnd_556x45_M_SAW"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_mag_6Rnd_M441_HE"",""rhsusf_100Rnd_762x51_m61_ap"",""rhsusf_100Rnd_762x51_m62_tracer"",""rhsusf_mag_17Rnd_9x19_FMJ"",""rhsusf_mag_17Rnd_9x19_JHP"",""RPG32_HE_F"",""RPG32_F"",""rhsusf_20Rnd_762x51_m62_Mag"",""rhsusf_20Rnd_762x51_m993_Mag""],[50,50,1,1,7,1,16,5,5,10,10,2,4,20,30]],[[],[]],[[""B_Kitbag_rgr"",""tf_rt1523g_bwmod""],[8,2]]],false]";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+};
