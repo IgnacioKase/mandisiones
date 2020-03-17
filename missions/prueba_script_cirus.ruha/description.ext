@@ -1,0 +1,21 @@
+﻿TIEMPO_MUERTE_POR_CONTAGIO = 900; //900 seg son 15 minutos desde contagio
+PRIMER_AVISO_CONTAGIO = 300; //300 5 minutos desde contagio
+SEGUNDO_AVISO_CONTAGIO = 600; //600 10 minutos desde contagio
+
+enableDebugConsole = 1;
+author = "Sgt. Zorro"; // Author
+onLoadName = "Tamaulipas 3"; // Mission name
+onLoadMission = "Mision No Oficial" ;
+onLoadMissionTime = 1;
+loadScreen =  "imgs\portada 2.jpg";
+
+class Header
+{
+    gameType=coop;
+    minPlayers=1;
+    maxPlayers=70; //Cantidad de slots
+};
+
+respawnOnStart = 0;
+
+//Este archivo sirve para las configuraciones previas de la mision, como la cantidad de slots, el nombre, las imagenes, respawn, autor.
