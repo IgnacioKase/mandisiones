@@ -1,0 +1,40 @@
+﻿enableDebugConsole = 1;
+author = "Roke para ArgA"; // Author
+onLoadName = "Liberando Virolahti"; // Mission name
+onLoadMission = "Mision no oficial: Cortando la brecha" ;
+onLoadMissionTime = 1;
+loadScreen =  "imgs\portada.jpg";
+
+class Header
+{
+    gameType=coop;
+    minPlayers=1;
+    maxPlayers=100; //Cantidad de slots
+};
+
+respawnOnStart = 0;
+
+//Este archivo sirve para las configuraciones previas de la mision, como la cantidad de slots, el nombre, las imagenes, respawn, autor.
+
+class CfgFunctions {
+  class MANDI {
+    class general {
+      class setBriefing {
+        file = "functions\fnc_setBriefing.sqf";
+      };
+      class makeInfo {
+        file = "functions\fnc_makeInfo.sqf";
+      };
+      class posicion {
+        file = "functions\fnc_posicion.sqf";
+      };
+    };
+  };
+  class MAC {
+    class general {
+      class switchMove{
+        file = "functions\fnc_switchMove.sqf";
+      };
+    };
+  };
+};
