@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////
+///////////Realizado por |ArgA|Ignacio//////////////
+//////////////////////////////////////////////////////////////////
+
+[] execVM "scripts\del_terrain.sqf";
+[0.95] execVM "scripts\fuera_luces.sqf";
+
+{
+    if (!(isPlayer  _x) && (group _x) getVariable ["Vcm_Disable", false])then
+    {
+        _x setSkill ["aimingAccuracy",0.01];
+        _x setSkill ["aimingShake",0.99];
+        _x setSkill ["aimingSpeed",0.1];
+        _x setSkill ["spotDistance",0.2];
+        _x setSkill ["spotTime",0.5];
+        _x setSkill ["courage",0.25];
+        _x setSkill ["reloadSpeed",0.25];
+        _x setSkill ["commanding",0.75];
+        _x setSpeedMode "LIMITED";
+        _x setBehaviour "CARELESS";
+    }
+}forEach allUnits;
+
+
+///////////////////////////////////////////////////////////////////
+///////////Realizado por |ArgA|Ignacio//////////////
+//////////////////////////////////////////////////////////////////
