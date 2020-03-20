@@ -1,4 +1,4 @@
-private _distanciaVision = 2000;
+private _distanciaVision = 4000;
 
 if(hasInterface)then{
   [_distanciaVision, 800] execVM "scripts\dist_vis.sqf";
@@ -12,3 +12,21 @@ if(hasInterface)then{
     [player,"arga_ing_medico"] call BIS_fnc_setUnitInsignia
   };
 };
+
+player action ["SwitchWeapon", player, player, 100];
+
+private _group = (group player);
+
+{
+  _x disableAI "move";
+  _x setUnitPos "middle";
+} forEach units _group;
+
+[missionNamespace, "arsenalOpened", {
+  disableSerialization;
+  params ["_display"];
+  _display displayAddEventHandler ["keydown", "_this select 3"];
+  {
+    (_display displayCtrl _x) ctrlShow false
+  } forEach [44151, 44150, 44146, 44147, 44148, 44149, 44346];
+}] call BIS_fnc_addScriptedEventHandler;
