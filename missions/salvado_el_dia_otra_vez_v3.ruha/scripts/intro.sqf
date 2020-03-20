@@ -33,9 +33,9 @@ _camera cameraEffect ["terminate", "back"];
 camDestroy _camera;
 titleCut [" ","BLACK IN",2];
 
-["<t size='0.8' color='#FFFFFF'>By MandI",0,0.4,2,2,0.0] spawn bis_fnc_dynamictext;
+["<t size='0.8' color='#FFFFFF'>Maxi e Ignacio",0,0.4,2,2,0.0] spawn bis_fnc_dynamictext;
 
-any= ["Op. Salvando el día otra vez",
+any= ["Salvando el día otra vez",
 "Ruha"
 ] spawn BIS_fnc_infoText;
 

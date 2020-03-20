@@ -38,13 +38,13 @@ Las fuerzas de Ruha han sido sometidas o desertaron para unirse a la insurgencia
 private _info = [
 "Salvando el día otra vez",
 "Carácter: No Oficial",
-"Horario: 0300hs",
+"Horario: 0600hs",
 "Fecha: 20/03/2020",
 "Clima: Despejado",
 "Ubicación: Ruha"
 ];
 
-private _editores = "MandI";
+private _editores = "Maxi e Ignacio";
 
 [_recursos, _enemigos, _objetivos, _situacion, _extractoSinModificar, _situacionReal, _situacionHistorica, _info, _editores] call MANDI_fnc_setBriefing;
 

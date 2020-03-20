@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=487;
+		nextID=491;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6144.9502,465.89368,6324.1064};
-		dir[]={0.044920672,-0.48994595,-0.87061381};
-		up[]={0.025246272,0.87174928,-0.48930937};
-		aside[]={-0.99869156,3.4961704e-007,-0.05152848};
+		pos[]={6174.999,110.58015,6830.0591};
+		dir[]={-0.14171158,-0.43194783,0.89073372};
+		up[]={-0.067872114,0.90188164,0.42660663};
+		aside[]={0.98760748,-3.7538121e-007,0.15712488};
 	};
 };
 binarizationWanted=0;
@@ -13823,7 +13823,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Operación Salvando el día otra vez";
+		briefingName="Operación Salvando el día otra vez v3";
 		overviewText="Rescatar al gobernador y a los civiles";
 		timeOfChanges=1800.0002;
 		startWeather=0.021348676;
@@ -29298,7 +29298,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6610.8579,49.035969,1165.5203};
-				angles[]={-0,1.0471976,0};
+				angles[]={0,1.0471976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -29347,7 +29347,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6118.3975,6.6414385,7063.4048};
-						angles[]={-0,3.1762376,0};
+						angles[]={0,3.1762376,0};
 					};
 					side="East";
 					flags=4;
@@ -29363,7 +29363,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6118.3975,6.6414385,7063.4048};
-						angles[]={-0,3.1762376,0};
+						angles[]={0,3.1762376,0};
 					};
 					side="East";
 					flags=6;
@@ -29417,7 +29417,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6118.3975,8.2875662,7063.355};
-				angles[]={-0,3.1762376,0};
+				angles[]={0,3.1762376,0};
 			};
 			side="East";
 			flags=6;

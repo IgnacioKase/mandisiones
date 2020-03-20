@@ -4,7 +4,7 @@
 
 params["_recursos", "_enemigos", "_objetivos", "_situacion", "_extractoSinModificar", "_situacionReal", "_situacionHistorica", "_info", "_editores"];
 
-player createDiaryRecord["Diary", ["Editores", "<br/><p align='center'><font color='#76a8f7' size='28'>"+_editores+"</font></p><br/><img image= 'imgs\logo.paa' width='323' height='323'/><br/>"]];
+player createDiaryRecord["Diary", ["Editores", "<br/><p align='center'><font color='#44CC00' size='28'>"+_editores+"</font></p><br/><img image= 'imgs\logo.paa' width='323' height='323'/><br/>"]];
 
 player createDiaryRecord["Diary", ["Nuestros Recursos", ([_recursos, true] call MANDI_fnc_makeInfo)]];
 
