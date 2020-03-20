@@ -44,7 +44,7 @@ private _info = [
 "Ubicación: Ruha"
 ];
 
-private _editores = "Maxi&Ignacio";
+private _editores = "MandI";
 
 [_recursos, _enemigos, _objetivos, _situacion, _extractoSinModificar, _situacionReal, _situacionHistorica, _info, _editores] call MANDI_fnc_setBriefing;
 
