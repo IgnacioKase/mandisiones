@@ -3,10 +3,9 @@
 //////////////////////////////////////////////////////////////////
 
 [] execVM "scripts\del_terrain.sqf";
-[0.95] execVM "scripts\fuera_luces.sqf";
 
 {
-    if (!(isPlayer  _x) && (group _x) getVariable ["Vcm_Disable", false])then
+    if (!(isPlayer  _x))then
     {
         _x setSkill ["aimingAccuracy",0.01];
         _x setSkill ["aimingShake",0.99];

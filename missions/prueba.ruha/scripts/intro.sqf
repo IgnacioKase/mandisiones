@@ -35,7 +35,7 @@ titleCut [" ","BLACK IN",2];
 
 ["<t size='0.8' color='#FFFFFF'>By MandI",0,0.4,2,2,0.0] spawn bis_fnc_dynamictext;
 
-any= ["Op. Salvando el día otra vez",
+any= ["Op. Probando mods para coop Squad Alpha",
 "Ruha"
 ] spawn BIS_fnc_infoText;
 
