@@ -1,0 +1,27 @@
+version=53;
+center[]={131.87996,146.58701,9173.1367};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Marker";
+		position[]={0.2509613,0.36872864,14.166016};
+		name="vision";
+		text="Vision";
+		type="Empty";
+		colorName="ColorPink";
+		id=2891;
+	};
+	class Item1
+	{
+		dataType="Marker";
+		position[]={-0.2509613,0,-14.166992};
+		name="eliminar";
+		text="Eliminar";
+		type="Empty";
+		colorName="ColorBrown";
+		id=2892;
+		atlOffset=-3.0517578e-005;
+	};
+};

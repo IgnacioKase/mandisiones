@@ -1,0 +1,167 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=25;
+	};
+	class Camera
+	{
+		pos[]={985.55725,198.05626,1188.7839};
+		dir[]={0.8619476,-0.29005593,0.41592205};
+		up[]={0.26125062,0.95699906,0.12606286};
+		aside[]={0.43460327,1.1103111e-008,-0.90066886};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"arga_faccion"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="arga_faccion";
+			name="arga_faccion";
+		};
+	};
+};
+randomSeed=14933958;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.10000001;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2018;
+		month=7;
+		day=2;
+		hour=12;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1719.2517,160.62143,1391.1179};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=2;
+					type="arga_dmarpat_base";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1720.63,160.62143,1390.9508};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=6;
+					type="arga_dmarpat_base";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1718.2739,160.62143,1391.3517};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=4;
+					type="arga_dmarpat_base";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7;
+		};
+	};
+};
