@@ -16,7 +16,7 @@ loadScreen = IMAGE;
 IMG_LOGO = "imgs\logo.paa"              
 COLOR_AUTOR = "#44CC00";               
 ES_CAMPANIA = 0;                        
-NOMBRE_CAMPANIA = "";
+NOMBRE_CAMPANIA = "NO ES UNA CAMPAÑA";
 
 MAX_DIST_VISION = 2800;
 GAFAS_INICIALES = "rhsusf_oakley_goggles_blk";
