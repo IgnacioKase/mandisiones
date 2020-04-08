@@ -6,7 +6,7 @@ if(isServer)then{
 	private _thdGroup = [grp5, grp6];
 	private _fthGroup = [grp7, grp8, grupo_veh1];
 	
-	uiSleep 20; //CAMBIAR
+	sleep 180;
 
 	{
 		private _group = _x;
@@ -17,7 +17,7 @@ if(isServer)then{
 		
 	} forEach _fstGroup;
 
-	uiSleep 60;
+	sleep 60;
 	veh2 hideObjectGlobal false;
 	veh2 enableSimulationGlobal true;
 	{
@@ -29,7 +29,7 @@ if(isServer)then{
 		
 	} forEach _sndGroup;
 
-	uiSleep 60;
+	sleep 60;
 
 	{
 		private _group = _x;
@@ -40,7 +40,7 @@ if(isServer)then{
 		
 	} forEach _thdGroup;
 
-	uiSleep 60;
+	sleep 60;
 	veh1 hideObjectGlobal false;
 	veh1 enableSimulationGlobal true;
 	{

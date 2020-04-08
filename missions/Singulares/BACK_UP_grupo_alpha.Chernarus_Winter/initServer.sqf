@@ -17,6 +17,7 @@ if(_customSkillsIA == 1)then{
     {
         if (!(isPlayer  _x))then
         {
+            (group _x) setVariable ["VCM_Skilldisable",true];
             _x setSkill ["aimingAccuracy", _aimingAccuracy];
             _x setSkill ["aimingShake", _aimingShake];
             _x setSkill ["aimingSpeed", _aimingSpeed];

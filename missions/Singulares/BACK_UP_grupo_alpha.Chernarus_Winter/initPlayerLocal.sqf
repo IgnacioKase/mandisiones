@@ -10,7 +10,13 @@ if(hasInterface)then{
   [_distanciaVision, 800] execVM "scripts\dist_vis.sqf";
   [] execVM "scripts\3rdView Restrictions.sqf";
   waitUntil {time > 0};
-  [] execVM "scripts\intro.sqf";
+  private _posMarker = getMarkerPos "marker_1";
+  private _playerPos = getPos player;
+  if ((_playerPos distance2D _posMarker) <= 200)then{
+    [] execVM "scripts\intro2.sqf";
+  }else{
+    [] execVM "scripts\intro.sqf";
+  };
   removeGoggles player; //arga_rhs_pm_negro
   if(_initialGoggles != "")then{
     player addGoggles _initialGoggles;
@@ -21,7 +27,7 @@ if(hasInterface)then{
   };
 };
 
-player action ["SwitchWeapon", player, player, 100];
+//player action ["SwitchWeapon", player, player, 100];
 
 // Deshabilita las opciones de Cargar y Guardar Equipo en el arsenal
 if(_disableCustomLoadout == 1)then{
