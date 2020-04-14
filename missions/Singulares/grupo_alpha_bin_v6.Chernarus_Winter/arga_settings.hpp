@@ -2,7 +2,7 @@
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-#define NAME "Op. ФСБ Альфа v5"
+#define NAME "Op. ФСБ Альфа v6"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Matar yankees"
 

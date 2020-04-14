@@ -2,9 +2,9 @@
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-#define NAME "Op. ФСБ Альфа v5"
-#define IMAGE "imgs\portada.paa"
-#define DESCRIPTION "Matar yankees"
+#define NAME "Op. Mercenarios fuera"
+#define IMAGE "imgs\portada.jpg"
+#define DESCRIPTION "Destruir el arsenal"
 
 author = "Maxi e Ignacio";                       
 onLoadName = NAME;	                    
@@ -18,29 +18,29 @@ COLOR_AUTOR = "#44CC00";
 ES_CAMPANIA = 0;                        
 NOMBRE_CAMPANIA = "NO ES UNA CAMPAÑA";
 
-MAX_DIST_VISION = 2600;
-GAFAS_INICIALES = "rhsusf_oakley_goggles_blk";
+MAX_DIST_VISION = 4000;
+GAFAS_INICIALES = "";
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;
 
 //BRIEFING
 // Cada elemento del array es un parrafo
 // Ejemplo: ["Primer parrafo", "Segundo parrafo"]
 CARACTER = "No Oficial";
-HORARIO = "1645 hrs";
-FECHA = "08/04/2020";
-CLIMA = "Nevando/ Neblina alta";
-UBICACION = "Chernarus Winter";
-SITUACION = ["Hace tiempo se desestabilizo la situación en Chernarus, eso llevo a revueltas y conflictos armados. Luego de unos meses EEUU decidió mandar tropas para ayudar. Esta noticia no fue muy bien recibida en Rusia debido a que esta era una zona protegida por Rusia con bases, tanto operativas como inoperativas, que ahora se ven comprometidas. Rusia decidió reforzar la presencia militar para injustificar la presencia yankee en la zona.", "Hace escasos minutos recibimos del equipo Spetnaz Вымпел (Výmpel) fue embozcado en un antiguo FOB en la localidad de Msta, se cree que el ataque fue realizado por EEUU pero no esta confirmado. En este momento el equipo Spetnaz СМЕРШ (Smersh) y ФСБ Альфа (Grupo Alfa) se dirigen a Msta para realizar apoyo.", "Este ataque indiscriminado no puede quedar así por lo que al reagrupar realizaremos un ataque a Elektrozavodsk para equilibrar la balanza."];               
+HORARIO = "1715 hrs";
+FECHA = "10/04/2020";
+CLIMA = "Despejado";
+UBICACION = "Malden 2035";
+SITUACION = ["Tras años de descontento con el gobierno, la oposición ha contratado una fuerza privada para tomar dos ciudades principales de Malden. La ONU decidió mandar al equipo ArgA a contrarrestar este movimiento armado.", "Debemos destruir el arsenal que se encuentra marcado en la zona mas roja de La Trinité. Además limpiar lo mas posible ambas ciudades."];
 SITUACION_HISTORICA = [""];     
 EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["Ayudar a Вымпел (Výmpel)", "Equilibrar la balanza"];
-RECURSOS = ["Aparecemos Armados", "4 GAZ-233014 (Artillado)", "2 GAZ-233011", "2 GAZ-233011 (Camo)(Médico)"];
-ENEMIGOS = ["Fuerzas enemigas bien entrenadas", "Vehículos ligeros", "Vehículos Pesados"];
+OBJETIVOS = ["Destruir arsenal en la zona más roja de La Trinité", "Limpiar lo más posible los puntos marcados"];
+RECURSOS = ["No aparecemos Armados", "Arsenal ilimitado", "1 CH-47F Médico", "1 AH-6M (Little bird artillado)", "2 M1240 (Camuflados) (Médicos y de reparación)", "2 M1220 (M2)", "2 M1025A2 (M2)", "2 M1097A2"];
+ENEMIGOS = ["Mercenarios privados", "1 Helicóptero","Vehículos ligeros", "Vehículo Medios"];
 ////////////////////////////////////////////////////////////////////////////////
 
 //IA - CONFIGURACION
 DESACTIVAR_IA_DE_GRUPO = 1;
-DESACTIVAR_TODO_BLUFOR = 0;
+DESACTIVAR_TODO_BLUFOR = 1;
 DIFICULTAD_IA_PERSONALIZADA = 0;
 AIMING_ACCURACY = 0.01;
 AIMING_SHAKE = 0.99; 	
