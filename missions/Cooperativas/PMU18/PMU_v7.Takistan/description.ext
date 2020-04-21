@@ -1,0 +1,14 @@
+﻿author="ArgA";
+OnLoadName = "PMU 18 - Fuego cruzado";
+OnLoadMission = "Detener el avance del ISIS";
+loadScreen = "imgs\portada.jpg";
+overviewPicture = "imgs\portada.jpg";
+
+class Header
+{
+    gameType=coop;
+    minPlayers=1;
+    maxPlayers=100;
+};
+
+respawnOnStart = 0;

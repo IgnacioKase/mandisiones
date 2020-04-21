@@ -1,0 +1,22 @@
+﻿///////////////////////////////////////////////////
+///////////Realizado por |ArgA|Ignacio/////////////
+///////////////////////////////////////////////////
+
+author="ArgA";
+OnLoadName = "PMU 18 - Frontera dudosa";
+OnLoadMission = "Detener el avance del ISIS";
+loadScreen = "imgs\portada.jpg";
+overviewPicture = "imgs\portada.jpg";
+
+class Header
+{
+    gameType=coop;
+    minPlayers=1;
+    maxPlayers=107;
+};
+
+respawnOnStart = 0;
+
+///////////////////////////////////////////////////
+///////////Realizado por |ArgA|Ignacio/////////////
+///////////////////////////////////////////////////

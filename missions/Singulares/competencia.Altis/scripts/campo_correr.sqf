@@ -14,47 +14,70 @@ switch ((_this select 0)) do
 {
     case (0):
     {
-      ["marker_54"] call Humo;
-      ["marker_52"] call Humo;
-      ["marker_53"] call Humo;
+      if(repetir_campo_0)then{
+        ["humo"] call Humo;
+        ["humo_1"] call Humo;
+        ["humo_2"] call Humo;
+        ["humo_3"] call Humo;
+        ["humo_4"] call Humo;
+        repetir_campo_0 = false;
+        publicVariable "repetir_campo_0";
+      };
     };
     case (1):
     {
-      ["marker_43"] call Minas;
-      sleep 0.5;
-      ["marker_2"] call Minas;
+      if(repetir_campo_1)then{
+        ["bomba"] call Minas;
+        sleep 0.5;
+        ["bomba_1"] call Minas;
+        repetir_campo_1 = false;
+        publicVariable "repetir_campo_1";
+      };
     };
     case (2):
     {
-      ["marker_45"] call Minas;
-      
-      sleep 1;
-      ["marker_45"] call Minas;
+      if(repetir_campo_2)then{
+        ["bomba_2"] call Minas;
+        sleep 1;
+        ["bomba_3"] call Minas;
+        repetir_campo_2 = false;
+        publicVariable "repetir_campo_2";
+      };
     };
     case (3):
     {
-      ["marker_46"] call Minas;
-      sleep 0.2;
-      ["marker_47"] call Minas;
-      objetivo_obstaculo enableSimulationGlobal true;
-      objetivo_obstaculo hideObjectGlobal false;
-      sleep 0.1;
-      objetivo_obstaculo hideObjectGlobal true;
-      sleep 40;
-      objetivo_obstaculo enableSimulationGlobal false;
+      if(repetir_campo_3)then{
+        ["bomba_4"] call Minas;
+        sleep 0.2;
+        ["bomba_5"] call Minas;
+        objetivo_obstaculo enableSimulationGlobal true;
+        objetivo_obstaculo hideObjectGlobal false;
+        sleep 0.1;
+        objetivo_obstaculo hideObjectGlobal true;
+        sleep 40;
+        objetivo_obstaculo enableSimulationGlobal false;
+        repetir_campo_3 = false;
+        publicVariable "repetir_campo_3";
+      };
     };
     case (4):
     {
-      ["marker_48"] call Minas;
-      
-      sleep 0.7;
-      ["marker_49"] call Minas;
+      if(repetir_campo_4)then{
+        ["bomba_6"] call Minas;
+        sleep 0.7;
+        ["bomba_7"] call Minas;
+        repetir_campo_4 = false;
+        publicVariable "repetir_campo_4";
+      };
     };
     case (5):
     {
-      ["marker_50"] call Minas;
-      sleep 0.7;
-      ["marker_51"] call Minas;
-      
+      if(repetir_campo_5)then{
+        ["bomba_8"] call Minas;
+        sleep 0.7;
+        ["bomba_9"] call Minas;
+        repetir_campo_5 = false;
+        publicVariable "repetir_campo_5";
+      };
     };
 };
