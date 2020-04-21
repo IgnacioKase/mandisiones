@@ -7,7 +7,11 @@ private _initialGoggles =  getMissionConfigValue ["GAFAS_INICIALES", ""];
 private _disableCustomLoadout =  getMissionConfigValue ["DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO", 1];
 
 if(hasInterface)then{
-  [_distanciaVision, 800] execVM "scripts\dist_vis.sqf";
+  player setName profileName;
+  player setVariable ["ACE_IsEngineer",1,true];
+  player setVariable ["ACE_isEOD",true,true];
+  player setVariable ["ace_medical_medicClass", 2, true];
+  [_distanciaVision, 25] execVM "scripts\dist_vis.sqf";
   [] execVM "scripts\3rdView Restrictions.sqf";
   [] execVM "scripts\disable_gps.sqf";
   waitUntil {time > 0};

@@ -2,9 +2,9 @@
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-#define NAME "Op. Bravo Six"
+#define NAME "Los Juegos ArgA"
 #define IMAGE "imgs\portada.paa"
-#define DESCRIPTION "Capturar a Mendoza"
+#define DESCRIPTION "Completar la competencia"
 
 author = "Maxi e Ignacio";                       
 onLoadName = NAME;	                    
@@ -19,7 +19,7 @@ ES_CAMPANIA = 0;
 NOMBRE_CAMPANIA = "NO ES UNA CAMPAÑA";
 
 MAX_DIST_VISION = 2000;
-GAFAS_INICIALES = "arga_rhs_pm_negro";
+GAFAS_INICIALES = "rhsusf_oakley_goggles_clr";
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;
 
 //BRIEFING
