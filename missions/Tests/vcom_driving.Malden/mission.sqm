@@ -1,0 +1,495 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=29;
+	};
+	class Camera
+	{
+		pos[]={6150.27,724.42468,4143.0044};
+		dir[]={-0.14903304,-0.90216869,-0.40500799};
+		up[]={-0.31154662,0.43143293,-0.84664553};
+		aside[]={-0.9385519,2.6379712e-006,0.34536842};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"CUP_Misc3_Config",
+	"A3_Structures_F_Walls",
+	"po_factions_me",
+	"po_factions_afr"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item2
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="po_factions_me";
+			name="po_factions_me";
+			author="Leight, Keeway";
+		};
+		class Item4
+		{
+			className="po_factions_afr";
+			name="po_factions_afr";
+			author="Leight, Keeway";
+		};
+	};
+};
+randomSeed=10076091;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=9;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5916.3008,54.715637,3525.4692};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_A_F";
+					atlOffset=3.8146973e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=3.8146973e-006;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6975.5806,83.768608,3505.208};
+				angles[]={0.00077204045,1.2622142,6.277586};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=12;
+			type="Land_ConcreteRamp";
+			atlOffset=3.8146973e-005;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6578.832,84.047569,3540.3525};
+				angles[]={-0,0.10593481,0.00069053395};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=13;
+			type="Land_Dirthump02";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6289.749,74.681084,3540.0437};
+				angles[]={0,4.6177063,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=14;
+			type="Land_Concrete_SmallWall_8m_F";
+			atlOffset=1.4709473;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6102.9795,59.330425,3516.3181};
+				angles[]={0,4.6177063,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=15;
+			type="Land_Concrete_SmallWall_8m_F";
+			atlOffset=1.4709473;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5927.7329,54.457771,3525.3787};
+						angles[]={0.00077204045,1.5993972,6.2599902};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=18;
+					type="LOP_IA_Infantry_Crewman";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5927.7329,54.457771,3525.3787};
+						angles[]={0.00077204045,1.5993972,6.2599902};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=19;
+					type="LOP_IA_Infantry_Crewman";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5927.7329,54.457771,3525.3787};
+						angles[]={0.00077204045,1.5993972,6.2599902};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=20;
+					type="LOP_IA_Infantry_Crewman";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5927.7329,54.457771,3525.3787};
+						angles[]={0.00077204045,1.5993972,6.2599902};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=21;
+					type="LOP_IA_Infantry_Crewman";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={6449.3057,82.170296,3534.3818};
+					combatMode="RED";
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=22;
+					type="Move";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=4;
+				};
+				class Links
+				{
+					items=4;
+					class Item0
+					{
+						linkID=0;
+						item0=18;
+						item1=17;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=19;
+						item1=17;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=20;
+						item1=17;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=21;
+						item1=17;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,1};
+						};
+					};
+				};
+			};
+			id=16;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5927.7695,56.026043,3525.3394};
+				angles[]={0.00077204045,1.5993972,6.2599902};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				reportOwnPosition=1;
+			};
+			id=17;
+			type="LOP_IA_M1A1_AIM_D";
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7154.4575,69.842804,3559.0662};
+						angles[]={0.067895547,4.2443609,6.1613913};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=25;
+					type="LOP_AFR_OPF_Infantry_Driver";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7154.4575,69.842804,3559.0662};
+						angles[]={0.067895547,4.2443609,6.1613913};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=26;
+					type="LOP_AFR_OPF_Infantry_Driver";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7154.4575,69.842804,3559.0662};
+						angles[]={0.067895547,4.2443609,6.1613913};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=27;
+					type="LOP_AFR_OPF_Infantry_Driver";
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={6536.7319,82.668152,3542.5081};
+					combatMode="RED";
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=28;
+					type="Move";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=25;
+						item1=24;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=26;
+						item1=24;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=27;
+						item1=24;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+				};
+			};
+			id=23;
+			atlOffset=-0.0028991699;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7154.7959,71.873947,3559.2209};
+				angles[]={0.067895547,4.2443609,6.1613913};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=24;
+			type="LOP_AFR_OPF_T72BB";
+			atlOffset=-0.0028991699;
+		};
+	};
+};
