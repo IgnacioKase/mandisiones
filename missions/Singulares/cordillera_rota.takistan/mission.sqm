@@ -1,0 +1,214 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=22;
+	};
+	class MarkerIDProvider
+	{
+		nextID=17;
+	};
+	class Camera
+	{
+		pos[]={5928.9937,242.36816,8055.1372};
+		dir[]={-0.62400568,-0.47633246,0.61950046};
+		up[]={-0.33804965,0.87925118,0.33560741};
+		aside[]={0.70455825,2.5201007e-007,0.7096839};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=16232582;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=12;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={5300.311,217.00439,4855.1953};
+			name="marker_0";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorWEST";
+			a=200;
+			b=200;
+			id=0;
+			atlOffset=-10.134308;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={7986.7188,296.10251,1898.0288};
+			name="marker_1";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorWEST";
+			a=600;
+			b=200;
+			angle=149.77838;
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={5749.9531,83.040001,11368.317};
+			name="marker_2";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorWEST";
+			a=700;
+			b=250;
+			angle=134.51898;
+			id=3;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={5761.0444,81.362305,11372.694};
+			name="marker_5";
+			text="Base OTAN";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=6;
+			atlOffset=-1.6776962;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={7988.0068,294.427,1898.161};
+			name="marker_6";
+			text="Base ONU";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=7;
+			atlOffset=-1.6130066;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={5300.1895,226.85077,4857.6079};
+			name="marker_8";
+			text="November";
+			type="mil_start";
+			colorName="ColorWEST";
+			id=10;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={6100.7378,83.040001,11572.339};
+			name="marker_9";
+			text="India";
+			type="mil_start";
+			colorName="ColorWEST";
+			id=11;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={2490.7,511.29248,2052.469};
+			name="marker_14";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorEAST";
+			fillName="FDiagonal";
+			a=3000;
+			b=400;
+			angle=150.60201;
+			id=16;
+			atlOffset=-56.129272;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={8954.6055,484.56204,4029.1296};
+			name="marker_15";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorEAST";
+			fillName="FDiagonal";
+			a=4000;
+			b=400;
+			angle=352.03598;
+			id=17;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={8846.2139,465.12,4161.5};
+			name="marker_16";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=18;
+			atlOffset=2.0807495;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={5172.0938,516.03131,3539.0029};
+			name="marker_17";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=19;
+			atlOffset=2.0807495;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={4033.5706,497.21146,3121.9353};
+			name="marker_18";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=21;
+			atlOffset=2.0807495;
+		};
+	};
+};

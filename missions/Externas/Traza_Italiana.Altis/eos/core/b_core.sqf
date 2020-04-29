@@ -287,7 +287,7 @@ _Placement=(_mkrX + 500);
 
 	_waves=(_waves - 1);
 
-	if (triggeractivated _bastActive and triggeractivated _bastClear and (_waves < 1) ) then{
+	if (triggeractivated _bastActive and triggeractivated _bastClear and (_waves < 1) ) then {
 			if (_hints) then  {hint "Waves complete";};
 			_mkr setmarkercolor VictoryColor;
 			_mkr setmarkeralpha _mAN;
@@ -347,5 +347,5 @@ _Placement=(_mkrX + 500);
 //*/
 
 // Modificado por Ignacio
-[EAST] remoteExec ["MANDI_clearUnconsciousAi", 2];  
+[EAST] remoteExec ["MANDI_fnc_clearUnconsciousAi", 2];  
 //////////////////////////////////////////////////////////////
