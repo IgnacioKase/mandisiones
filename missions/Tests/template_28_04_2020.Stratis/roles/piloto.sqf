@@ -3,9 +3,19 @@
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/
 
-params [["_unit", player]];
+params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+
+private _useBigBackPack = false;
+private _back = "tf_rt1523g_black";
+_helmet = "arga_bo_pilot";
 
 if (!local _unit) exitWith {};
+
+_unit setVariable ["ACE_GForceCoef",0.4];
+_unit addBackpack _back;
+_unit addHeadgear _helmet;
+removeUniform _unit;
+_unit forceAddUniform "arga_u_piloto";
 
 _unit addWeapon "acfaa_mp5sd_base";
 _unit addPrimaryWeaponItem "acfaa_32Rnd_9x19_FMJ_Mag";
@@ -27,9 +37,6 @@ _unit addItemToVest "ACE_Flashlight_XL50";
 for "_i" from 1 to 5 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 _unit addItemToBackpack "arga_h_norm";
 _unit addItemToBackpack "arga_ca_bomber";
-
-removeHeadgear _unit;
-_unit addHeadgear "arga_bo_pilot";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

@@ -3,10 +3,10 @@
 *******************************************************************************/
 
 #define NAME "Op. "                     // Colocar nombre de mision
-#define IMAGE "imgs\"                   // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada.paa"        // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION ""                  // Colocar descripcion de la mision entre las comillas
 
-author = "";                            // Editor
+author = "Arga";                        // Editor (Pone tu nombre)
 onLoadName = NAME;	                    // Nombre de carga
 briefingName = NAME;                    // Nombre en briefing
 onLoadMission = DESCRIPTION;            // Pie de carga
@@ -33,12 +33,16 @@ DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1; // Equipamiento guardado en arsenal v
 //        Las opciones Personalizada y No editar pueden llevar a comportamientos inesperados.
 //        Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
 
-CAMUFLAJE = ["Bosque", "Multicam"];
+CAMUFLAJE = ["Desierto", "Marpat"];
 GAFAS_INICIALES = "";
 UNIFORME_PERSONALIZADO = "";
 CASCO_PERSONALIZADO = "";
 CHALECO_PERSONALIZADO = "";
 MOCHILA_PERSONALIZADO = "";
+MOCHILA_CHICA_PERSONALIZADO = "";
+STAND_MEDICO = "standMedico";
+STAND_INGENIERO = "standIngeniero";
+STAND_PILOTO = "standPiloto";
 
 //BRIEFING
 // Cada elemento del array es un parrafo

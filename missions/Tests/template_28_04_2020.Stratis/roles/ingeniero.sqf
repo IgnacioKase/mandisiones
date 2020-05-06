@@ -3,9 +3,17 @@
 						  Rol por       |ArgA|Veck|Cbo¹
 *******************************************************************************/
 
-params [["_unit", player]];
+params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+
+private _useBigBackPack = true;
+private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
 
 if (!local _unit) exitWith {};
+
+_unit setVariable ["ACE_IsEngineer",1,true];
+_unit setVariable ["ACE_isEOD",true,true];
+_unit addBackpack _back;
+_unit addHeadgear _helmet;
 
 _unit addWeapon "ACFAA_FNFAL_PARA";
 _unit addPrimaryWeaponItem "acfaa_fnfal_silencer";
