@@ -1,5 +1,5 @@
 version=53;
-center[]={8107.083,29.111526,9975.6367};
+center[]={8107.083,29.111549,9975.6357};
 class items
 {
 	items=3;
@@ -8,7 +8,251 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.049804688,0.6336422,-1.9707031};
+			position[]={0.0092773438,0.60647202,0.032226563};
+			angles[]={0.016004669,4.712389,6.2751913};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{this addAction [""<t color='#f03f3c'>Hacer Médico</t>"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ace_medical_medicClass"", 2, true];" \n "        [_caller,""arga_ing_medico""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Ahora sos médico!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];" \n "this addAction [""Cancelar especialidades"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ACE_IsEngineer"", 0,true]; " \n "        _caller setVariable [""ACE_isEOD"", false, true]; " \n "        _caller setVariable [""ace_medical_medicClass"", 0, true]; " \n "        _caller setVariable [""ACE_GForceCoef"", 1]; " \n "        [_caller,""arga_ing_arga""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Cancelaste tus especialidades!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];}";
+		};
+		id=1843;
+		type="Land_InfoStand_V1_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ObjectTextureCustom0";
+				expression="_this setObjectTextureGlobal [0,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="imgs\medico.paa";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ENH_HoldAction";
+				expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"ARRAY"
+							};
+						};
+						class value
+						{
+							items=13;
+							class Item0
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+								};
+							};
+							class Item3
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+							class Item4
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+							class Item5
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item6
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item7
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item8
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item9
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=10;
+								};
+							};
+							class Item10
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=991;
+								};
+							};
+							class Item11
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+							class Item12
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.049804688,0.63361931,-1.9697266};
 			angles[]={0.011990411,4.712389,6.2751913};
 		};
 		side="Empty";
@@ -24,8 +268,8 @@ class items
 		{
 			class Attribute0
 			{
-				property="ENH_HoldAction";
-				expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+				property="ObjectTextureCustom0";
+				expression="_this setObjectTextureGlobal [0,_value]";
 				class Value
 				{
 					class data
@@ -34,220 +278,14 @@ class items
 						{
 							type[]=
 							{
-								"ARRAY"
+								"STRING"
 							};
 						};
-						class value
-						{
-							items=13;
-							class Item0
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-							class Item1
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-								};
-							};
-							class Item2
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
-								};
-							};
-							class Item3
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="true";
-								};
-							};
-							class Item4
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="true";
-								};
-							};
-							class Item5
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-							class Item6
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-							class Item7
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-							class Item8
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-							class Item9
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=10;
-								};
-							};
-							class Item10
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=991;
-								};
-							};
-							class Item11
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-							class Item12
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
+						value="imgs\ingeniero.paa";
 					};
 				};
 			};
-			nAttributes=1;
-		};
-	};
-	class Item1
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.0092773438,0.60650444,0.03125};
-			angles[]={0.016004669,4.712389,6.2751913};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			init="call{this addAction [""<t color='#f03f3c'>Hacer Médico</t>"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ace_medical_medicClass"", 2, true];" \n "        [_caller,""arga_ing_medico""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Ahora sos médico!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];" \n "this addAction [""Cancelar especialidades"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ACE_IsEngineer"", 0,true]; " \n "        _caller setVariable [""ACE_isEOD"", false, true]; " \n "        _caller setVariable [""ace_medical_medicClass"", 0, true]; " \n "        _caller setVariable [""ACE_GForceCoef"", 1]; " \n "        [_caller,""arga_ing_arga""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Cancelaste tus especialidades!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];}";
-		};
-		id=1843;
-		type="Land_InfoStand_V1_F";
-		class CustomAttributes
-		{
-			class Attribute0
+			class Attribute1
 			{
 				property="ENH_HoldAction";
 				expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
@@ -451,7 +489,7 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			nAttributes=2;
 		};
 	};
 	class Item2
@@ -459,7 +497,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.052246094,0.57530403,1.9599609};
+			position[]={0.052246094,0.57527161,1.9609375};
 			angles[]={0.016004669,4.712389,6.2751913};
 		};
 		side="Empty";
@@ -474,6 +512,25 @@ class items
 		{
 			class Attribute0
 			{
+				property="ObjectTextureCustom0";
+				expression="_this setObjectTextureGlobal [0,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="imgs\piloto.paa";
+					};
+				};
+			};
+			class Attribute1
+			{
 				property="ENH_HoldAction";
 				expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
 				class Value
@@ -676,7 +733,7 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			nAttributes=2;
 		};
 	};
 };
