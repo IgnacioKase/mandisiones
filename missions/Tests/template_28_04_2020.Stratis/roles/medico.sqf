@@ -3,11 +3,20 @@
 						  Rol por       |ArgA|Labrador|Cbo¹
 *******************************************************************************/
 
-params [["_unit", player]];
+params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+
+private _useBigBackPack = true;
+private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
+
 
 if (!local _unit) exitWith {};
 
+_unit setVariable ["ace_medical_medicClass", 2, true];
+_unit addBackpack _back;
+_unit addHeadgear _helmet;
+
 _unit addWeapon "ACFAA_FAMCA";
+_unit addPrimaryWeaponItem "muzzle_snds_b";
 _unit addPrimaryWeaponItem "rhsusf_acc_g33_xps3";
 _unit addPrimaryWeaponItem "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
 _unit addWeapon "rhsusf_weap_glock17g4";

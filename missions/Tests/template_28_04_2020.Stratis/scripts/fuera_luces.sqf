@@ -1,10 +1,19 @@
-_types = ["Lamps_Base_F","PowerLines_base_F","Land_PowerPoleWooden_L_F"];
+/*******************************************************************************
+                          Realizado por |ArgA|Ignacio
+*******************************************************************************/
 
-private _state = _this select 0;
+params [["_state", 0], ["_marker", "LIGHTSOURCE"], ["_distance", 800], ["_types", ["Lamps_Base_F","PowerLines_base_F","Land_PowerPoleWooden_L_F"]]];
+private _countTypes = (count _types);
+private _lamps = "";
 
-for [ {_i=0}, {_i < (count _types)}, {_i=_i+1} ] do
 {
-	_lamps = getMarkerPos "LIGHTSOURCE" nearObjects [_types select _i, 800];
+	_lamps = getMarkerPos _marker nearObjects [_x, _distance];
 	sleep 1;
-	{ _x setDamage _state } forEach _lamps;
-};
+	{ 
+		_x setDamage _state;
+	} forEach _lamps;
+} forEach _types;
+
+/*******************************************************************************
+                          Realizado por |ArgA|Ignacio
+*******************************************************************************/

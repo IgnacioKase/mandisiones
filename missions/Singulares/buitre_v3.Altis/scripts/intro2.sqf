@@ -17,9 +17,9 @@ if(_isCampaign == 1)then{
 };
 ["<t size='0.9' color='#FFFFFF'>"+_author+"",0,0.4,5,5,0.0] spawn bis_fnc_dynamictext;
 
-sleep 0.25;
 playSound "effect_intro";
-sleep 4.75;
+
+sleep 5;
 
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6];

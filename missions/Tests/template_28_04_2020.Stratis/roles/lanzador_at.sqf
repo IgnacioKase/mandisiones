@@ -3,9 +3,15 @@
 						  Rol por       |ArgA|Nico|Cpt
 *******************************************************************************/
 
-params [["_unit", player]];
+params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+
+private _useBigBackPack = true;
+private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
 
 if (!local _unit) exitWith {};
+
+_unit addBackpack _back;
+_unit addHeadgear _helmet;
 
 _unit addWeapon "ACFAA_FAMCA";
 _unit addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
@@ -30,8 +36,9 @@ _unit addItemToVest "rhsusf_mag_17Rnd_9x19_JHP";
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellBlue";};
 for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 for "_i" from 1 to 8 do {_unit addItemToVest "ACE_20Rnd_762x51_M118LR_Mag";};
-for "_i" from 1 to 3 do {this addItemToBackpack "RPG32_F";};
-for "_i" from 1 to 2 do {this addItemToBackpack "RPG32_HE_F";};
+for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG32_F";};
+for "_i" from 1 to 2 do {_unit addItemToBackpack "RPG32_HE_F";};
+
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";

@@ -3,9 +3,15 @@
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/
 
-params [["_unit", player]];
+params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+
+private _useBigBackPack = true;
+private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
 
 if (!local _unit) exitWith {};
+
+_unit addBackpack _back;
+_unit addHeadgear _helmet;
 
 _unit addWeapon "rhs_weap_m249_pip_S_vfg3";
 _unit addPrimaryWeaponItem "rhsusf_acc_SF3P556";
