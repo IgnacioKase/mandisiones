@@ -24,11 +24,11 @@ if((_extractodeInteligencia select 0) != "") then {
 };
 
 if((_situation select 0) != "") then {
-  player createDiaryRecord["Diary", ["Misi"+toString[243]+"n", ([_situation, false] call MANDI_fnc_makeInfo)]];
+  player createDiaryRecord["Diary", ["Situaci"+toString[243]+"n", ([_situation, false] call MANDI_fnc_makeInfo)]];
 };
 
 if((_storySituation select 0) != "") then {
-  player createDiaryRecord["Diary", ["Situaci"+toString[243]+"n", ([_storySituation, false] call MANDI_fnc_makeInfo)]];
+  player createDiaryRecord["Diary", ["Situaci"+toString[243]+"n hist"+toString[243]+"rica", ([_storySituation, false] call MANDI_fnc_makeInfo)]];
 };
 player createDiaryRecord["Diary", ["Informaci"+toString[243]+"n", ([_info, true] call MANDI_fnc_makeInfo)]];
 

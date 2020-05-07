@@ -2,8 +2,16 @@
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-[[player, ""], "MAC_fnc_switchMove"] spawn BIS_fnc_MP;
-player removeAction standup;
+params [["_unit", player]];
+
+removeAllWeapons _unit;
+removeAllItems _unit;
+removeAllAssignedItems _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
 
 /*******************************************************************************
                           Realizado por |ArgA|Ignacio
