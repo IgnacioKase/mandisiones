@@ -1,0 +1,1 @@
+playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss",box, false, getPosATL box, 5, 1, 750];
