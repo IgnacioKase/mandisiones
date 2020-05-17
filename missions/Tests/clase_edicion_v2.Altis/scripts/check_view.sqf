@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 if (difficultyOption "thirdPersonView" == 1) then {
@@ -13,5 +13,5 @@ if (difficultyOption "thirdPersonView" == 1) then {
 };
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

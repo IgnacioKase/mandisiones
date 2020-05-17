@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 private _distanciaVision = 4000;
@@ -30,5 +30,5 @@ player action ["SwitchWeapon", player, player, 100];
 }] call BIS_fnc_addScriptedEventHandler;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

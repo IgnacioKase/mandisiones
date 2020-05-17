@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 if(!isServer)then{
 	exit;
@@ -24,5 +24,5 @@ comandante setName "Comandante";
 [comandante, _message] remoteExec ["globalChat", 0]; 
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

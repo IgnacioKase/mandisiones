@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////
-///////////Realizado por |ArgA|Ignacio/////////////
+///////////Realizado por |ArgA|MandI/////////////
 ///////////////////////////////////////////////////
 
 Movimiento =
@@ -67,5 +67,5 @@ waitUntil{call Posicion};
 [convoy3, [v9, v10, v11, v12], ["marker_62", "marker_63", "marker_58", "marker_59", "marker_60", "marker_61", "marker_42", "marker_43", "marker_44", "marker_45", "marker_46", "marker_47", "marker_49", "marker_50", "marker_51"]] call Movimiento;
 
 ///////////////////////////////////////////////////
-///////////Realizado por |ArgA|Ignacio/////////////
+///////////Realizado por |ArgA|MandI/////////////
 ///////////////////////////////////////////////////

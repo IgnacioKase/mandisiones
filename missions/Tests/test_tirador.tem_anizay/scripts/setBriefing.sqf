@@ -1,5 +1,5 @@
 ﻿/*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 private _recursos = [
@@ -43,5 +43,5 @@ private _editores = "EDITOR";
 _mision, _situacionHistorica, _info, _imagenes, _editores] call MANDI_fnc_setBriefing;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

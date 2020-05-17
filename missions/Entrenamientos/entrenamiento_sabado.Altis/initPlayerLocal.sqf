@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 private _distanciaVision = getMissionConfigValue ["MAX_DIST_VISION", 4000];
@@ -51,5 +51,5 @@ if(_disableCustomLoadout == 1)then{
 };
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

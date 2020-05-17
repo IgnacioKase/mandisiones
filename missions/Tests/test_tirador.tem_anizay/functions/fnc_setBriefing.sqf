@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 params["_recursos", "_enemigos", "_objetivos", "_situacion", "_extractodeInteligencia", "_mision", "_situacionHistorica", "_info", "_imagenes", "_editores"];
@@ -35,5 +35,5 @@ player createDiaryRecord["Diary", ["Informaci"+toString[243]+"n", ([_info, true]
 true;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

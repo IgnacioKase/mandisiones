@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/
 
@@ -33,6 +33,6 @@ _unit linkItem "ItemCompass";
 _unit linkItem "ACE_Altimeter";
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/

@@ -1,5 +1,5 @@
 ﻿/*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 private _mode = getMissionConfigValue ["CARACTER", "No oficial"];
 private _time = getMissionConfigValue ["HORARIO", ""];
@@ -36,5 +36,5 @@ private _params = [
 _params call MANDI_fnc_setBriefing;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

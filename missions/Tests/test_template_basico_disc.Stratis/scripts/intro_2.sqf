@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 private _mission = getMissionConfigValue ["onLoadName", ""];
@@ -30,5 +30,5 @@ titleCut ["", "BLACK IN", 5];
 [_mission, _location, _time] spawn BIS_fnc_infoText;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 params [["_unit", player], "_rol", ["_uniform", "arga_u_mbosque"], ["_helmet", "arga_cas_mbosque"], ["_vest", "arga_c_mbosque"], ["_backPack", "arga_m_mbosque_p"]];
@@ -18,5 +18,5 @@ if (! isNil "_rol") then {
 };
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

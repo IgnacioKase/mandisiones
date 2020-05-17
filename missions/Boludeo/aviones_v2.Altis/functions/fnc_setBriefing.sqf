@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 private _colorAuthor = getMissionConfigValue ["COLOR_AUTOR", "#76a8f7"];
@@ -35,5 +35,5 @@ player createDiaryRecord["Diary", ["Informaci"+toString[243]+"n", ([_info, true]
 true;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

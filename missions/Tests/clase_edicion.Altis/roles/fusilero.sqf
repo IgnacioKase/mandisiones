@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Ignacio
 *******************************************************************************/
 
@@ -38,6 +38,6 @@ for "_i" from 1 to 9 do {_unit addItemToBackpack "rhsusf_20Rnd_762x51_m993_Mag";
 for "_i" from 1 to 3 do {_unit addItemToBackpack "SmokeShellBlue";};
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Ignacio
 *******************************************************************************/

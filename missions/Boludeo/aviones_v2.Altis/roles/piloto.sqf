@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/
 
@@ -37,6 +37,6 @@ _unit linkItem "tf_microdagr";
 _unit linkItem "tf_anprc148jem_1";
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/

@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Labrador|Cbo¹
 *******************************************************************************/
 
@@ -57,6 +57,6 @@ _unit linkItem "ACE_Altimeter";
 _unit linkItem "tf_anprc152_2";
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 						  Rol por       |ArgA|Labrador|Cbo¹
 *******************************************************************************/

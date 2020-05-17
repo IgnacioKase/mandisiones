@@ -1,5 +1,5 @@
 version=53;
-center[]={8107.083,29.111549,9975.6357};
+center[]={5161.3052,145.38698,6042.3184};
 class items
 {
 	items=3;
@@ -8,16 +8,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.0092773438,0.60647202,0.032226563};
-			angles[]={0.016004669,4.712389,6.2751913};
+			position[]={1.9169922,0.57536316,0.48486328};
+			angles[]={6.2799911,2.8652549,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{this addAction [""<t color='#f03f3c'>Hacer Médico</t>"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ace_medical_medicClass"", 2, true];" \n "        [_caller,""arga_ing_medico""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Ahora sos médico!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];" \n "this addAction [""Cancelar especialidades"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ACE_IsEngineer"", 0,true]; " \n "        _caller setVariable [""ACE_isEOD"", false, true]; " \n "        _caller setVariable [""ace_medical_medicClass"", 0, true]; " \n "        _caller setVariable [""ACE_GForceCoef"", 1]; " \n "        [_caller,""arga_ing_arga""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Cancelaste tus especialidades!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];}";
+			name="standIngeniero";
 		};
-		id=1843;
+		id=2448;
 		type="Land_InfoStand_V1_F";
 		class CustomAttributes
 		{
@@ -36,7 +36,7 @@ class items
 								"STRING"
 							};
 						};
-						value="imgs\medico.paa";
+						value="";
 					};
 				};
 			};
@@ -252,18 +252,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.049804688,0.63361931,-1.9697266};
-			angles[]={0.011990411,4.712389,6.2751913};
+			position[]={-0.025390625,0.57574463,-0.0043945313};
+			angles[]={6.2799911,2.8652549,6.2815971};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{this addAction [""<t color='#fcba03'>Hacer Ingeniero</t>"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ace_medical_medicClass"", 2, true]; " \n "        hint ""Ahora sos ingeniero!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];" \n "this addAction [""Cancelar especialidades"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ACE_IsEngineer"", 0,true]; " \n "        _caller setVariable [""ACE_isEOD"", false, true]; " \n "        _caller setVariable [""ace_medical_medicClass"", 0, true]; " \n "        _caller setVariable [""ACE_GForceCoef"", 1]; " \n "        [_caller,""arga_ing_arga""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Cancelaste tus especialidades!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];}";
+			name="standMedico";
 		};
-		id=1842;
+		id=2447;
 		type="Land_InfoStand_V1_F";
-		atlOffset=1.9073486e-006;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -281,7 +280,7 @@ class items
 								"STRING"
 							};
 						};
-						value="imgs\ingeniero.paa";
+						value="";
 					};
 				};
 			};
@@ -497,16 +496,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.052246094,0.57527161,1.9609375};
-			angles[]={0.016004669,4.712389,6.2751913};
+			position[]={-1.8901367,0.57717896,-0.48632813};
+			angles[]={6.2799911,2.8652549,6.2815971};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{this addAction [""<t color='#55bef2'>Hacer Piloto</t>"", { " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "        _caller setVariable [""ACE_GForceCoef"", 0]; " \n "        hint ""Ahora sos piloto""" \n "        },[],1.5, true, true, """",""true"", 4,false,"""","""" " \n "];" \n "this addAction [""Cancelar especialidades"", {  " \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];  " \n "        _caller setVariable [""ACE_IsEngineer"", 0,true]; " \n "        _caller setVariable [""ACE_isEOD"", false, true]; " \n "        _caller setVariable [""ace_medical_medicClass"", 0, true]; " \n "        _caller setVariable [""ACE_GForceCoef"", 1]; " \n "        [_caller,""arga_ing_arga""] call BIS_fnc_setUnitInsignia; " \n "        hint ""Cancelaste tus especialidades!""; " \n "        },[],1.5, true, true, """",""true"", 4,false,"""",""""  " \n "];}";
+			name="standPiloto";
 		};
-		id=1863;
+		id=2449;
 		type="Land_InfoStand_V1_F";
 		class CustomAttributes
 		{
@@ -525,7 +524,7 @@ class items
 								"STRING"
 							};
 						};
-						value="imgs\piloto.paa";
+						value="";
 					};
 				};
 			};

@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
 params [["_state", 0], ["_marker", "LIGHTSOURCE"], ["_distance", 800], ["_types", ["Lamps_Base_F","PowerLines_base_F","Land_PowerPoleWooden_L_F"]]];
@@ -15,5 +15,5 @@ private _lamps = "";
 } forEach _types;
 
 /*******************************************************************************
-                          Realizado por |ArgA|Ignacio
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
