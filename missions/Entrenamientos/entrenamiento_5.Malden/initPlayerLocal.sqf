@@ -12,6 +12,7 @@ if (hasInterface) then {
   [_distanciaVision, 800] execVM "scripts\view_distance.sqf";
   [] execVM "scripts\check_view.sqf";
   [_intro] execVM "scripts\init_intro.sqf";
+  //TODO Intro para los que esperan
   removeGoggles player; //arga_rhs_pm_negro
   if(_initialGoggles != "")then{
     player addGoggles _initialGoggles;
