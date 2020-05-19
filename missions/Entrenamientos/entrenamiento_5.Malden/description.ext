@@ -24,6 +24,9 @@ class CfgFunctions {
       class getObjects_server {
         file = "functions\fnc_getObjects_server.sqf";
       };
+      class displayObject {
+        file = "functions\fnc_displayObject.sqf";
+      };
     };
   };
   class MAC {

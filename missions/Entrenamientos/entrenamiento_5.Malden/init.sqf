@@ -19,6 +19,8 @@ if(! isNil "roles") then {
 
 [_standMedico, _standIngeniero, _standPiloto] execVM "scripts\init_stands.sqf";
 
+execVM "scripts\init_campo_correr.sqf";
+
 // [] execVM "scripts\init_vcom_driving.sqf";
 
 player disableAI "MOVE";

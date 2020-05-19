@@ -56,6 +56,8 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_flags_server.sqf";
 
+execVM "scripts\reset_campo_correr.sqf";
+
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/
