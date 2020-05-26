@@ -37,6 +37,7 @@ if(_disableGroupIA == 1)then{
     {
         private _group = (group _x);
         {
+            doStop _x;
             _x disableAI "MOVE";
             _x action ["SwitchWeapon", _x, _x, 100];
             _x setUnitPos "middle";
@@ -47,16 +48,13 @@ if(_disableGroupIA == 1)then{
 if(_disableBluforIA == 1) then {
   {
     if(side _x == west) then {
+      doStop _x;
       _x disableAI "MOVE";
       _x action ["SwitchWeapon", _x, _x, 100];
       _x setUnitPos "middle";
     };
   }foreach allUnits;
 };
-
-execVM "scripts\init_objs_server.sqf";
-
-execVM "scripts\reset_campo_correr.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

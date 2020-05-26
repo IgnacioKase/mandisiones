@@ -18,6 +18,12 @@ class Header {
 class CfgFunctions {
   class MANDI {
     class general {
+      class setBriefing {
+        file = "functions\fnc_setBriefing.sqf";
+      };
+      class makeInfo {
+        file = "functions\fnc_makeInfo.sqf";
+      };
       class posicion {
         file = "functions\fnc_posicion.sqf";
       };
@@ -29,9 +35,6 @@ class CfgFunctions {
       };
       class displayObject {
         file = "functions\fnc_displayObject.sqf";
-      };
-      class setStand {
-        file = "functions\fnc_setStand.sqf";
       };
     };
   };
@@ -56,16 +59,10 @@ class CfgFunctions {
 
 class CfgSounds {
 	sounds[] = {};
-  class MANDI_TRUMPET
+  class effect_intro
 	{
-    name = "MANDI_TRUMPET";
-    sound[] = {"sounds\Track_trumpet.ogg", 1, 1};
-    titles[] = {};
-	};
-  class MANDI_ANTHEM
-	{
-    name = "MANDI_ANTHEM";
-    sound[] = {"sounds\Track_anthem.ogg", 1, 1};
+    name = "effect_intro";
+    sound[] = {"sounds\effect_intro.ogg", 1, 1};
     titles[] = {};
 	};
 };

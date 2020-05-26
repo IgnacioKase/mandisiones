@@ -40,9 +40,6 @@ CASCO_PERSONALIZADO = "";
 CHALECO_PERSONALIZADO = "";
 MOCHILA_PERSONALIZADO = "";
 MOCHILA_CHICA_PERSONALIZADO = "";
-STAND_MEDICO = "standMedico";
-STAND_INGENIERO = "standIngeniero";
-STAND_PILOTO = "standPiloto";
 
 //BRIEFING
 // Cada elemento del array es un parrafo
