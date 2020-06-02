@@ -8,7 +8,7 @@ private _rol = false;
 
 {
 	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
+	if (_rol != false) {
 		[_x, _rol] call MANDI_fnc_setStand;
 	};
 } forEach _allStands;

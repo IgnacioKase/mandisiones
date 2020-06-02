@@ -2,16 +2,10 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+params ["_object", "_state"];
 
-private _rol = false;
-
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+_object enableSimulationGlobal _state;
+_object hideObjectGlobal !_state;
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

@@ -2,16 +2,19 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+params ["_data", "_list"];
 
-private _rol = false;
-
+private _s = "";
+private _si = "";
 {
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+    _si = "<p>";
+    if(_list)then {
+      _si = _si + "-";
+    };
+    _s = _s + _si + _x + "<br/><br/></p>";
+}forEach _data;
+
+_s;
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

@@ -2,16 +2,16 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+params [["_types", []]];
 
-private _rol = false;
+if( !isServer ) exitWith{
+	_types remoteExec ["MANDI_fnc_getObjects_server", 2];
+};
 
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+private _center = getArray (configfile >> "CfgWorlds" >> worldName >> "centerPosition");
+private _allObjs = _center nearObjects [_types, worldSize];
+
+_allObjs;
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

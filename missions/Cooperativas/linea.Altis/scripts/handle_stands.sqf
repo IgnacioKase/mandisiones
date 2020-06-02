@@ -4,11 +4,11 @@
 
 params [["_allStands", []]];
 
-private _rol = false;
+private _rol = "";
 
 {
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
+	_rol = _x getVariable ["MANDI_STAND_ROL", ""];
+	if (_rol != "") then {
 		[_x, _rol] call MANDI_fnc_setStand;
 	};
 } forEach _allStands;

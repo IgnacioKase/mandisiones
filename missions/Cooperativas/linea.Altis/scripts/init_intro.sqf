@@ -2,16 +2,11 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+params [["_intro", 2]];
 
-private _rol = false;
+MANDI_INTRO_PLAYED = false;
 
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+call compile format ["addMissionEventHandler ['PreloadFinished', {if(!MANDI_INTRO_PLAYED)then{[] execVM 'scripts\intro_%1.sqf'; MANDI_INTRO_PLAYED = true;};}];", _intro];
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

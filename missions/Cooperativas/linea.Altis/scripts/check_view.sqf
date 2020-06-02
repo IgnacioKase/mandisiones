@@ -2,16 +2,15 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
-
-private _rol = false;
-
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+if (difficultyOption "thirdPersonView" == 1) then {
+    while {true} do {
+        if (cameraView == "External") then
+        {
+            player switchCamera "Internal";
+        };
+        sleep 0.1;
+    };
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

@@ -2,16 +2,11 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+if (!isServer) exitWith { };
 
-private _rol = false;
+private _allStands = ["Land_InfoStand_V1_F"] call MANDI_fnc_getObjects_server;
 
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+[[_allStands], "scripts\handle_stands.sqf"] remoteExec ["BIS_fnc_execVM", 0];
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

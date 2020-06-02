@@ -2,16 +2,16 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-params [["_allStands", []]];
+params [["_unit", player]];
 
-private _rol = false;
-
-{
-	_rol = _x getVariable ["MANDI_STAND_ROL", false];
-	if (_rol != false) then {
-		[_x, _rol] call MANDI_fnc_setStand;
-	};
-} forEach _allStands;
+removeAllWeapons _unit;
+removeAllItems _unit;
+removeAllAssignedItems _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeHeadgear _unit;
+removeGoggles _unit;
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI
