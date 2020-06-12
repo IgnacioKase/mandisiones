@@ -1,0 +1,119 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=3;
+	};
+	class Camera
+	{
+		pos[]={10217.094,27.975555,10032.912};
+		dir[]={0.28558993,-0.56966972,-0.77066678};
+		up[]={0.19795187,0.8218711,-0.53417379};
+		aside[]={-0.93769145,-1.9453e-007,-0.3474853};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=7391177;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10224.576,11.852757,10021.676};
+						angles[]={0,4.049262,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_A_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={10212.995,11.669938,10004.272};
+			angle=4.0582571;
+			class Attributes
+			{
+				condition="call{([""|ArgA|Ignacio|Sdo"", str thisList] call BIS_fnc_inString);}";
+				onActivation="call{hint str thisList;}";
+				sizeA=15;
+				sizeB=15;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2;
+			type="EmptyDetector";
+			atlOffset=9.5367432e-007;
+		};
+	};
+};

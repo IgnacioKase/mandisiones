@@ -9,7 +9,7 @@ private _intro = getMissionConfigValue ["INTRO", 2];
 
 if (hasInterface) then {
   MANDI_ENABLE_DIST = true;
-  [_distanciaVision, 800] execVM "scripts\view_distance.sqf";
+  [_distanciaVision, 1100] execVM "scripts\view_distance.sqf";
   [] execVM "scripts\check_view.sqf";
   [_intro] execVM "scripts\init_intro.sqf";
   removeGoggles player; //arga_rhs_pm_negro
