@@ -58,6 +58,7 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_objs_server.sqf";
 
+execVM "scripts\smart_tank\smart.sqf";
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/

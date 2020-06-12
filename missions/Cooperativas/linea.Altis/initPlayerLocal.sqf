@@ -28,7 +28,7 @@ doStop player;
 player disableAI "MOVE";
 player action ["SwitchWeapon", player, player, 100];
 player setUnitPos "middle";
-enableEngineArtillery false;
+//enableEngineArtillery false;
 
 // Deshabilita las opciones de Cargar y Guardar Equipo en el arsenal
 if(_disableCustomLoadout == 1) then {
