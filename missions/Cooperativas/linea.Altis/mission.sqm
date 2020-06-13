@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=45;
+		nextID=50;
 	};
 	class Camera
 	{
@@ -35242,8 +35242,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -35252,10 +35252,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=1;
 								};
 							};
 						};
@@ -35299,8 +35299,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -35309,10 +35309,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="";
 								};
 							};
 						};
@@ -37534,7 +37534,7 @@ class Mission
 					};
 					id=998;
 					type="rhs_msv_emr_machinegunner";
-					atlOffset=0.094177246;
+					atlOffset=0.094179153;
 				};
 				class Item16
 				{
@@ -54780,6 +54780,7 @@ class Mission
 					};
 					id=1638;
 					type="rhs_msv_emr_rifleman";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56411,6 +56412,7 @@ class Mission
 					};
 					id=1695;
 					type="rhs_msv_emr_rifleman";
+					atlOffset=1.9073486e-006;
 				};
 				class Item1
 				{
@@ -56426,7 +56428,7 @@ class Mission
 					};
 					id=1696;
 					type="rhs_msv_emr_rifleman";
-					atlOffset=2.8610229e-005;
+					atlOffset=3.0517578e-005;
 				};
 				class Item2
 				{
@@ -56442,7 +56444,7 @@ class Mission
 					};
 					id=1697;
 					type="rhs_msv_emr_medic";
-					atlOffset=2.6702881e-005;
+					atlOffset=3.8146973e-005;
 				};
 				class Item3
 				{
@@ -56532,7 +56534,7 @@ class Mission
 					};
 					id=1698;
 					type="rhs_msv_emr_engineer";
-					atlOffset=0.15068817;
+					atlOffset=0.15069008;
 				};
 			};
 			class Attributes
@@ -56542,6 +56544,7 @@ class Mission
 				formation="STAG COLUMN";
 			};
 			id=1694;
+			atlOffset=1.9073486e-006;
 		};
 		class Item495
 		{
@@ -63158,6 +63161,7 @@ class Mission
 					};
 					id=1848;
 					type="rhs_msv_armoredcrew";
+					atlOffset=6.6757202e-006;
 				};
 				class Item1
 				{
@@ -63174,6 +63178,7 @@ class Mission
 					};
 					id=1849;
 					type="rhs_msv_armoredcrew";
+					atlOffset=6.6757202e-006;
 				};
 			};
 			class Attributes
