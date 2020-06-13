@@ -16,7 +16,7 @@ private _TIME_THD_WAVE = 60;
 */
 
 // TODO PONER ESTOS TIEMPOS PARA LA COOP
-private _TIME_FST_WAVE = 300;
+private _TIME_FST_WAVE = 1;
 private _TIME_SND_WAVE = 600;
 private _TIME_THD_WAVE = 600;
 
