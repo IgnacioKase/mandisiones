@@ -28,8 +28,18 @@ if(_customSkillsIA == 1)then{
             _x setSkill ["reloadSpeed", _reloadSpeed];
             _x setSkill ["commanding", _commanding];
         }
-    }forEach allUnits;
+    } forEach allUnits;
 };
+
+{
+  if (!(isPlayer  _x))then { 
+    _x addeventhandler ["Killed", {_this execVM "scripts\remove_dead.sqf"}];
+    if( !(isNull objectParent _x)) then {
+        _vehicleUnit = vehicle _x;
+        _vehicleUnit addeventhandler ["Killed", {_this execVM "scripts\remove_dead.sqf"}];
+    };
+  };
+} forEach allUnits;
 
 // Deshabilita el movimiento de la IA para todas las IA que 
 // esten en el mismo grupo que un jugador humano

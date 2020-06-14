@@ -2,7 +2,7 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Op. Contra la Línea V2"
+#define NAME "Op. Contra la Línea V6"
 #define IMAGE "imgs\portada.paa"                   
 #define DESCRIPTION "Defender y contraatacar."                  
 

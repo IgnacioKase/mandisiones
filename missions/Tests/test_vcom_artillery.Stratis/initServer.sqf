@@ -1,0 +1,1 @@
+execVM "scripts\init_mortero.sqf";
