@@ -2,7 +2,7 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Op. Contra la Línea"
+#define NAME "Op. Contra la Línea V2"
 #define IMAGE "imgs\portada.paa"                   
 #define DESCRIPTION "Defender y contraatacar."                  
 
@@ -18,7 +18,7 @@ COLOR_AUTOR = "#44CC00";
 ES_CAMPANIA = 0;                        
 NOMBRE_CAMPANIA = "NO ES UNA CAMPAÑA";
 INTRO = 2;                               
-MAX_DIST_VISION = 3000;
+MAX_DIST_VISION = 2000;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;
 
 //EQUIPAMIENTO
