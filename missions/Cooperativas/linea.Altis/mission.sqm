@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=50;
+		nextID=60;
 	};
 	class Camera
 	{
-		pos[]={21086.84,191.42033,7451.25};
-		dir[]={0.45485815,-0.52305919,-0.72080493};
-		up[]={0.27914733,0.85229057,-0.44235885};
-		aside[]={-0.84571362,2.9156217e-007,-0.53367954};
+		pos[]={17784.826,83.256172,17364.76};
+		dir[]={0.6922062,-0.48316294,-0.53618747};
+		up[]={0.3819963,0.87551069,-0.29589537};
+		aside[]={-0.61240375,-4.360918e-007,-0.7905975};
 	};
 };
 binarizationWanted=0;
@@ -8372,18 +8372,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17806.666,81.268852,17352.418};
+						position[]={17806.666,80.706413,17352.418};
 						angles[]={0,4.7371559,0};
 					};
 					side="Empty";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.2;
 					};
 					id=243;
 					type="Land_Cargo_Patrol_V1_F";
-					atlOffset=0.56243896;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8621,18 +8620,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17805.342,82.676315,17307.121};
+						position[]={17805.342,82.113869,17307.121};
 						angles[]={0,4.7371559,0};
 					};
 					side="Empty";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.2;
 					};
 					id=249;
 					type="Land_Cargo_Patrol_V1_F";
-					atlOffset=0.56244659;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9154,7 +9152,7 @@ class Mission
 				};
 			};
 			id=204;
-			atlOffset=-0.44525146;
+			atlOffset=-0.44532013;
 		};
 		class Item118
 		{
@@ -11381,12 +11379,12 @@ class Mission
 				angles[]={0,1.6082711,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=338;
 			type="RHS_M2StaticMG_D";
+			atlOffset=0.56244659;
 		};
 		class Item191
 		{
