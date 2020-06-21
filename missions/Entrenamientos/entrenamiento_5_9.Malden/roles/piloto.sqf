@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/
 
@@ -41,9 +41,9 @@ _unit addItemToBackpack "arga_ca_bomber";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
-_unit linkItem "tf_anprc148jem_1";
+_unit linkItem "tf_anprc152";
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Maxi|Cbo
 *******************************************************************************/

@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Nico|Cpt
 *******************************************************************************/
 
@@ -42,9 +42,9 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "RPG32_HE_F";};
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
-_unit linkItem "tf_anprc152_1";
+_unit linkItem "tf_anprc152";
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Nico|Cpt
 *******************************************************************************/

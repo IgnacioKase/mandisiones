@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Ignacio
 *******************************************************************************/
 
@@ -31,6 +31,10 @@ for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_elasticBandage";};
 _unit addItemToUniform "ACE_Flashlight_XL50";
 _unit addItemToUniform "ACE_MapTools";
 _unit addItemToUniform "ACE_IR_Strobe_Item";
+_unit linkItem "ItemMap";
+_unit linkItem "ItemCompass";
+_unit linkItem "ItemWatch";
+
 for "_i" from 1 to 7 do {_unit addItemToVest "rhsusf_20Rnd_762x51_m993_Mag";};
 for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellBlue";};
 for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
@@ -40,9 +44,9 @@ for "_i" from 1 to 3 do {_unit addItemToBackpack "SmokeShellBlue";};
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ACE_Altimeter";
-_unit linkItem "tf_anprc152_1";
+_unit linkItem "tf_anprc152";
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Ignacio
 *******************************************************************************/
