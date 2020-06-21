@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8153.084,49.772297,9580.7627};
-		dir[]={0.42256463,-0.58052164,-0.69609392};
-		up[]={0.30126041,0.81422544,-0.49626639};
-		aside[]={-0.85486901,-9.6857548e-008,-0.51894885};
+		pos[]={8171.1782,40.251072,9994.6914};
+		dir[]={-0.98301172,-0.13625523,-0.12352308};
+		up[]={-0.1352672,0.99066401,-0.016998356};
+		aside[]={-0.12468421,-3.8512371e-007,0.99226093};
 	};
 };
 binarizationWanted=0;
@@ -1638,7 +1638,7 @@ class Mission
 			};
 			id=28;
 			type="RHS_UH60M_d";
-			atlOffset=-0.16799927;
+			atlOffset=-0.089942932;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1698,7 +1698,7 @@ class Mission
 			};
 			id=29;
 			type="RHS_UH60M";
-			atlOffset=3.8146973e-006;
+			atlOffset=0.07806015;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4524,6 +4524,7 @@ class Mission
 			};
 			id=138;
 			type="rhsusf_M1237_M2_usarmy_wd";
+			atlOffset=-9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11355,13 +11356,13 @@ class Mission
 				angles[]={0.0039967569,0,6.2816033};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
 			};
 			id=379;
 			type="Land_Defibrillator_F";
+			atlOffset=0.74278641;
 		};
 		class Item380
 		{
@@ -11372,14 +11373,13 @@ class Mission
 				angles[]={0.0039967569,0,6.2816033};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
 			};
 			id=380;
 			type="Land_Defibrillator_F";
-			atlOffset=0.00039482117;
+			atlOffset=0.74317741;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40367,7 +40367,7 @@ class Mission
 			};
 			id=1543;
 			type="Land_OfficeCabinet_01_F";
-			atlOffset=7.4386597e-005;
+			atlOffset=0.023378372;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40466,7 +40466,7 @@ class Mission
 			};
 			id=1546;
 			type="Land_CampingChair_V2_white_F";
-			atlOffset=7.4386597e-005;
+			atlOffset=0.0151968;
 		};
 		class Item1528
 		{
@@ -41312,6 +41312,7 @@ class Mission
 			};
 			id=1570;
 			type="RHS_UH60M_MEV";
+			atlOffset=0.077955246;
 			class CustomAttributes
 			{
 				class Attribute0
