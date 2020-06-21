@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Veck|Cbo¹
 *******************************************************************************/
 
@@ -10,8 +10,8 @@ private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
 
 if (!local _unit) exitWith {};
 
-_unit setVariable ["ACE_IsEngineer",1,true];
-_unit setVariable ["ACE_isEOD",true,true];
+_unit setVariable ["ACE_IsEngineer", 1, true];
+_unit setVariable ["ACE_isEOD", true, true];
 _unit addBackpack _back;
 _unit addHeadgear _helmet;
 
@@ -53,9 +53,9 @@ _unit addItemToBackpack "APERSMineDispenser_Mag";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
-_unit linkItem "tf_anprc152_11";
+_unit linkItem "tf_anprc152";
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Veck|Cbo¹
 *******************************************************************************/

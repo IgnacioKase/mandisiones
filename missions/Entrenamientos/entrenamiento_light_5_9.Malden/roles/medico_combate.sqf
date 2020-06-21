@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Labrador|Cbo¹
 *******************************************************************************/
 
@@ -54,9 +54,9 @@ for "_i" from 1 to 5 do {_unit addItemToBackpack "SmokeShellBlue";};
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ACE_Altimeter";
-_unit linkItem "tf_anprc152_2";
+_unit linkItem "tf_anprc152";
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|Ignacio
 						  Rol por       |ArgA|Labrador|Cbo¹
 *******************************************************************************/
