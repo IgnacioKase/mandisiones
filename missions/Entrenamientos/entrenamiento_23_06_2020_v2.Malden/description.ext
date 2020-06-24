@@ -1,0 +1,82 @@
+/*******************************************************************************
+                          Realizado por |ArgA|MandI
+*******************************************************************************/
+#include "arga_settings.hpp"
+
+enableDebugConsole = 1;
+
+disableChannels[]={{0, true, true}, {1, true, true}, {2, true, true},{3, false, true}, {4, true, true}, {6, true, true}};
+
+respawnOnStart = 0;
+respawndialog= false;
+
+class Header {
+    gameType=coop;
+    minPlayers=1;
+    maxPlayers=40;
+};
+
+class CfgFunctions {
+  class MANDI {
+    class general {
+      class clearEquipment {
+        file = "functions\fnc_clearEquipment.sqf";
+      };
+      class getObjects_server {
+        file = "functions\fnc_getObjects_server.sqf";
+      };
+      class displayObject {
+        file = "functions\fnc_displayObject.sqf";
+      };
+      class setStand {
+        file = "functions\fnc_setStand.sqf";
+      };
+      class getRol {
+        file = "functions\fnc_getRol.sqf";
+      };
+    };
+  };
+  class MAC {
+    class general {
+      class switchMove{
+        file = "functions\fnc_switchMove.sqf";
+      };
+    };
+  };
+  class VCOM {
+    class general {
+      class isDriver{
+        file = "functions\fnc_isDriver.sqf";
+      };
+      class vehicleDetection{
+        file = "functions\fnc_vehicleDetection.sqf";
+      };
+    };
+  };
+};
+
+class CfgSounds {
+	sounds[] = {};
+  class MANDI_TRUMPET
+	{
+    name = "MANDI_TRUMPET";
+    sound[] = {"sounds\Track_trumpet.ogg", 1, 1};
+    titles[] = {};
+	};
+  class MANDI_ANTHEM
+	{
+    name = "MANDI_ANTHEM";
+    sound[] = {"sounds\Track_anthem.ogg", 1, 1};
+    titles[] = {};
+	};
+  class MANDI_BUS
+	{
+    name = "MANDI_BUS";
+    sound[] = {"sounds\Tack_bus.ogg", 1, 1};
+    titles[] = {};
+	};
+};
+
+/*******************************************************************************
+                          Realizado por |ArgA|MandI
+*******************************************************************************/

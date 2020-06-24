@@ -8,7 +8,10 @@ private _disableCustomLoadout =  getMissionConfigValue ["DESACTIVAR_EQUIPAMIENTO
 private _intro = getMissionConfigValue ["INTRO", 3];
 private _curatorWhiteList = parseSimpleArray getMissionConfigValue ["CURATOR_WHITELIST", "[]"];
 
+setTerrainGrid 25;
+
 if (hasInterface) then {
+  player setVariable["Saved_Loadout", getUnitLoadout player];
   MANDI_ENABLE_DIST = true;
   [_distanciaVision, 800] execVM "scripts\view_distance.sqf";
   execVM "scripts\check_view.sqf";

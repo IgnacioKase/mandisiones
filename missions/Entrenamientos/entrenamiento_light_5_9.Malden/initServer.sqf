@@ -56,6 +56,36 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_objs_server.sqf";
 
+
+MANDI_ROLE_LIST = call compile preprocessFileLineNumbers "scripts\db\querys\get_role_list.sqf";
+
+sleep 3;
+
+addMissionEventHandler ["PlayerConnected",
+{
+	params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
+  private ["_unit"];
+  {
+    if (getPlayerUID _x == _uid) then {
+      _unit = x;
+    };
+  } forEach allPlayers;
+  [_unit, "connected", MANDI_DB, MANDI_ROLE_LIST] execVM "scripts\db\querys\write_log.sqf";
+}];
+
+addMissionEventHandler ["HandleDisconnect",
+{
+	params ["_unit", "_id", "_uid", "_name"];
+  [_unit, "disconnect", MANDI_DB, MANDI_ROLE_LIST] execVM "scripts\db\querys\write_log.sqf";
+}];
+
+
+sleep 50;
+
+{
+  [_unit, "connected", MANDI_DB, MANDI_ROLE_LIST] execVM "scripts\db\querys\write_log.sqf";
+} forEach allPlayers;
+
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/
