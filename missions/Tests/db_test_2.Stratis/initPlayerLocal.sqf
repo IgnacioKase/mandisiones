@@ -5,14 +5,13 @@
 
 private _distanciaVision = getMissionConfigValue ["MAX_DIST_VISION", 4000];
 private _initialGoggles =  getMissionConfigValue ["GAFAS_INICIALES", ""];
-private _disableCustomLoadout =  getMissionConfigValue ["DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO", 1];
+private _disableCustomLoadout =  getMissionConfigValue ["DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO", 1] == 1;
 private _intro = getMissionConfigValue ["INTRO", 2];
-private _disableGroupIA = getMissionConfigValue ["DESACTIVAR_IA_DE_GRUPO", 1];
-private _disableBluforIA = getMissionConfigValue ["DESACTIVAR_TODO_BLUFOR", 0];
+private _disableGroupIA = getMissionConfigValue ["DESACTIVAR_IA_DE_GRUPO", 1] == 1;
+private _disableBluforIA = getMissionConfigValue ["DESACTIVAR_TODO_BLUFOR", 0] == 1;
 // Vultur
-private _enableArtilleryComputer = getMissionConfigValue ["PERMITIR_COMPUTADORA_ARTILLERIA", true];
-// TODO Ver por que sale un string y no un bolean
-private _enableAutomaticRole = getMissionConfigValue ["PERMITIR_ROL_AUTOMATICO", true];
+private _enableArtilleryComputer = getMissionConfigValue ["PERMITIR_COMPUTADORA_ARTILLERIA",  1] == 1;
+private _enableAutomaticRole = getMissionConfigValue ["PERMITIR_ROL_AUTOMATICO",  1] == 1;
 private _rol = "";
 
 setTerrainGrid 25;
@@ -32,7 +31,7 @@ if (hasInterface) then {
   execVM "scripts\setBriefing.sqf";
 };
 
-if ((_enableAutomaticRole == "true")) then {
+if ((_enableAutomaticRole)) then {
   switch (toLower roleDescription player) do {
     case "cacique @comandancia": { _rol = "roles\capitan.sqf"; };
     case "capitán @comandancia": { _rol = "roles\capitan.sqf"; };
@@ -71,11 +70,11 @@ doStop player;
 player disableAI "MOVE";
 player action ["SwitchWeapon", player, player, 100];
 player setUnitPos "middle";
-enableEngineArtillery (_enableArtilleryComputer == "true");
+enableEngineArtillery (_enableArtilleryComputer);
 
 // Deshabilita el movimiento de la IA para todas las IA que 
 // esten en el mismo grupo que un jugador humano
-if(_disableGroupIA == 1) then {
+if(_disableGroupIA) then {
   private _units = units (group player);
   {
     if(local _x) then {
@@ -87,7 +86,7 @@ if(_disableGroupIA == 1) then {
   }foreach _units;
 };
 
-if(_disableBluforIA == 1) then {
+if (_disableBluforIA) then {
   {
     if(side _x == west && local _x) then {
       doStop _x;
@@ -99,7 +98,7 @@ if(_disableBluforIA == 1) then {
 };
 
 // Deshabilita las opciones de Cargar y Guardar Equipo en el arsenal
-if(_disableCustomLoadout == 1) then {
+if(_disableCustomLoadout) then {
   [missionNamespace, "arsenalOpened", {
     disableSerialization;
     params ["_display"];

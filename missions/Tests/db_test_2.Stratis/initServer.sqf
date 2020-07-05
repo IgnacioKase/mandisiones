@@ -60,8 +60,9 @@ execVM "scripts\init_vcom_driving.sqf";
 
 execVM "scripts\smart_tank\smart.sqf";
 
-execVM "scripts\db\init_log_system.sqf";
-
+if (isDedicated) then {
+  execVM "scripts\db\init_log_system.sqf";
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|Ignacio

@@ -23,7 +23,7 @@ private _mission_id = ["executeQuery", _query] call _extdb3;
 
 _mission_id = (_mission_id select 0) select 0;
 
-_query = format ["DELETE FROM `arga-log`.log WHERE log_type_id = (select id from `arga-log`.log_type where name = 'info') AND id > %1 LIMIT 1;", _mission_id];
+_query = format ["DELETE FROM `arga-log`.log WHERE log_type_id = (select id from `arga-log`.log_type where name = 'info') AND id > %1;", _mission_id];
 
 [format ["QUERY: %1", str _query]] call BIS_fnc_logFormat;
 

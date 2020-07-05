@@ -12,7 +12,10 @@ waitUntil { time > 0 };
 
 sleep 5;
 
-[_playerUnit, "connected"] execVM "scripts\db\querys\write_log.sqf";
+if (isDedicated) then {
+    [[_playerUnit]] call compile preprocessFileLineNumbers "scripts\db\querys\write_alternative_role.sqf";
+    [_playerUnit, "connected"] execVM "scripts\db\querys\write_log.sqf";
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

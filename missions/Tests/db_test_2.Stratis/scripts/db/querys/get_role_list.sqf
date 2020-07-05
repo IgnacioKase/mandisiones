@@ -15,13 +15,17 @@ _result = "connect" call _extdb3;
 [format ["CONNECTION: %1", str _result]] call BIS_fnc_logFormat;
 /////////////////////
 
-private _query = "SELECT code, name FROM role;";
+private _query = "SELECT code, name, id FROM role;";
 
 private _roleList = ["executeQuery", _query] call _extdb3;
 
-private _query = "SELECT role.code, alt.name FROM role_alternative_name as alt INNER join role as role on alt.role_id = role.id;";
+[format ["ROLE_LIST: %1", str _roleList]] call BIS_fnc_logFormat;
+
+private _query = "SELECT role.code, alt.name, alt.id FROM role_alternative_name as alt LEFT JOIN role as role on alt.role_id = role.id;";
 
 private _alternativeList = ["executeQuery", _query] call _extdb3;
+
+[format ["ALT LIST: %1", str _alternativeList]] call BIS_fnc_logFormat;
 
 (_roleList + _alternativeList);
 

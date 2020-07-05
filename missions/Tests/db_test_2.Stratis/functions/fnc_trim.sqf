@@ -16,12 +16,21 @@ if (_length != 0) then {
 	}; 
 	for "_i" from _length to 0 step -1 do { 
 		if (_string select _i != 32 && _end == -1) then { 
-			_end = _i; 
-		}; 
+			_end = _i;
+		};
 	}; 
-}; 
+};
 
-[_originalString, _begin, _end] call BIS_fnc_trimString; 
+_begin = if (_begin == -1) then { 0 } else { _begin };
+_end = if (_end == -1) then { _length } else { _end };
+
+private _result = [];
+
+for "_i" from _begin to _end step 1 do {
+	_result pushBack (_string select _i);
+};
+
+toString _result;
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV
