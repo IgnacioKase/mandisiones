@@ -5,10 +5,11 @@
 private _distanciaVision = getMissionConfigValue ["MAX_DIST_VISION", 4000];
 private _initialGoggles =  getMissionConfigValue ["GAFAS_INICIALES", ""];
 private _disableCustomLoadout =  getMissionConfigValue ["DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO", 1];
+private _disableGroupIA = getMissionConfigValue ["DESACTIVAR_IA_DE_GRUPO", 1];
+private _disableBluforIA = getMissionConfigValue ["DESACTIVAR_TODO_BLUFOR", 0];
 private _intro = getMissionConfigValue ["INTRO", 3];
 private _curatorWhiteList = parseSimpleArray getMissionConfigValue ["CURATOR_WHITELIST", "[]"];
 
-player setVariable ["MANDI_ROL", "entrenamiento"];
 setTerrainGrid 25;
 
 if (hasInterface) then {
@@ -16,6 +17,9 @@ if (hasInterface) then {
   MANDI_ENABLE_DIST = true;
   [_distanciaVision, 800] execVM "scripts\view_distance.sqf";
   execVM "scripts\check_view.sqf";
+  if (player inArea "marker_aspirantes") then {
+    _intro = "aspirantes";
+  };
   [_intro] execVM "scripts\init_intro.sqf";
   removeGoggles player; //arga_rhs_pm_negro
   if(_initialGoggles != "")then{
@@ -35,6 +39,29 @@ player disableAI "MOVE";
 player action ["SwitchWeapon", player, player, 100];
 player setUnitPos "middle";
 enableEngineArtillery false;
+
+// Deshabilita el movimiento de la IA para todas las IA que 
+// esten en el mismo grupo que un jugador humano
+if (_disableGroupIA == 1) then {
+  private _units = units (group player);
+  {
+    if(local _x) then {
+      _x disableAI "MOVE";
+      _x action ["SwitchWeapon", _x, _x, 100];
+      _x setUnitPos "middle";
+    };
+  } foreach _units;
+};
+
+if (_disableBluforIA == 1) then {
+  {
+    if(side _x == west && local _x) then {
+      _x disableAI "MOVE";
+      _x action ["SwitchWeapon", _x, _x, 100];
+      _x setUnitPos "middle";
+    };
+  }foreach allUnits;
+};
 
 // Deshabilita las opciones de Cargar y Guardar Equipo en el arsenal
 if (_disableCustomLoadout == 1) then {

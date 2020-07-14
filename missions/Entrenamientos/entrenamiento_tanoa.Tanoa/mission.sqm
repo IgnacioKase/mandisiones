@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1060;
+		nextID=1067;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11656.069,59.483559,13171.751};
-		dir[]={-0.30522335,-0.68783617,-0.65876794};
-		up[]={-0.28921255,0.72567141,-0.62419438};
-		aside[]={-0.90737218,-3.0254596e-006,0.420407};
+		pos[]={11711.359,44.274578,13230.299};
+		dir[]={-0.014415107,-0.46323836,-0.88616067};
+		up[]={-0.0075362697,0.88620394,-0.46323135};
+		aside[]={-0.99989992,-2.0655807e-007,0.016265534};
 	};
 };
 binarizationWanted=0;
@@ -482,11 +482,258 @@ class AddonsMetaData
 randomSeed=9969618;
 class ScenarioData
 {
-	author="KlosTher";
+	author="Maxi e Ignacio";
+	respawn=2;
+	respawnDelay=10;
 };
 class CustomAttributes
 {
 	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="ENH_dynamicSkill";
+			expression="if (!is3DEN && {_value # 0 && {isServer}}) then			{				_value params				[					'_enable',					'_skillMinBLUFOR',					'_skillAimMinBLUFOR',					'_skillMaxBLUFOR',					'_skillAimMaxBlUFOR',					'_skillMinOPFOR',					'_skillAimMinOPFOR',					'_skillMaxOPFOR',					'_skillAimMaxOPFOR',					'_skillMinINDFOR',					'_skillAimMinINDFOR',					'_skillMaxINDFOR',					'_skillAimMaxINDFOR'				];				[					true,					[						[WEST,_skillMinBLUFOR,_skillAimMinBLUFOR,_skillMaxBLUFOR,_skillAimMaxBlUFOR],						[EAST,_skillMinOPFOR,_skillAimMinOPFOR,_skillMaxOPFOR,_skillAimMaxOPFOR],						[INDEPENDENT,_skillMinINDFOR,_skillAimMinINDFOR,_skillMaxINDFOR,_skillAimMaxINDFOR]					]				] call BIS_fnc_EXP_camp_dynamicAISkill;			}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=13;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.80000001;
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.30000001;
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+						class Item6
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.80000001;
+							};
+						};
+						class Item7
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.30000001;
+							};
+						};
+						class Item8
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+						class Item9
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+						class Item10
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.80000001;
+							};
+						};
+						class Item11
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.30000001;
+							};
+						};
+						class Item12
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.5;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -536,7 +783,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=637;
+		items=640;
 		class Item0
 		{
 			dataType="Object";
@@ -74517,8 +74764,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=815;
 			type="Box_NATO_Uniforms_F";
@@ -92880,8 +93126,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=849;
 			type="Box_NATO_Uniforms_F";
@@ -93145,8 +93390,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=916;
 			type="Box_NATO_Uniforms_F";
@@ -93409,8 +93653,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=917;
 			type="Box_NATO_Uniforms_F";
@@ -93674,8 +93917,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=918;
 			type="Box_NATO_Uniforms_F";
@@ -93939,8 +94181,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=919;
 			type="Box_NATO_Uniforms_F";
@@ -94204,8 +94445,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=920;
 			type="Box_NATO_Uniforms_F";
@@ -94469,8 +94709,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=921;
 			type="Box_NATO_Uniforms_F";
@@ -94734,8 +94973,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=922;
 			type="Box_NATO_Uniforms_F";
@@ -94992,18 +95230,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11777.446,7.389596,13047.501};
-				angles[]={0,1.8432407,6.2820935};
+				position[]={11777.446,7.3895288,13047.501};
+				angles[]={0,1.8432422,6.2820859};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
+				init="call{this execVM ""scripts\init_roles.sqf"";}";
 			};
 			id=923;
 			type="Box_NATO_Uniforms_F";
+			atlOffset=0.058000088;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -100775,7 +101013,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11723.704,8.0555115,13086.191};
-				angles[]={-0,5.0579453,6.2815661};
+				angles[]={0,5.0579453,6.2815661};
 			};
 			side="Empty";
 			flags=4;
@@ -104378,7 +104616,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11721.698,7.9369845,13085.123};
-				angles[]={-0,0.33175924,6.2815661};
+				angles[]={0,0.33175924,6.2815661};
 			};
 			side="Empty";
 			flags=4;
@@ -108027,7 +108265,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11677.432,6.6214938,13094.95};
-				angles[]={-0,1.9086241,0};
+				angles[]={0,1.9086241,0};
 			};
 			side="Empty";
 			flags=4;
@@ -108292,7 +108530,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11677.757,6.6214938,13095.893};
-				angles[]={-0,1.9086241,0};
+				angles[]={0,1.9086241,0};
 			};
 			side="Empty";
 			flags=4;
@@ -108557,7 +108795,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11678.085,6.6214938,13096.839};
-				angles[]={-0,1.9086241,0};
+				angles[]={0,1.9086241,0};
 			};
 			side="Empty";
 			flags=4;
@@ -108822,7 +109060,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11673.651,10.926805,13094.141};
-				angles[]={0,3.4794381,-0};
+				angles[]={0,3.4794381,0};
 			};
 			side="Empty";
 			flags=5;
@@ -109048,7 +109286,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11659.346,11.272035,13096.766};
-				angles[]={0,1.9086241,-0};
+				angles[]={0,1.9086241,0};
 			};
 			side="Empty";
 			flags=1;
@@ -109066,7 +109304,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11701.48,11.2714,13081.592};
-				angles[]={0,1.9086241,-0};
+				angles[]={0,1.9086241,0};
 			};
 			side="Empty";
 			flags=1;
@@ -109084,7 +109322,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11809.062,9.2715912,13086.458};
-				angles[]={-0,0.27722555,0};
+				angles[]={0,0.27722555,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109101,7 +109339,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11826.243,9.2715912,13081.411};
-				angles[]={-0,0.28099793,0};
+				angles[]={0,0.28099793,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109118,7 +109356,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11871.724,9.6658058,13068.238};
-				angles[]={-0,0.26699293,0};
+				angles[]={0,0.26699293,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109135,7 +109373,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11847.064,9.6694145,13075.597};
-				angles[]={-0,0.28422675,0};
+				angles[]={0,0.28422675,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109152,7 +109390,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11896.914,10.678283,13062.03};
-				angles[]={-0,0.31372765,0};
+				angles[]={0,0.31372765,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109169,7 +109407,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11783.792,8.8901749,13103.494};
-				angles[]={-0,0.25531116,0};
+				angles[]={0,0.25531116,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109188,7 +109426,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11775.03,8.8901749,13105.908};
-				angles[]={-0,0.25531116,0};
+				angles[]={0,0.25531116,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109207,7 +109445,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11766.429,8.8901749,13108.082};
-				angles[]={-0,0.23374318,0};
+				angles[]={0,0.23374318,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109226,7 +109464,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11759.983,8.915082,13068.019};
-				angles[]={-0,0.27954429,0};
+				angles[]={0,0.27954429,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109242,7 +109480,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11805.858,8.915082,13055.463};
-				angles[]={-0,0.26914689,0};
+				angles[]={0,0.26914689,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109258,7 +109496,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11810.665,8.9686031,13054.244};
-				angles[]={-0,0.30587885,0};
+				angles[]={0,0.30587885,0};
 			};
 			side="Empty";
 			flags=4;
@@ -109274,7 +109512,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11827.451,6.5368857,13028.431};
-				angles[]={-0,1.8463775,6.282495};
+				angles[]={0,1.8463775,6.282495};
 			};
 			side="Empty";
 			flags=4;
@@ -109539,7 +109777,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11827.181,6.5386515,13027.468};
-				angles[]={-0,1.8463775,6.282495};
+				angles[]={0,1.8463775,6.282495};
 			};
 			side="Empty";
 			flags=4;
@@ -109804,7 +110042,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11826.915,6.5391693,13026.507};
-				angles[]={-0,1.8463767,6.282495};
+				angles[]={0,1.8463767,6.282495};
 			};
 			side="Empty";
 			flags=4;
@@ -110146,7 +110384,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11607.486,9.8236609,13018.385};
-				angles[]={-0,0.33865479,6.2511969};
+				angles[]={0,0.33865479,6.2511969};
 			};
 			side="Empty";
 			flags=4;
@@ -110163,7 +110401,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11601.075,9.290309,13022.96};
-				angles[]={-0,1.1472344,0.02666023};
+				angles[]={0,1.1472344,0.02666023};
 			};
 			side="Empty";
 			flags=4;
@@ -110189,7 +110427,7 @@ class Mission
 			};
 			id=1031;
 			type="rhsusf_m1025_w_m2";
-			atlOffset=-0.002477169;
+			atlOffset=-0.0025014877;
 		};
 		class Item618
 		{
@@ -110282,7 +110520,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11588.691,10.0823,13050.778};
-				angles[]={-0,1.1478283,6.2805333};
+				angles[]={0,1.1478283,6.2805333};
 			};
 			side="Empty";
 			flags=4;
@@ -110319,7 +110557,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11634.361,9.1252861,13026.469};
-				angles[]={-0,5.0257549,0};
+				angles[]={0,5.0257549,0};
 			};
 			side="Empty";
 			flags=4;
@@ -110435,6 +110673,7 @@ class Mission
 			};
 			id=1055;
 			type="Land_TinWall_02_l_4m_F";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -110521,6 +110760,741 @@ class Mission
 			b=150;
 			angle=16.604;
 			id=1058;
+		};
+		class Item637
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11772.019,7.5893631,13058.501};
+				angles[]={2.878588e-005,3.385349,6.2820978};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""MANDI_STAND_ROL"", ""medico""];}";
+			};
+			id=1063;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.063999653;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ENH_HoldAction";
+					expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=13;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=10;
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=991;
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item638
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11770.155,7.5913801,13059.005};
+				angles[]={2.878588e-005,3.385349,6.2820978};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""MANDI_STAND_ROL"", ""piloto""];}";
+			};
+			id=1064;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.066016674;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ENH_HoldAction";
+					expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=13;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=10;
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=991;
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item639
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11773.944,7.5893517,13057.959};
+				angles[]={2.878588e-005,3.385349,6.2820978};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""MANDI_STAND_ROL"", ""ingeniero""];}";
+			};
+			id=1065;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.0020771027;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ENH_HoldAction";
+					expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && {!(_name isEqualTo '')}) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=13;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=10;
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=991;
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };

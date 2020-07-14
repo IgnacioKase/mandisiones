@@ -4,15 +4,18 @@
 
 params [["_missionState", "mission_end"]];
 
+if (!(getMissionConfigValue ["ENABLE_LOG_SYSTEM", 0] == 1)) exitWith { };
+
 private ["_query", "_values"];
 
-_query = "INSERT INTO log (`log_type_id`, `mission_name`, `mission_time`) VALUES";
+_query = "INSERT INTO log (`log_type_id`, `mission_name`, `mission_time`, `server_name`) VALUES";
 
 _values = format [
-	"((SELECT id from log_type WHERE name = '%1'), '%2', %3);",
+	"((SELECT id from log_type WHERE name = '%1'), '%2', %3, '%4');",
 	_missionState,
 	missionName,
-	time
+	time,
+	serverName
 ];
 
 _query = [_query, _values] joinString " ";

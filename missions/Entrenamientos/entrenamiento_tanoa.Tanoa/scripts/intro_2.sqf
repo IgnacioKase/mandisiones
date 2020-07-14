@@ -18,7 +18,7 @@ if(_isCampaign == 1)then{
 
 ["<t size='1.3' color='#00B3FF'>CLAN ARGA<t font = 'PuristaSemiBold' size='1.0' color='#FFFFFF'><br/>"+_mission+"</t></t><br/><t size='0.9' color='#cccccc' font='PuristaSemiBold'>by "+_author+"</t>",0,0.3,4,2,0.0] spawn bis_fnc_dynamictext;
 
-playSound "effect_intro";
+// playSound "effect_intro";
 sleep 5;
 
 "dynamicBlur" ppEffectEnable true;

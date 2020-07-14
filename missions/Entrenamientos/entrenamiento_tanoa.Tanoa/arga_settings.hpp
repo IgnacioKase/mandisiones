@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Mapa de Entrenamiento ArgA Ligth"
-#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Light 6.0"
+#define NAME "Mapa de Entrenamiento ArgA Tanoa"
+#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Tanoa 6.1"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
@@ -18,10 +18,12 @@ IMG_LOGO = "imgs\logo.paa";
 COLOR_AUTOR = "#76a8f7";
 ES_CAMPANIA = 0;
 NOMBRE_CAMPANIA = "";
-INTRO = 3;
+INTRO = 2;
 MAX_DIST_VISION = 4000;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;
 CURATOR_WHITELIST = ["|ArgA|Ignacio|", "|ArgA|Maxi|", "|Sgt", "|Cpt", "|Tte", "|Cmd", "instructor", "subinstructor"];
+DEBUG = 1;
+ENABLE_LOG_SYSTEM = 1;
 
 //EQUIPAMIENTO
 // Camuflajes disponibles:          Tipos disponibles:
@@ -35,7 +37,7 @@ CURATOR_WHITELIST = ["|ArgA|Ignacio|", "|ArgA|Maxi|", "|Sgt", "|Cpt", "|Tte", "|
 //        Las opciones Personalizada y No editar pueden llevar a comportamientos inesperados.
 //        Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
 
-CAMUFLAJE = ["Bosque", "Multicam"];
+CAMUFLAJE = ["Selva", "Marpat"];
 GAFAS_INICIALES = "";
 UNIFORME_PERSONALIZADO = "";
 CASCO_PERSONALIZADO = "";

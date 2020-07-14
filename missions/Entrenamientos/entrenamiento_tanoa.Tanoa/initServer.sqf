@@ -56,7 +56,6 @@ if(_disableBluforIA == 1) then {
 
 execVM "scripts\init_objs_server.sqf";
 
-
 if (isDedicated) then {
   execVM "scripts\db\init_log_system.sqf";
 };
