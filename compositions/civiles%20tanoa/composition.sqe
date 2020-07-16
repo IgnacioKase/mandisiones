@@ -1,0 +1,606 @@
+version=53;
+center[]={11369.296,112.16788,12329.065};
+class items
+{
+	items=17;
+	class Item0
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-10.722656,2.1065674,0.77929688};
+					angles[]={0,1.9336748,0};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=354;
+				type="C_man_sport_1_F";
+				atlOffset=2.2888184e-005;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03GRE";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=353;
+		atlOffset=2.2888184e-005;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.1494141,3.2718124,-7.2353516};
+				};
+				side="Civilian";
+				flags=3;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=362;
+				type="C_Man_casual_2_F_afro";
+				atlOffset=0.96939087;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=361;
+		atlOffset=0.96939087;
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.7929688,3.2598267,-7.8847656};
+				};
+				side="Civilian";
+				flags=3;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=364;
+				type="C_Man_casual_5_F_afro";
+				atlOffset=0.92624664;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=363;
+		atlOffset=0.92624664;
+	};
+	class Item3
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-4.53125,3.310173,-7.1269531};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=366;
+				type="C_Man_casual_6_F_afro";
+				atlOffset=0.038352966;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=365;
+		atlOffset=0.038352966;
+	};
+	class Item4
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.8388672,3.2951965,-7.2626953};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=369;
+				type="C_man_sport_3_F_afro";
+				atlOffset=0.023376465;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=368;
+		atlOffset=0.023376465;
+	};
+	class Item5
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-12.144531,2.161377,-0.052734375};
+					angles[]={0,3.0535836,0};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=371;
+				type="C_Man_casual_2_F_afro";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=370;
+	};
+	class Item6
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-12.557617,3.1006241,0.5625};
+					angles[]={0,3.0535836,0};
+				};
+				side="Civilian";
+				flags=3;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=373;
+				type="C_Man_casual_5_F_afro";
+				atlOffset=0.97586823;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=372;
+		atlOffset=0.97586823;
+	};
+	class Item7
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-10.758789,2.1567917,-0.038085938};
+					angles[]={0,3.0535836,0};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=375;
+				type="C_Man_casual_6_F_afro";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=374;
+	};
+	class Item8
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-11.460938,2.1541748,0.03515625};
+					angles[]={0,3.0535836,0};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=378;
+				type="C_man_sport_3_F_afro";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=377;
+	};
+	class Item9
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={12.482422,0.0014419556,3.4990234};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=387;
+				type="C_Man_casual_2_F_afro";
+				atlOffset=-7.6293945e-006;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=386;
+		atlOffset=-7.6293945e-006;
+	};
+	class Item10
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={12.839844,0.4274826,2.8496094};
+				};
+				side="Civilian";
+				flags=3;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=389;
+				type="C_Man_casual_5_F_afro";
+				atlOffset=0.38996124;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=388;
+		atlOffset=0.38996124;
+	};
+	class Item11
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={11.101563,0.2232666,3.6064453};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=391;
+				type="C_Man_casual_6_F_afro";
+				atlOffset=7.6293945e-006;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=390;
+		atlOffset=7.6293945e-006;
+	};
+	class Item12
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={11.793945,0.13427734,3.4716797};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=394;
+				type="C_man_sport_3_F_afro";
+				atlOffset=7.6293945e-006;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=393;
+		atlOffset=7.6293945e-006;
+	};
+	class Item13
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.3652344,0.74137878,4.0498047};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=398;
+				type="C_Man_casual_2_F_afro";
+				atlOffset=1.5258789e-005;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=397;
+		atlOffset=1.5258789e-005;
+	};
+	class Item14
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.7226563,1.153862,3.4003906};
+				};
+				side="Civilian";
+				flags=3;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=400;
+				type="C_Man_casual_5_F_afro";
+				atlOffset=0.37744904;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=399;
+		atlOffset=0.37744904;
+	};
+	class Item15
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={4.984375,0.8549118,4.1572266};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=402;
+				type="C_Man_casual_6_F_afro";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=401;
+	};
+	class Item16
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={5.6767578,0.80664825,4.0224609};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					health=0;
+					skill=0.2;
+					ammo=0;
+				};
+				id=405;
+				type="C_man_sport_3_F_afro";
+				atlOffset=7.6293945e-006;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=404;
+		atlOffset=7.6293945e-006;
+	};
+};

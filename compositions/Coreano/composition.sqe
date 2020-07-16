@@ -1,0 +1,121 @@
+version=53;
+center[]={11381.911,109.15919,12361.921};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014419556,0.049804688};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					isPlayer=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="rhs_weap_ak74m";
+							muzzle="rhs_acc_dtk";
+							class primaryMuzzleMag
+							{
+								name="rhs_30Rnd_545x39_7N10_AK";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="rhs_weap_pya";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x19_17";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="LOP_U_US_Fatigue_03";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_30Rnd_545x39_7N10_AK";
+									count=1;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="LOP_V_6Sh92_Radio_OLV";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=4;
+								class Item0
+								{
+									name="rhs_30Rnd_545x39_7N10_AK";
+									count=1;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="rhs_mag_rdg2_white";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="rhs_mag_nspd";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						headgear="rhs_6b7_1m_bala1_olive";
+					};
+				};
+				id=1;
+				type="rhs_vdv_mflora_armoredcrew";
+				atlOffset=0.00021362305;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=0;
+		atlOffset=0.00021362305;
+	};
+};
