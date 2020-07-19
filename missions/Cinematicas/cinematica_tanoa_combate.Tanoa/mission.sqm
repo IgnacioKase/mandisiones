@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=218;
+		nextID=220;
 	};
 	class Camera
 	{
-		pos[]={2902.4119,18.028446,5746.7573};
-		dir[]={0.89225483,-0.44884267,-0.051695164};
-		up[]={0.44815627,0.89351261,-0.025962286};
-		aside[]={-0.057833537,-5.812235e-007,-0.9984374};
+		pos[]={3868.1951,20.598948,5485.269};
+		dir[]={0.81947136,-0.50504261,0.27122605};
+		up[]={0.47946602,0.86308479,0.15869272};
+		aside[]={0.31424186,-5.0431117e-007,-0.94943142};
 	};
 };
 binarizationWanted=0;
@@ -1385,7 +1385,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2913.8159,12.789742,5744.6118};
+						position[]={2915.5076,12.815346,5744.522};
 						angles[]={0,1.5620697,0};
 					};
 					side="West";
@@ -1393,6 +1393,7 @@ class Mission
 					class Attributes
 					{
 						name="a1";
+						stance="Up";
 						class Inventory
 						{
 							class primaryWeapon
@@ -1514,6 +1515,7 @@ class Mission
 			};
 			class Attributes
 			{
+				behaviour="COMBAT";
 			};
 			id=206;
 		};
@@ -1529,7 +1531,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2911.6912,12.721047,5741.8594};
+						position[]={2909.0913,12.675135,5741.9307};
 						angles[]={0,1.5620697,0};
 					};
 					side="West";
@@ -1687,7 +1689,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2912.4063,12.798235,5747.0415};
+						position[]={2909.158,12.76123,5747.728};
 						angles[]={0,1.5620697,0};
 					};
 					side="West";
@@ -1695,6 +1697,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this switchMove ""Acts_trailer_relaxedWalk_B""}";
+						name="a2";
 						class Inventory
 						{
 							class primaryWeapon
@@ -1837,7 +1840,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2912.5662,12.829899,5748.8345};
+						position[]={2909.3176,12.854836,5749.5205};
 						angles[]={0,1.5620697,0};
 					};
 					side="West";
@@ -1920,6 +1923,7 @@ class Mission
 					};
 					id=213;
 					type="arga_mselva_base";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1968,6 +1972,7 @@ class Mission
 			{
 			};
 			id=212;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item11
 		{
@@ -1981,7 +1986,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2913.1189,12.912645,5750.6719};
+						position[]={2909.8704,12.834119,5751.3579};
 						angles[]={0,1.5620697,0};
 					};
 					side="West";
@@ -2072,6 +2077,7 @@ class Mission
 					};
 					id=215;
 					type="arga_mselva_base";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2120,6 +2126,7 @@ class Mission
 			{
 			};
 			id=214;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item12
 		{
@@ -2178,19 +2185,171 @@ class Mission
 		};
 		class Item13
 		{
-			dataType="Trigger";
-			position[]={2912.988,12.8106,5747.1758};
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3928.325,6.2148347,5505.5127};
+						angles[]={0,4.2492905,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_svdp_npz";
+								optics="rhs_acc_dh520x56";
+								muzzle="rhs_acc_tgpv2";
+								class primaryMuzzleMag
+								{
+									name="rhs_10Rnd_762x54mmR_7N1";
+									ammoLeft=10;
+								};
+							};
+							class uniform
+							{
+								typeName="LOP_U_Fatigue_BDU_BLK_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_rgn";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_blk";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_rgn";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="VSM_balaclava2_Black";
+						};
+					};
+					id=219;
+					type="rhs_msv_emr_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01RUS";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
 			class Attributes
 			{
-				condition="call{this}";
-				onActivation="call{a1 switchMove ""AdthPercMstpSrasWrflDnon_r08"";}";
-				sizeA=2;
-				sizeB=2;
-				timeout[]={1,1,1};
-				activationBy="WEST";
 			};
-			id=217;
-			type="EmptyDetector";
+			id=218;
 		};
 	};
 };

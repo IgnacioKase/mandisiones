@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1272.3127,41.620548,3198.8438};
-		dir[]={-0.35500142,-0.71141201,0.60670847};
-		up[]={-0.35930023,0.70269787,0.61405033};
-		aside[]={0.86316973,-2.3747561e-006,0.50507122};
+		pos[]={1373.2413,113.08417,3401.0361};
+		dir[]={-0.56292009,-0.4790366,-0.67371047};
+		up[]={-0.30721673,0.87770432,-0.36768609};
+		aside[]={-0.76745731,-5.3824624e-007,0.6412406};
 	};
 };
 binarizationWanted=0;
@@ -1582,7 +1582,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1224.0901,32.478001,3284.6533};
-				angles[]={-0,5.0590162,0};
+				angles[]={0,5.0590162,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1894,7 +1894,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1244.8508,14.790883,3236.8945};
-						angles[]={0,1.4164523,-0};
+						angles[]={0,1.4164523,0};
 					};
 					side="West";
 					flags=7;
@@ -2075,7 +2075,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1254.2634,14.754169,3242.343};
-						angles[]={0,1.691401,-0};
+						angles[]={0,1.691401,0};
 					};
 					side="West";
 					flags=7;
@@ -2156,6 +2156,7 @@ class Mission
 					};
 					id=79;
 					type="arga_mbosque_base";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2242,6 +2243,7 @@ class Mission
 			{
 			};
 			id=78;
+			atlOffset=9.5367432e-007;
 		};
 		class Item23
 		{
@@ -2256,7 +2258,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1256.2843,14.868037,3233.3313};
-						angles[]={0,1.3732214,-0};
+						angles[]={0,1.3732214,0};
 					};
 					side="West";
 					flags=7;
@@ -2439,7 +2441,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1256.29,14.862693,3233.8831};
-						angles[]={0,3.4293325,-0};
+						angles[]={0,3.4293325,0};
 					};
 					side="West";
 					flags=7;
@@ -3197,7 +3199,7 @@ class Mission
 			};
 			id=101;
 			type="Land_Garbage_square5_F";
-			atlOffset=0.00088596344;
+			atlOffset=0.00088500977;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3308,7 +3310,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1243.2125,15.016419,3233.7417};
-				angles[]={-0,0,0.00059801998};
+				angles[]={0,0,0.00059801998};
 			};
 			side="Empty";
 			flags=4;
@@ -3745,6 +3747,7 @@ class Mission
 					};
 					id=126;
 					type="arga_mbosque_base";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
