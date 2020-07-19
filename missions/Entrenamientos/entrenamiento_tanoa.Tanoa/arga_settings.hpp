@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Mapa de Entrenamiento ArgA Tanoa"
-#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Tanoa 6.1"
+#define COMPLETE_NAME "Mapa de Entrenamiento ArgA Tanoa 6.3"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
@@ -37,7 +37,7 @@ ENABLE_LOG_SYSTEM = 1;
 //        Las opciones Personalizada y No editar pueden llevar a comportamientos inesperados.
 //        Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
 
-CAMUFLAJE = ["Selva", "Marpat"];
+CAMUFLAJE = ["", ""];
 GAFAS_INICIALES = "";
 UNIFORME_PERSONALIZADO = "";
 CASCO_PERSONALIZADO = "";
