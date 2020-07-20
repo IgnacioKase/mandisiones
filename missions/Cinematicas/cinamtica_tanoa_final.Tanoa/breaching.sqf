@@ -26,20 +26,20 @@ enemy1 switchmove "Acts_Breaching_Enemy_A";
 enemy2 switchmove "Acts_Breaching_Enemy_B"; 
 enemy3 switchmove "Acts_Breaching_Enemy_C";
 
-_camera = "camera" camCreate [6092.91,7341.95,1.5];
+_camera = "camera" camCreate [6090.52,7341.41,1.5];
 _camera cameraEffect ["Internal", "back"];
 
 showCinemaBorder false;
 
-_camera camPrepareTarget [6087,7344.19,1.5];
-_camera camPreparePos [6092.91,7341.95,1.5];
-_camera camPrepareFov 0.740;
+_camera camPrepareTarget [6087,7346.9,0.8];
+_camera camPreparePos [6090.52,7341.41,1.5];
+_camera camPrepareFov 0.480;
 _camera camCommitPrepared 0;
 
 sleep 7.5;
 
-_camera camPrepareTarget [6088.78,7344.19,1.5];
-_camera camPreparePos [6083.99,7340.55,1.5];
+_camera camPrepareTarget [6086.81,7344.33,1.5];
+_camera camPreparePos [6086.77,7341.89,1.5];
 _camera camPrepareFov 0.740;
 _camera camCommitPrepared 0;
 
@@ -74,7 +74,7 @@ enemy2 call MANDI_FIRE;
 sleep 0.5;
 
 _camera camPrepareTarget [6082.81,7344.86,1.5];
-_camera camPreparePos [6087.96,7349.5,1.5];
+_camera camPreparePos [6082.48,7349.59,1.5];
 _camera camPrepareFov 0.740;
 _camera camCommitPrepared 0;
 

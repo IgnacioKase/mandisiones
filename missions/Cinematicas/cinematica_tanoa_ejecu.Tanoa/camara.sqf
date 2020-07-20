@@ -1,15 +1,18 @@
-﻿private _pos = [2924.7,5751.97,1.2];
+﻿private _pos = [11080.5,8461.28,1];
 _camera = "camera" camCreate _pos;
  _camera cameraEffect ["Internal", "back"];
 
  showCinemaBorder false;
 
-_camera camPrepareTarget [2921.3,5680.14,1.2];
+_camera camPrepareTarget [11009,8494.58,1];
 _camera camPreparePos _pos;
-_camera camPrepareFov 0.840;
+_camera camPrepareFov 0.740;
 _camera camCommitPrepared 0;
 
-
+_camera camPrepareTarget [11009,8494.58,1];
+_camera camPreparePos [11076.7,8463.42,1];
+_camera camPrepareFov 0.740;
+_camera camCommitPrepared 10;
 
 /*_camera = "camera" camCreate (getPos p1);
  _camera cameraEffect ["Internal", "back"];
