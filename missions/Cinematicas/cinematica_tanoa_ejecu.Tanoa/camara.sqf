@@ -1,11 +1,12 @@
-﻿_camera = "camera" camCreate (getPos h1);
+﻿private _pos = [2924.7,5751.97,1.2];
+_camera = "camera" camCreate _pos;
  _camera cameraEffect ["Internal", "back"];
 
  showCinemaBorder false;
 
-_camera camPrepareTarget h1;
-_camera attachTo [h1, [3.5,2,1.8]];
-_camera camPrepareFov 0.540;
+_camera camPrepareTarget [2921.3,5680.14,1.2];
+_camera camPreparePos _pos;
+_camera camPrepareFov 0.840;
 _camera camCommitPrepared 0;
 
 

@@ -1,0 +1,602 @@
+version=53;
+center[]={10584.057,-1.1177198,6345.1895};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.9882813,0.024440527,1.4980469};
+					angles[]={0,3.6893306,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="ACFAA_FAMA_base";
+							optics="rhsusf_acc_eotech_552";
+							muzzle="acfaa_fnfal_silencer";
+							class primaryMuzzleMag
+							{
+								name="acfaa_20Rndfal_762x51";
+								ammoLeft=20;
+							};
+						};
+						class uniform
+						{
+							typeName="arga_u_dmarpat";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_elasticBandage";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_CableTie";
+									count=3;
+								};
+								class Item5
+								{
+									name="ACE_morphine";
+									count=4;
+								};
+								class Item6
+								{
+									name="ACE_epinephrine";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACE_EntrenchingTool";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="arga_c_negro";
+							isBackpack=0;
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ACE_Altimeter";
+						goggles="VSM_Balaclava2_black_Goggles";
+						headgear="VSM_Bowman";
+					};
+				};
+				id=333;
+				type="arga_dmarpat_base";
+				atlOffset=-0.26015759;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=332;
+		atlOffset=-0.26015759;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.52734375,0.023684859,0.5625};
+					angles[]={0,3.6893349,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="ACFAA_FAMA_base";
+							optics="rhsusf_acc_eotech_552";
+							muzzle="acfaa_fnfal_silencer";
+							class primaryMuzzleMag
+							{
+								name="acfaa_20Rndfal_762x51";
+								ammoLeft=20;
+							};
+						};
+						class uniform
+						{
+							typeName="arga_u_dmarpat";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_elasticBandage";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_CableTie";
+									count=3;
+								};
+								class Item5
+								{
+									name="ACE_morphine";
+									count=4;
+								};
+								class Item6
+								{
+									name="ACE_epinephrine";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACE_EntrenchingTool";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="arga_c_negro";
+							isBackpack=0;
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ACE_Altimeter";
+						goggles="VSM_balaclava_Black";
+						headgear="VSM_Bowman";
+					};
+				};
+				id=335;
+				type="arga_dmarpat_base";
+				atlOffset=-0.12601572;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male11ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.94999999;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="face";
+						expression="_this setface _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="WhiteHead_22_sa";
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=334;
+		atlOffset=-0.12601572;
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.66210938,0.014832377,-0.36621094};
+					angles[]={0,3.6893349,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="ACFAA_FAMA_base";
+							optics="rhsusf_acc_eotech_552";
+							muzzle="acfaa_fnfal_silencer";
+							class primaryMuzzleMag
+							{
+								name="acfaa_20Rndfal_762x51";
+								ammoLeft=20;
+							};
+						};
+						class uniform
+						{
+							typeName="arga_u_dmarpat";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_elasticBandage";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_CableTie";
+									count=3;
+								};
+								class Item5
+								{
+									name="ACE_morphine";
+									count=4;
+								};
+								class Item6
+								{
+									name="ACE_epinephrine";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACE_EntrenchingTool";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="arga_c_negro";
+							isBackpack=0;
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ACE_Altimeter";
+						goggles="VSM_FaceMask_black";
+						headgear="VSM_Bowman";
+					};
+				};
+				id=337;
+				type="arga_dmarpat_base";
+				atlOffset=-0.019157767;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.94999999;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="face";
+						expression="_this setface _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PersianHead_A3_04_l";
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=336;
+		atlOffset=-0.019157767;
+	};
+	class Item3
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.8544922,0.0014388561,-1.4956055};
+					angles[]={0,3.6893349,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="ACFAA_FAMA_base";
+							optics="rhsusf_acc_eotech_552";
+							muzzle="acfaa_fnfal_silencer";
+							class primaryMuzzleMag
+							{
+								name="acfaa_20Rndfal_762x51";
+								ammoLeft=20;
+							};
+						};
+						class uniform
+						{
+							typeName="arga_u_dmarpat";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_elasticBandage";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_CableTie";
+									count=3;
+								};
+								class Item5
+								{
+									name="ACE_morphine";
+									count=4;
+								};
+								class Item6
+								{
+									name="ACE_epinephrine";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACE_EntrenchingTool";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="arga_c_negro";
+							isBackpack=0;
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ACE_Altimeter";
+						headgear="VSM_Bowman";
+					};
+				};
+				id=339;
+				type="arga_dmarpat_base";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male06ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="face";
+						expression="_this setface _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="WhiteHead_22_l";
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=338;
+	};
+};
