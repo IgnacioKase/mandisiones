@@ -8,36 +8,42 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=14;
+		nextID=19;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={9753.6338,397.10544,8643.8447};
-		dir[]={0.20451289,-0.50336313,0.83953273};
-		up[]={0.11913654,0.86407322,0.48905978};
-		aside[]={0.97159415,1.1292286e-007,-0.23668352};
+		pos[]={11107.359,460.74695,11782.894};
+		dir[]={-0.074818306,-0.41457272,0.90694278};
+		up[]={-0.034084916,0.91001415,0.41317412};
+		aside[]={0.99662155,-1.2782402e-007,0.082216881};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"arga_faccion"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="arga_faccion";
+			name="arga_faccion";
 		};
 	};
 };
@@ -71,7 +77,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=8;
 		class Item0
 		{
 			dataType="Marker";
@@ -116,6 +122,71 @@ class Mission
 			colorName="ColorWEST";
 			id=13;
 			atlOffset=0.00042724609;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={8393.708,19.43,10324.04};
+			name="marker_3";
+			text="Orca";
+			type="mil_box";
+			colorName="ColorEAST";
+			a=0;
+			b=0;
+			id=14;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={11051.8,216.77,8471.9033};
+			name="marker_4";
+			text="Liebre";
+			type="mil_box";
+			colorName="ColorEAST";
+			a=0;
+			b=0;
+			id=15;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9766.0498,70.554398,9752.8877};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=17;
+					type="arga_bmarpat_base";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=16;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={7641.5771,27.87933,6849.498};
+			name="marker_5";
+			text="Fin";
+			type="mil_end";
+			colorName="ColorWEST";
+			id=18;
 		};
 	};
 };
