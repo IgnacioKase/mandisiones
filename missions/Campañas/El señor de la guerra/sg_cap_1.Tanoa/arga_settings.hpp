@@ -2,16 +2,16 @@
                           Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-#define NAME Op. Template Basico            // Colocar nombre de mision (un espacio despues de Op. y sin comillas ni nada)
-#define VERSION v0.3.3                      // Versión de la misión
+#define NAME Capítulo I           // Colocar nombre de mision (un espacio despues de Op. y sin comillas ni nada)
+#define VERSION v1                      // Versión de la misión
 #define IMAGE "imgs\portada.paa"            // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
-#define DESCRIPTION ""                      // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Obtener información y capturar los altos mandos"                      // Colocar descripcion de la mision entre las comillas
 
-author = "|ArgA|";                          // Editor (Pone tu nombre)
+author = "Maxi e Ignacio";                  // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logo.paa";                 // Nota: Las imagenes deberian estar en
-COLOR_AUTOR = "#76a8f7";                    // formato .paa y en proporcion 2x1 (1024x512)
-ES_CAMPANIA = 0;                            // tamaño logo: 323px x 323px
-NOMBRE_CAMPANIA = "";
+COLOR_AUTOR = "#44CC00";                    // formato .paa y en proporcion 2x1 (1024x512)
+ES_CAMPANIA = 1;                            // tamaño logo: 323px x 323px
+NOMBRE_CAMPANIA = "El Señor de la Guerra";
 INTRO = 2;                                  // Intros: 1 y 2. Para desactivar: 0
 MAX_DIST_VISION = 4000;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;  // Equipamiento guardado en arsenal virtual
@@ -36,7 +36,7 @@ ENABLE_LOG_SYSTEM_ONLY_DEDICATED = 1;       // Habilita el sistema de log sólo 
 //        Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
 
 CAMUFLAJE = ["Desierto", "Marpat"];
-GAFAS_INICIALES = "";
+GAFAS_INICIALES = "arga_rhs_pm_negro";
 UNIFORME_PERSONALIZADO = "";
 CASCO_PERSONALIZADO = "";
 CHALECO_PERSONALIZADO = "";
@@ -46,17 +46,17 @@ MOCHILA_CHICA_PERSONALIZADO = "";
 //BRIEFING
 // Cada elemento del array es un parrafo
 // Ejemplo: ["Primer parrafo", "Segundo parrafo"]
-CARACTER = "No Oficial";
-HORARIO = "";
-FECHA = "";
-CLIMA = "";
-UBICACION = "";
-SITUACION = [""];               
-SITUACION_HISTORICA = [""];     
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["", ""];
-RECURSOS = ["", ""];
-ENEMIGOS = ["", ""];
+CARACTER = "Oficial";
+HORARIO = "0640hrs";
+FECHA = "21/07/2020";
+CLIMA = "Despejado";
+UBICACION = "Fiji/Tanoa";
+SITUACION = ["Es la primer operación sobre las islas, Corea desconoce sobre nuestra presencia en Fiji, aun así tienen fuertes patrullas en la zona. Tendremos dos objetivos en esta primera operación.", "Inteligencia informó sobre laboratorios clandestinos coreanos en Fiji. Por lo que aprovechando nuestro anonimato en la zona, Cóndor realizará un ataque sorpresa al punto Liebre, principal sospechoso.", "Mientras tanto, Yaguar, realizará un asalto a un punto clave de logística de los coreanos en la zona. Designado como Orca.", "En ambos objetivos deberán capturar a los oficiales de alto rango, recuperar información para inteligencia (laptos, archivos, etc).", "Ambas escuadras despliegan en la selva equipados ya con lo necesario para la operación. Para el repliegue se les informará horas antes de la operación sobre la ubicación de los vehículos de escape."];               
+SITUACION_HISTORICA = ["Diciembre de 2019: una de las mayores crisis sanitarias a nivel mundial se desata en China. Corea del Norte ve en esto una oportunidad para tomar poder sobre otras tierras. Las grandes potencias estarían ocupadas tratando de salvar su crisis sanitaria, económica y social.", "Para facilitar el avance y movilización de sus tropas, Corea decide ofrecer ayuda a distintas islas. Entre ellas se encuentran, las islas de Tanoa, Altis y Ruegen.","Una vez establecidas bases militares en las islas y una primera movilización de tropas, la OTAN empiezan a sospechar de los movimientos del pequeño rojo.", "Al mismo tiempo, Rusia recibe información de sus espías en China. Ellos afirmaban que China estaba brindando tropas, armamento y apoyo logístico a Corea del Norte. Rusia entonces, contacta con la OTAN debido a este movimiento inusual de armamento y deciden tomar cartas en el asunto.", "La OTAN y Rusia deciden intervenir y darle un plazo a Corea hasta marzo de 2020 para que retire sus tropas innecesarias en dichas islas. Llegó la fecha, pasó otro mes más y Corea no mostraba intenciones de retirar a nadie.", "En mayo de 2020 la coalición OTAN-Rusia reitera el pedido a China y Corea de retirar sus debidas tropas de las islas, estos piden plazo hasta Julio de 2020 y es concedido.", "Junio 2020: Ni un solo regimiento de Corea ni de China fue movilizado.", "Julio 2020: Las tropas empiezan a patrullar reiteradamente por los pueblos civiles y se reportan comportamientos agresivos hacia la población. Se espera lo peor.", "El equipo ArgA es contactado por Rusia para realizar operaciones específicas junto a la colación en las islas afectadas." ];     
+EXTRACTO_INTELIGENCIA = ["Se filtró información acerca de un mantenimiento en las comunicaciones de Fiji en este día a las 7:20, el cuál tendrá una brecha de 5 minutos.Por lo tanto es una oportunidad perfecta para coordinar los ataques a esta hora y así lograr un retraso en los refuerzos coreanos." "Se encontró información sobre altos mandos en la zona, militares de Fiji que simpatizan con los ideales norcoreanos, se muestra una fotografía de los capitanes." ];
+OBJETIVOS = ["Atacar el centro logístico <marker name='orca'>Orca</marker> (Yaguar)", "Demoler armamento encontrado en <marker name='orca'>Orca</marker> (Yaguar)", "Asaltar laboratorio clandestino <marker name='liebre'>Liebre</marker> (Cóndor)", "Desmantelar el laboratorio (Cóndor)", "Capturar información (laptos, servidores, archivos, etc) (Cóndor y Yaguar)", "Capturar oficiales de alto rango (Cóndor y Yaguar)", "Terminar en el punto indicado como <marker name='fin'>Fin</marker>"];
+RECURSOS = ["Aparecemos armados", "Mezcla de Armamento ruso y de ArgA" ];
+ENEMIGOS = ["Ejercito coreano bien entrenado", "Vehiculos blindados pesados", "Vehiculos blindados Medianos" ];
 ////////////////////////////////////////////////////////////////////////////////
 
 //IA - CONFIGURACION

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8615.2168,127.02161,10168.752};
-		dir[]={-0.67160004,-0.69079977,0.26797867};
-		up[]={-0.64164084,0.72300923,0.25602642};
-		aside[]={0.37061107,5.7843863e-008,0.92882073};
+		pos[]={8241.4404,143.04568,10682.661};
+		dir[]={0.044356398,-0.64504635,-0.76286399};
+		up[]={0.037442535,0.76413798,-0.64396167};
+		aside[]={-0.99832034,-1.8015271e-008,-0.058046374};
 	};
 };
 binarizationWanted=0;
@@ -506,7 +506,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -31918,7 +31918,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8518.3203,19.431438,10245.345};
+						position[]={8494.8105,19.431438,10251.923};
 						angles[]={0,2.955209,0};
 					};
 					side="East";
@@ -32089,7 +32089,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8520.5811,19.431438,10245.479};
+						position[]={8497.0713,19.431438,10252.057};
 						angles[]={0,2.9552085,0};
 					};
 					side="East";
@@ -32223,7 +32223,7 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={8518.918,19.430012,10243.415};
+					position[]={8495.4082,19.430012,10249.993};
 					class Effects
 					{
 					};
@@ -34919,7 +34919,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8533.8281,19.431438,10328.021};
+						position[]={8500.1084,19.431438,10276.598};
 						angles[]={0,2.955209,0};
 					};
 					side="East";
@@ -35090,7 +35090,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8534.8047,19.431438,10328.247};
+						position[]={8501.085,19.431438,10276.824};
 						angles[]={0,2.955209,0};
 					};
 					side="East";
@@ -35259,7 +35259,7 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={8534.1475,19.430008,10326.14};
+					position[]={8500.4277,19.430008,10274.717};
 					class Effects
 					{
 					};
@@ -35703,7 +35703,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8398.124,19.431438,10224.715};
+						position[]={8455.0254,19.431438,10205.751};
 						angles[]={0,2.955209,0};
 					};
 					side="East";
@@ -35874,7 +35874,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8399.1006,19.431438,10224.941};
+						position[]={8456.002,19.431438,10205.978};
 						angles[]={0,2.955209,0};
 					};
 					side="East";
@@ -36043,7 +36043,7 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={8398.4434,19.430008,10222.834};
+					position[]={8455.3447,19.430008,10203.87};
 					class Effects
 					{
 					};
