@@ -1,9 +1,22 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initPlayerServer.sqf";
+params ["_fileName"];
+
+private _existsFile = True;
+private _fileLoaded = "";
+
+try{
+	_fileLoaded = loadFile _fileName; }
+catch{ 
+	_existsFile = False;
+};
+
+if (_fileLoaded == "") then { _existsFile = False; };
+
+_existsFile
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/

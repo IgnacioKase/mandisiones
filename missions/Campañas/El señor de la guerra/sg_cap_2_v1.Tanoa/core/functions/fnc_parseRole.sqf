@@ -1,9 +1,14 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initPlayerServer.sqf";
+params ["_unit","_description"];
+
+_unit setVariable ["MIV_KEEP_ROLE", ["#nc", _description] call BIS_fnc_inString];
+_description = [_description, "#nc", ""] call MIV_fnc_replaceInString;
+
+_description;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
