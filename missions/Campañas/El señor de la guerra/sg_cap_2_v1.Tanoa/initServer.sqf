@@ -4,6 +4,10 @@
 
 call compile preprocessFile "core\events\initServer.sqf";
 
+waitUntil { time > 0 };
+
+execVM "scripts\defensa.sqf";
+
 /*******************************************************************************
                           Realizado por |ArgA|MIV
 *******************************************************************************/
