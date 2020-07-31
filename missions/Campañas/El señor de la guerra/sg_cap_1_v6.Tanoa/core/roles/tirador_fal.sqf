@@ -3,7 +3,7 @@
 						  Rol por       |ArgA|Ignacio
 *******************************************************************************/
 
-params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+params [["_unit", player], ["_helmet", "arga_cas_combate_bosque_marpat"], ["_backPack", "arga_m_petate_bosque_marpat"], ["_backPackLittle", "arga_m_asalto_bosque_marpat"]];
 
 private _useBigBackPack = true;
 private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
@@ -48,7 +48,6 @@ _unit addItemToBackpack "Laserdesignator";
 _unit addItemToBackpack "Laserbatteries";
 for "_i" from 1 to 5 do {_unit addItemToBackpack "acfaa_20Rndfal_762x51_T";};
 for "_i" from 1 to 12 do {_unit addItemToBackpack "10Rnd_338_Mag";};
-_unit addHeadgear "arga_cas_dmarpat";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

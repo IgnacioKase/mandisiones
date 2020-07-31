@@ -3,7 +3,7 @@
                           Rol por       |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 
-params [["_unit", player], ["_helmet", "arga_cas_mbosque"], ["_backPack", "arga_m_mbosque_p"], ["_backPackLittle", "arga_m_mbosque_a"]];
+params [["_unit", player], ["_helmet", "arga_cas_combate_bosque_marpat"], ["_backPack", "arga_m_petate_bosque_marpat"], ["_backPackLittle", "arga_m_asalto_bosque_marpat"]];
 
 private _useBigBackPack = true;
 private _back = if (_useBigBackPack) then {_backPack} else {_backPackLittle};
@@ -37,7 +37,6 @@ for "_i" from 1 to 3 do {_unit addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";};
 for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 for "_i" from 1 to 6 do {_unit addItemToBackpack "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";};
 for "_i" from 1 to 9 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-_unit addHeadgear "arga_cas_mdesert";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

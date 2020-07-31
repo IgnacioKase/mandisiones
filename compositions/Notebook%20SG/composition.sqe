@@ -1,0 +1,23 @@
+version=53;
+center[]={8449.0342,20.332598,10245.876};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.26763535,0};
+			angles[]={0,0.51082289,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{this execVM ""scripts\addAction_take.sqf"";}";
+		};
+		id=1047;
+		type="Item_Laptop_Unfolded";
+	};
+};
