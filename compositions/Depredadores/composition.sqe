@@ -1,8 +1,8 @@
 version=53;
-center[]={7223.9595,170.98164,9785.7461};
+center[]={7612.5244,95.878822,10392.614};
 class items
 {
-	items=1;
+	items=2;
 	class Item0
 	{
 		dataType="Group";
@@ -15,16 +15,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43164063,0.0014343262,1.3261719};
-					angles[]={0,5.7312999,0};
+					position[]={-3.2231445,0.0014419556,1.5537109};
+					angles[]={0,2.422653,0};
 				};
 				side="East";
 				flags=7;
 				class Attributes
 				{
-					disableSimulation=1;
 				};
-				id=1086;
+				id=5;
 				type="O_V_Soldier_ghex_F";
 				class CustomAttributes
 				{
@@ -62,7 +61,7 @@ class items
 										"BOOL"
 									};
 								};
-								value=1;
+								value=0;
 							};
 						};
 					};
@@ -74,16 +73,17 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.0234375,0.37173462,-1.4785156};
+					position[]={-2.2548828,0.043861389,4.5615234};
+					angles[]={0,2.9745386,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
-					disableSimulation=1;
 				};
-				id=1087;
+				id=6;
 				type="O_V_Soldier_Medic_ghex_F";
+				atlOffset=0.052581787;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -120,7 +120,7 @@ class items
 										"BOOL"
 									};
 								};
-								value=1;
+								value=0;
 							};
 						};
 					};
@@ -132,16 +132,17 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15917969,0.4289093,-0.97167969};
+					position[]={-3.3364258,0.038902283,3.8652344};
+					angles[]={0,2.9745386,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
-					disableSimulation=1;
 				};
-				id=1088;
+				id=7;
 				type="O_V_Soldier_TL_ghex_F";
+				atlOffset=0.073959351;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -178,7 +179,7 @@ class items
 										"BOOL"
 									};
 								};
-								value=1;
+								value=0;
 							};
 						};
 					};
@@ -188,10 +189,236 @@ class items
 		};
 		class Attributes
 		{
-			name="e1";
+			init="call{[this, true] execVM ""scripts\depredador.sqf"";}";
 			speedMode="FULL";
 			formation="STAG COLUMN";
 		};
-		id=1085;
+		id=4;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.9882813,0.23524475,-3.1162109};
+					angles[]={0,2.422653,0};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=18;
+				type="O_V_Soldier_ghex_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01CHI";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.956543,0.27766418,-0.10839844};
+					angles[]={0,2.9745386,0};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+				};
+				id=19;
+				type="O_V_Soldier_Medic_ghex_F";
+				atlOffset=-0.0075912476;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01CHI";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.875,0.27270508,-0.8046875};
+					angles[]={0,2.9745386,0};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+				};
+				id=20;
+				type="O_V_Soldier_TL_ghex_F";
+				atlOffset=0.027053833;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01CHI";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item3
+			{
+				dataType="Waypoint";
+				position[]={3.234375,0.28263855,-3.9882813};
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=21;
+				type="Move";
+			};
+		};
+		class Attributes
+		{
+			init="call{[this, false] execVM ""scripts\depredador.sqf"";}";
+			speedMode="FULL";
+			formation="STAG COLUMN";
+		};
+		id=17;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ENH_TaskPatrol";
+				expression="if (!is3DEN && {_value > 0}) then {[_this,getPosATL (leader _this),_value] call BIS_fnc_taskPatrol}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=500;
+					};
+				};
+			};
+			nAttributes=1;
+		};
 	};
 };

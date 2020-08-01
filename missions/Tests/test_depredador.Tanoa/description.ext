@@ -1,0 +1,9 @@
+class CfgSounds {
+	sounds[] = {};
+  class effect_predator
+	{
+    name = "effect_predator";
+    sound[] = {"sounds\predator.ogg", 1, 1};
+    titles[] = {};
+	};
+};
