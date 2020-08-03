@@ -26,9 +26,12 @@ if (_chaseTarget) then {
 
 [_group, _target] execVM "scripts\loop_depredador.sqf";
 
+private ["_isGroupAlive"];
+
 while {_chaseTarget} do {
 	sleep _RECOMPUTE_ATTACK_TIME;
-	if (!alive _target) exitWith { };
+	_isGroupAlive = (true in ((units _group) apply { alive _x }));
+	if (!alive _target || !_isGroupAlive) exitWith { };
 	[_group, getPos _target] call BIS_fnc_taskAttack;
 };
 

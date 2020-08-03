@@ -17,7 +17,6 @@ private _TIME_FST_WAVE = 600;
 private _TIME_SND_WAVE = 420;
 private _TIME_THD_WAVE = 420;
 
-
 // dos escuadra del sur, un bote de ataque, dos botes de asalto, uno de los pastizales del norte
 private _fstGroup = [e_7, e_19, e_13, e_14, e_9, e_3];
 
@@ -62,3 +61,4 @@ MANDI_SPAWN_WAVE =
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/
+
