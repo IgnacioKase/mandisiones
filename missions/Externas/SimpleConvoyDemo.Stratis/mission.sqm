@@ -1,0 +1,506 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=55;
+	};
+	class LayerIndexProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={2419.9839,110.74043,5904.7832};
+		dir[]={0.81242532,-0.33059707,-0.48030844};
+		up[]={0.28458872,0.94377184,-0.16825028};
+		aside[]={-0.50892365,-2.3102621e-007,-0.86082804};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"Desert",
+	"A3_Modules_F",
+	"A3_Characters_F",
+	"A3_Soft_F_MRAP_02",
+	"ace_realisticnames",
+	"A3_Soft_F_EPC_Truck_03",
+	"ace_cargo",
+	"A3_Soft_F_Gamma_Truck_02",
+	"A3_Armor_F_Beta_APC_Wheeled_02"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=8;
+		class Item0
+		{
+			className="Desert";
+			name="Desert";
+		};
+		class Item1
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Soft_F_EPC";
+			name="Arma 3 Win Episode - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item6
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=5945363;
+class ScenarioData
+{
+	author="Tova";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=10;
+		class Item0
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={2891.1746,18.46521,5557.1631};
+				angles[]={0.34112221,0,6.0476403};
+			};
+			title="Place script code in an init field or sqf file";
+			id=1;
+		};
+		class Item1
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={2314.9365,0,5889.0527};
+			};
+			title="place you convoy and add waypoints";
+			id=2;
+			atlOffset=6.4157543;
+		};
+		class Item2
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={2433.292,69.944,5721.0918};
+				angles[]={0.40187165,0,0.11449653};
+			};
+			title="Call the convoy script with your chosen parameters (Here it's it the Ifrit init field)";
+			id=3;
+			atlOffset=-0.00057220459;
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2761.146,45.03957,5547.6479};
+				angles[]={0.43113121,0,0.15378095};
+			};
+			init="call{TOV_fnc_SimpleConvoy = {  " \n " params [""_convoyGroup"",[""_convoySpeed"",50],[""_convoySeparation"",50],[""_pushThrough"", true]]; " \n " if (_pushThrough) then { " \n "  _convoyGroup enableAttack !(_pushThrough); " \n "  {(vehicle _x) setUnloadInCombat [false, false];} forEach (units _convoyGroup); " \n " }; " \n " _convoyGroup setFormation ""COLUMN""; " \n " { " \n "     (vehicle _x) limitSpeed _convoySpeed*1.15; " \n "        (vehicle _x) setConvoySeparation _convoySeparation; " \n "    } forEach (units _convoyGroup); " \n " (vehicle leader _convoyGroup) limitSpeed _convoySpeed; " \n " while {sleep 5;true} do { " \n "  { " \n "   if ((speed vehicle _x < 5) && (_pushThrough || (behaviour _x != ""COMBAT""))) then { " \n "    (vehicle _x) doFollow (leader _convoyGroup); " \n "   };  " \n "  } forEach (units _convoyGroup)-(crew (vehicle (leader _convoyGroup)))-allPlayers; " \n "        {(vehicle _x) setConvoySeparation _convoySeparation;} forEach (units _convoyGroup); " \n " };  " \n "};}";
+			id=40;
+			type="Logic";
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=8;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2403.8459,3.7902837,5841.6909};
+						angles[]={0,1.2741601,0.0075049158};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=43;
+					type="O_Soldier_F";
+					atlOffset=2.3841858e-007;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2403.8459,3.7902837,5841.6909};
+						angles[]={0,1.2741601,0.0075049158};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=44;
+					type="O_Soldier_F";
+					atlOffset=2.3841858e-007;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2386.8811,3.5531662,5834.9785};
+						angles[]={6.2806959,1.1618918,0.0049914722};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=46;
+					type="O_Soldier_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2373.8459,3.4260538,5827.6206};
+						angles[]={0,1.0814948,0.0024897563};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=48;
+					type="O_Soldier_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2361.0447,3.4113925,5820.3984};
+						angles[]={0.0024897563,0.96128637,6.2806959};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=50;
+					type="O_Soldier_F";
+					atlOffset=0.0034368038;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2351.8525,3.4717829,5814.1284};
+						angles[]={0.0049914722,0.84328818,6.278194};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=52;
+					type="O_crew_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2351.8525,3.4717829,5814.1284};
+						angles[]={0.0049914722,0.84328818,6.278194};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=53;
+					type="O_crew_F";
+				};
+				class Item7
+				{
+					dataType="Waypoint";
+					position[]={4982.0742,201.36137,5850.0981};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=54;
+					type="Move";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=7;
+				};
+				class Links
+				{
+					items=7;
+					class Item0
+					{
+						linkID=0;
+						item0=43;
+						item1=42;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=44;
+						item1=42;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=46;
+						item1=45;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=48;
+						item1=47;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=50;
+						item1=49;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item5
+					{
+						linkID=5;
+						item0=52;
+						item1=51;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item6
+					{
+						linkID=6;
+						item0=53;
+						item1=51;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=41;
+			atlOffset=2.3841858e-007;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2403.825,6.581491,5841.6392};
+				angles[]={0,1.2741601,0.0075049158};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+				init="call{(group this) setVariable [""Vcm_Disable"",true];" \n "convoyScript = [group this, 35, 10] spawn TOV_fnc_SimpleConvoy;}";
+			};
+			id=42;
+			type="O_MRAP_02_hmg_F";
+			atlOffset=2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_Katiba_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_green"",""150Rnd_762x54_Box"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag"",""RPG32_F""],[16,4,10,4,4,4,4,10,4,4,4,4,12,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2386.9026,5.7003026,5834.9385};
+				angles[]={6.2806959,1.1618918,0.0049914722};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45;
+			type="O_Truck_03_device_F";
+			atlOffset=-0.00029349327;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2373.8459,5.841116,5827.5693};
+				angles[]={0,1.0814948,0.0024897563};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=47;
+			type="O_Truck_03_transport_F";
+			atlOffset=-7.8678131e-006;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2361.0447,5.7916508,5820.3428};
+				angles[]={0.0024897563,0.96128637,6.2806959};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=49;
+			type="O_Truck_02_Ammo_F";
+			atlOffset=0.0034005642;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2352.0247,6.0210962,5814.0405};
+				angles[]={0.0049914722,0.84328818,6.278194};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=51;
+			type="O_APC_Wheeled_02_rcws_v2_F";
+			atlOffset=-0.0054838657;
+		};
+	};
+};
