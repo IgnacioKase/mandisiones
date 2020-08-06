@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Capítulo II"                  // Colocar nombre de mision
-#define COMPLETE_NAME "Capítulo II - El Señor de la Guerra v4"  // Nombre y versión de la misión
+#define NAME "Capítulo III"                  // Colocar nombre de mision
+#define COMPLETE_NAME "Capítulo III - El Señor de la Guerra v1"  // Nombre y versión de la misión
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
-#define DESCRIPTION "Obtener información y capturar al coronel"                              // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Capturar al coronel y encontrar el dispositivo"                              // Colocar descripcion de la mision entre las comillas
 
 author = "Maxi e Ignacio";                                    // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
@@ -54,15 +54,15 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 CARACTER = "Oficial";
-HORARIO = "1000hs";
-FECHA = "27/07/2020";
-CLIMA = "Viento y marea fuerte";
+HORARIO = "0630hs";
+FECHA = "06/08/2020";
+CLIMA = "Parcialmente nublado";
 UBICACION = "Fiji/Tanoa";
-SITUACION = ["El ejercito coreano encontró nuestro ubicación y esta enviando tropas desde el norte y desde el mar. Debemos repeler el ataque y contra-atacar tres puntos claves en la isla que se encuentra al Sureste donde inteligencia cree que se puede encontrar el Coronel Min ho, el cual creemos que esta a cargo de toda la operación en la isla Fiji."];               
-SITUACION_HISTORICA = ["Diciembre de 2019: una de las mayores crisis sanitarias a nivel mundial se desata en China. Corea del Norte ve en esto una oportunidad para tomar poder sobre otras tierras. Las grandes potencias estarían ocupadas tratando de salvar su crisis sanitaria, económica y social.", "Para facilitar el avance y movilización de sus tropas, Corea decide ofrecer ayuda a distintas islas. Entre ellas se encuentran, las islas de Tanoa, Altis y Ruegen.","Una vez establecidas bases militares en las islas y una primera movilización de tropas, la OTAN empiezan a sospechar de los movimientos del pequeño rojo.", "Al mismo tiempo, Rusia recibe información de sus espías en China. Ellos afirmaban que China estaba brindando tropas, armamento y apoyo logístico a Corea del Norte. Rusia entonces, contacta con la OTAN debido a este movimiento inusual de armamento y deciden tomar cartas en el asunto.", "La OTAN y Rusia deciden intervenir y darle un plazo a Corea hasta marzo de 2020 para que retire sus tropas innecesarias en dichas islas. Llegó la fecha, pasó otro mes más y Corea no mostraba intenciones de retirar a nadie.", "En mayo de 2020 la coalición OTAN-Rusia reitera el pedido a China y Corea de retirar sus debidas tropas de las islas, estos piden plazo hasta Julio de 2020 y es concedido.", "Junio 2020: Ni un solo regimiento de Corea ni de China fue movilizado.", "Julio 2020: Las tropas empiezan a patrullar reiteradamente por los pueblos civiles y se reportan comportamientos agresivos hacia la población. Se espera lo peor.", "El equipo ArgA es contactado por Rusia para realizar operaciones específicas junto a la colación en las islas afectadas." ];     
-EXTRACTO_INTELIGENCIA = ["El equipo de inteligencia analizo las notebooks obtenidas en la misión pasada y logramos identificar al coronel a cargo de la isla, sin embargo no pudimos descifrar que es lo que hacían con los civiles en sus laboratorios clandestinos, debido a esto necesitamos capturarlo. Además, sospechamos que el coronel responde a un superior inmediato fuera de la isla.", "<img image= 'imgs\minho.paa' width='323' height='323'/>"];
-OBJETIVOS = ["Repeler el ataque", "Encontrar y capturar al Coronel Min ho", "Tomar control de la zona <marker name='conejo'>Conejo</marker> (Yaguar)", "Tomar control de la zona <marker name='manati'>Manatí</marker> (Yaguar)", "Tomar control de la zona <marker name='pinguino'>Pingüino</marker> (Cóndor)"];
-RECURSOS = ["Aparecemos armados", "Mezcla de Armamento ruso y de ArgA", "Recibimos suministros", "2 Botes RHIB (Marcados en mapa de misión)", "3 Little Bird MH-6M", "1 Polaris DAGOR", "1 Polaris DAGOR (Mini-spike AT)", "2 Polaris DAGOR (XM312)"];
+SITUACION = ["OTAN-Rusia se encargarán del ataque en gran escala, nuestro objetivo sera encontrar y recuperar el arma biológica. Con ayuda de inteligencia pudimos marcar dos puntos claves donde creemos que podremos interceptar la bomba. Además, una escuadra especial deberá movilizarse hasta el objetivo Alpaca y capturar al coronel Min ho, que gracias a la información obtenida en la operación pasada sabemos ahora su ubicación exacta.", "Las ubicaciones posibles son: objetivo Mapache, hace unas horas que un tren esta detenido a las afueras de Geortown y pudimos observar que tiene más resguardo que el que debería. Debemos investigar que sucede ahí.", "Objetivo Gorrión: punto clave para realizar una emboscada a un sospechoso convoy bien vigilado que se dirige hacia el puerto del norte de Fiji. El convoy viene desde el suroeste y se dirige hacia el norte por la ruta principal. El convoy pasara por la zona marcada a las 0710hrs, por lo que tendremos 40 minutos para posicionarnos para la emboscada."];               
+SITUACION_HISTORICA = ["La coalición analizó la información que conseguimos en Fiji y encontraron evidencia contundente sobre el desarrollo de un arma biológica capaz de arrasar con un pueblo entero. Según inteligencia, estaban utilizando esta isla para desarrollar y probar el arma con la población local. Los cuerpos hallados en la primera operación parece que fueron causa de prueba de la sustancia para esta arma. Desconocemos como funciona este arma, pero debemos encontrarla.", "La coalición marco este como objetivo prioritario y decidió enviar a la <marker name='flota'>7° flota</marker> que se encontraba en camino hacia la isla de Lemnos (Altis). Unos días después de nuestro contacto la flota arribó a las costas de la isla de Fiji. Ahora nos encontramos en el portaaviones preparando el último despliegue sobre estas islas. Un despliegue en conjunto Rusia-OTAN-ArgA. Para luego continuar camino hacia Lemnos." ];     
+EXTRACTO_INTELIGENCIA = ["Panda a raíz de nuestros hallazgos nos brindo información acerca de este arma. En la siguiente fotografía podemos ver como la transportan y la apariencia del dispositivo de detonación.", "<img image= 'imgs\minho.paa' width='323' height='323'/>"];
+OBJETIVOS = ["<marker name='mapache'>Mapache</marker>: Atacar el tren detenido y buscar la bomba", "<marker name='alpaca'>Alpaca</marker>: Encontrar y capturar al Coronel Min ho.", "<marker name='gorrion'>Gorrión</marker>: emboscar al convoy en busca de la bomba." ];
+RECURSOS = ["Aparecemos armados", "Mezcla de Armamento ruso y de ArgA", "5 UH-60"];
 ENEMIGOS = ["Ejercito coreano bien entrenado", "Vehiculos blindados pesados", "Vehiculos blindados Medianos" ];
 ////////////////////////////////////////////////////////////////////////////////
 
