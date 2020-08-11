@@ -1,0 +1,1 @@
+[cqb] execVM "scripts\init_respawn_ai.sqf";

@@ -1,0 +1,222 @@
+/*%FSM<COMPILE "M:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, missionFlow">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-25.000000,325.000000,75.000000,375.000000,0.000000,"init"};
+item1[] = {"Mission_start",4,218,-25.000000,400.000000,75.000000,450.000000,0.000000,"Mission start"};
+item2[] = {"Task_0",2,250,-25.000000,475.000000,75.000000,525.000000,0.000000,"Task 0"};
+item3[] = {"Player_moved",4,218,-25.000000,575.000000,75.000000,625.000000,0.000000,"Player moved"};
+item4[] = {"New_task",2,250,-25.000000,650.000000,75.000000,700.000000,0.000000,"New task"};
+item5[] = {"New_task_1",2,4346,-25.000000,800.000000,75.000000,850.000000,0.000000,"New task"};
+item6[] = {"Obj_done",4,218,125.000000,800.000000,225.000000,850.000000,0.000000,"Obj done"};
+item7[] = {"Done",2,250,121.800110,907.999695,221.800110,957.999695,0.000000,"Done"};
+item8[] = {"Objs_down",4,218,-25.000000,725.000000,75.000000,775.000000,0.000000,"Objs down"};
+item9[] = {"Evac",4,218,-25.000000,900.000000,75.000000,950.000000,0.000000,"Evac"};
+item10[] = {"End_1_Win",1,250,-25.000000,975.000000,75.000000,1025.000000,0.000000,"End#1 Win"};
+item11[] = {"End__1",1,250,-25.000000,1975.000000,75.000000,2025.000000,0.000000,"End #1"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,8};
+link5[] = {5,6};
+link6[] = {5,9};
+link7[] = {6,7};
+link8[] = {7,9};
+link9[] = {8,5};
+link10[] = {9,10};
+globals[] = {0.000000,0,0,0,0,640,480,1,54,6316128,1,-475.815643,417.282532,1155.544556,260.421234,882,884,1};
+window[] = {2,-1,-1,-1,-1,889,130,1570,130,3,900};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "missionFlow";
+        class States
+        {
+                /*%FSM<STATE "init">*/
+                class init
+                {
+                        name = "init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Mission_start">*/
+                                class Mission_start
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Task_0";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"time > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Task_0">*/
+                class Task_0
+                {
+                        name = "Task_0";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/"player_boss sideChat ""Move into position and await orders"";" \n
+                         "" \n
+                         "" \n
+                         "" \n
+                         "[player,[""task_0""],["""",""Move into position"",""""],getPos trg_wp1,1,9,true,""move""] call BIS_fnc_taskCreate; " \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Player_moved">*/
+                                class Player_moved
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="New_task";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"triggerActivated trg_wp1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "New_task">*/
+                class New_task
+                {
+                        name = "New_task";
+                        itemno = 4;
+                        init = /*%FSM<STATEINIT""">*/"player_boss sideChat ""Alright, direct the airstrike on the AAF positions, destroy their cars"";" \n
+                         "[] spawn {" \n
+                         "sleep 5;" \n
+                         "" \n
+                         "hint ""Use the laser for precise strikes, to call the missile use 0-8"";" \n
+                         "" \n
+                         "[player,[""task_1""],["""",""Hit the warehouse"",""""],getPos trg_wp2,0,9,true,""destroy""] call BIS_fnc_taskCreate; " \n
+                         "" \n
+                         "" \n
+                         "[player,[""task_2""],["""",""Hit the radar station"",""""],getPos trg_wp3,1,9,true,""destroy""] call BIS_fnc_taskCreate; " \n
+                         "}"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Objs_down">*/
+                                class Objs_down
+                                {
+                                        itemno = 8;
+                                        priority = 0.000000;
+                                        to="New_task_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"triggerActivated trg_wp3 && triggerActivated trg_wp2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "New_task_1">*/
+                class New_task_1
+                {
+                        name = "New_task_1";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/"player_boss sideChat ""You may exfil or keep directing the strike, there are some antennas that need to be destroyed."";" \n
+                         "[] spawn {" \n
+                         "sleep 5;" \n
+                         "" \n
+                         "[player,[""task_5""],["""",""Exfil"",""""],getPos trg_wp6,0,8,true,""move""] call BIS_fnc_taskCreate; " \n
+                         "" \n
+                         "[player,[""task_3""],["""",""Destroy Antennas"",""""],getPos trg_wp4,1,9,true,""destroy""] call BIS_fnc_taskCreate; " \n
+                         "" \n
+                         "[player,[""task_4""],["""",""Destroy single antenna"",""""],getPos trg_wp5,1,10,true,""destroy""] call BIS_fnc_taskCreate; " \n
+                         "" \n
+                         "}" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Evac">*/
+                                class Evac
+                                {
+                                        itemno = 9;
+                                        priority = 0.000000;
+                                        to="End_1_Win";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"triggerActivated trg_wp6"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Obj_done">*/
+                                class Obj_done
+                                {
+                                        itemno = 6;
+                                        priority = 0.000000;
+                                        to="Done";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"triggerActivated trg_wp4 && triggerActivated trg_wp5"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Done">*/
+                class Done
+                {
+                        name = "Done";
+                        itemno = 7;
+                        init = /*%FSM<STATEINIT""">*/"player_boss sideChat ""Nice job! Now exfil."";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Evac">*/
+                                class Evac
+                                {
+                                        itemno = 9;
+                                        priority = 0.000000;
+                                        to="End_1_Win";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"triggerActivated trg_wp6"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End_1_Win">*/
+                class End_1_Win
+                {
+                        name = "End_1_Win";
+                        itemno = 10;
+                        init = /*%FSM<STATEINIT""">*/"[""task_5"", ""SUCCEEDED"", true] call BIS_fnc_taskSetState;" \n
+                         "" \n
+                         """end1"" call BIS_fnc_endMission;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End__1">*/
+                class End__1
+                {
+                        name = "End__1";
+                        itemno = 11;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="init";
+        finalStates[] =
+        {
+                "End_1_Win",
+                "End__1",
+        };
+};
+/*%FSM</COMPILE>*/

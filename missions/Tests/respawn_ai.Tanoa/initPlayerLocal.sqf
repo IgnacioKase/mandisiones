@@ -1,0 +1,1 @@
+execVM "scripts\set_stand_respawn_ai.sqf";

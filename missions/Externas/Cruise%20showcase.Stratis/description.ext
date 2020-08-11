@@ -1,0 +1,33 @@
+OnLoadMissionTime = 0;
+OnLoadName = "Cruise missile showcase";
+onLoadMission = "Direct a cruise missile strike before a NATO attack.";
+overviewText = "Use my new Cruise missile function in order to strike AAF positions and aid NATO in their invasion of Stratis. This is just a quick mission I put togheter in order to showcase my new script.";
+loadScreen = "imgstart.jpg";
+overviewPicture = "imgstart.jpg";
+author="Dankan37";
+
+
+class CfgCommunicationMenu
+{
+    class missileBomb
+    {
+        text = "Cruise strike";
+        expression = "[] spawn fnc_CruiseMissile";
+        icon = "\a3\ui_f\data\map\markers\nato\b_inf.paa";
+        removeAfterExpressionCall = 1;
+    };
+}
+
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Nice strike!.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};

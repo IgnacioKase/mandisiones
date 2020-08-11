@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=417;
+		nextID=422;
 	};
 	class Camera
 	{
-		pos[]={2577.3701,43.917168,4192.999};
-		dir[]={-0.68570256,-0.54743421,-0.47996753};
-		up[]={-0.44853455,0.83670735,-0.31395069};
-		aside[]={-0.57351142,4.5227353e-006,0.81933933};
+		pos[]={2560.1631,56.080059,4119.2773};
+		dir[]={-0.2002297,-0.46892503,0.86030102};
+		up[]={-0.10630163,0.88322592,0.45672759};
+		aside[]={0.97400951,-2.4680048e-008,0.22669393};
 	};
 };
 binarizationWanted=0;
@@ -2300,7 +2300,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={2598.98,22.346008,4090.5269};
+				position[]={2598.98,22.346001,4090.5271};
 				angles[]={0,1.5707963,0};
 			};
 			title="Briefing room";
@@ -2313,13 +2313,13 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={2533.3364,23.448151,4129.1729};
+				position[]={2533.3359,23.448,4129.1729};
 				angles[]={0,1.5707963,0};
 			};
 			title="Ambient takeoff";
 			description="Make this plane take off during establishing shot. Delete after mission start.";
 			id=568;
-			atlOffset=209.41815;
+			atlOffset=209.418;
 		};
 		class Item9
 		{
@@ -7275,7 +7275,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2534.0769,23.653992,4144.4438};
-			angle=3.1221492;
+			angle=3.1221495;
 			class Attributes
 			{
 				name="BIS_trgCatapult";

@@ -1,0 +1,11 @@
+enableDebugConsole = 1;
+
+class CfgFunctions {
+  class MAC {
+    class general {
+      class switchMove{
+        file = "functions\fnc_switchMove.sqf";
+      };
+    };
+  };
+};
