@@ -4,6 +4,8 @@
 
 call compile preprocessFile "core\events\initServer.sqf";
 
+execVM "scripts\init_mortero.sqf";
+
 /*******************************************************************************
                           Realizado por |ArgA|MIV
 *******************************************************************************/

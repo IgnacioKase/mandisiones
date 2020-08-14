@@ -39,7 +39,7 @@ if (_disableGroupIA == 1) then {
         {
           if (!isPlayer _x) then {
             _x disableAI "MOVE";
-            _x action ["SwitchWeapon", _x, _x, 100];
+              
             // _x enableSimulationGlobal false;
             // _x hideObjectGlobal true;
           };

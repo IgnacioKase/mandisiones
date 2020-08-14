@@ -2,15 +2,17 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-if (!isServer || MANDI_CHANGE_OBJECTIVE_SHOWN) exitWith { };
+params ["_yak"];
 
-MANDI_CHANGE_OBJECTIVE_SHOWN = true;
+if (!isServer) exitWith { };
 
-publicVariable "MANDI_CHANGE_OBJECTIVE_SHOWN";
+private _DISCOVER_DISTANCE = 3000;
 
-sleep 300;
+waitUntil {  sleep 5; (true in (allPlayers apply { _x distance2D _yak <= _DISCOVER_DISTANCE })) };
 
-[[], "scripts\change_objective_client.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+private _group = group _yak;
+
+_group setBehaviour "COMBAT";
 
 /*******************************************************************************
                           Realizado por |ArgA|MandI

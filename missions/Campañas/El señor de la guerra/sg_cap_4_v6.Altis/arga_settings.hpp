@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Capítulo III"                  // Colocar nombre de mision
-#define COMPLETE_NAME "Capítulo III - El Señor de la Guerra v7"  // Nombre y versión de la misión
+#define NAME "Capítulo IV"                  // Colocar nombre de mision
+#define COMPLETE_NAME "Capítulo IV - El Señor de la Guerra v6"  // Nombre y versión de la misión
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
-#define DESCRIPTION "Capturar al coronel y encontrar el dispositivo"                              // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Desembarcar y realizar una avanzada hacia la ciudad."                              // Colocar descripcion de la mision entre las comillas
 
 author = "Maxi e Ignacio";                                    // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
@@ -16,7 +16,8 @@ INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
 INTRO = "scripts\intro_3.sqf";                                          // Intros: 1 y 2. Para desactivar: 0
-MAX_DIST_VISION = 2000;
+
+MAX_DIST_VISION = 1800;
 MIN_DIST_VISION = 800;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual
 ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner true. Para que no aparezca poner false
@@ -53,17 +54,18 @@ BRIEFING
     Cada elemento del array es un parrafo
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
+ACTIVAR_BRIEFING = 1;
 CARACTER = "Oficial";
-HORARIO = "0630hs";
+HORARIO = "0530hrs";
 FECHA = "06/08/2020";
-CLIMA = "Parcialmente nublado";
-UBICACION = "Fiji/Tanoa";
-SITUACION = ["OTAN-Rusia se encargarán del ataque en gran escala, nuestro objetivo sera encontrar y recuperar el arma biológica. Con ayuda de inteligencia pudimos marcar dos puntos claves donde creemos que podremos interceptar la bomba. Además, una escuadra especial deberá movilizarse hasta el objetivo Alpaca y capturar al coronel Min ho, que gracias a la información obtenida en la operación pasada sabemos ahora su ubicación exacta.", "Las ubicaciones posibles son: objetivo Mapache, hace unas horas que un tren esta detenido a las afueras de Geortown y pudimos observar que tiene más resguardo que el que debería. Debemos investigar que sucede ahí.", "Objetivo Gorrión: punto clave para realizar una emboscada a un sospechoso convoy bien vigilado que se dirige hacia el puerto del norte de Fiji. El convoy viene desde el suroeste y se dirige hacia el norte por la ruta principal. El convoy pasara por la zona marcada a las 0710hrs, por lo que tendremos 40 minutos para posicionarnos para la emboscada."];               
-SITUACION_HISTORICA = ["La coalición analizó la información que conseguimos en Fiji y encontraron evidencia contundente sobre el desarrollo de un arma biológica capaz de arrasar con un pueblo entero. Según inteligencia, estaban utilizando esta isla para desarrollar y probar el arma con la población local. Los cuerpos hallados en la primera operación parece que fueron causa de prueba de la sustancia para esta arma. Desconocemos como funciona este arma, pero debemos encontrarla.", "La coalición marco este como objetivo prioritario y decidió enviar a la <marker name='flota'>7° flota</marker> que se encontraba en camino hacia la isla de Lemnos (Altis). Unos días después de nuestro contacto la flota arribó a las costas de la isla de Fiji. Ahora nos encontramos en el portaaviones preparando el último despliegue sobre estas islas. Un despliegue en conjunto Rusia-OTAN-ArgA. Para luego continuar camino hacia Lemnos." ];     
-EXTRACTO_INTELIGENCIA = ["Panda a raíz de nuestros hallazgos nos brindo información acerca de este arma. En la siguiente fotografía podemos ver como la transportan y la apariencia del dispositivo de detonación.", "<img image= 'imgs\minho.paa' width='323' height='323'/>"];
-OBJETIVOS = ["<marker name='mapache'>Mapache</marker>: Atacar el tren detenido y buscar la bomba", "<marker name='alpaca'>Alpaca</marker>: Encontrar y capturar al Coronel Min ho.", "<marker name='gorrion'>Gorrión</marker>: emboscar al convoy en busca de la bomba." ];
-RECURSOS = ["Aparecemos armados", "Mezcla de Armamento ruso y de ArgA", "5 UH-60"];
-ENEMIGOS = ["Ejercito coreano bien entrenado", "Vehiculos blindados pesados", "Vehiculos blindados Medianos" ];
+CLIMA = "Parcialmente nublado y niebla";
+UBICACION = "Lemnos/Altis";
+SITUACION = ["Nos encontramos desembarcando en las costas de Lemnos, mas precisamente en las playas de Panochori. La misión es simple, debemos tomar este punto estratégico para hacernos fuertes en la isla. Tendremos apoyo de fuego de la séptima flota. Además, dos cazas darán soporte sobre la zona.", "Al desembarcar deberemos hacer una avanzada hacia la ciudad, se espera fuerte resistencia en el avance, se sabe que es una ciudad altamente militarizada.", "Los rusos nos pidieron destruir el Anti-Aéreo que esta ubicado en el aeropuerto principal de Lemnos, para que puedan traer su bombardero estratégico Tu-95. Deberemos tener cuidado ya que los chinos trajeron un AA muy avanzado, el S-750 además, dos ZSU-23 y patrullas de Yak-130. Nuestras aeronaves contaran con misiles antirradiación AGM-88C HARM para que la tarea sea mas sencilla."];               
+SITUACION_HISTORICA = ["Luego de la activación de la bomba, se organizo un rápido repliegue de la zona con los aéreos, por suerte pocos miembros de ArgA fueron afectados. Pero estos tuvieron que pasar varios días en terapia intensiva para recuperarse del venenoso gas de este arma biológica. Si la ayuda hubiera llegado unos minutos mas tarde, ya estarían muertos.", "Pasado dos semanas de nuestro encuentro en Fiji, la séptima flota siguió su rumbo original luego del exitoso ataque a la isla." ];     
+EXTRACTO_INTELIGENCIA = ["Los rusos se encargaron de interrogar a Min ho. El interrogatorio fue un éxito y conseguimos mucha información, sabemos que Min Ho respondía a un coronel de Lemnos, no pudimos identificar su nombre, pero si pudimos identificar al capitán Yangyang el encargado del suroeste de toda la isla de Lemnos. Además, Min ho confesó que hay por lo menos una bomba mas en Lemnos y otra en Ruegen iguales que la que encontramos en Fiji."];
+OBJETIVOS = ["<marker name='pacu'>Pacu</marker>: Pacu: Desembarcar y realizar una avanzada hacia la ciudad. Tomar y hacerse fuerte en este punto.", "<marker name='dorado'>Dorado</marker>: Destruir la artillería. Objetivo para los cazas.", "<marker name='mojarrita'>Mojarrita</marker>: Destruir el AA. Objetivo para los cazas." ];
+RECURSOS = ["Aparecemos armados y en pleno desembarque", "Armamento brindado por la OTAN", "Desembarcamos en lanchas RHIB y little birds", "Operadores de artillería de la fragata Liberty (se utilizan con un operador y un marcador láser)", "2 F/A-181 Black Wasp II"];
+ENEMIGOS = ["Ejercito coreano bien entrenado", "Vehiculos blindados", "Puesto de artilleria", "Fortificaciones fuertemente defendidas", "Aereos enemigos sobrevolando la zona del AA" ];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
@@ -95,7 +97,8 @@ RELOAD_SPEED = 0.25; 	//velocidad de recarga
 COMMANDING = 0.75; 		//liderazgo
 ////////////////////////////////////////////////////////////////////////////////
 
-/* Modificar desde los define arriba de todo, no tocar directamente */
+/* Modificar desde los define que estan arriba de todo.
+NO TOCAR LO QUE ESTA ABAJO DE ESTA LINEA             */
 onLoadName = NAME;	                        // Nombre de carga
 briefingName = COMPLETE_NAME;               // Nombre en briefing
 onLoadMission = DESCRIPTION;                // Pie de carga

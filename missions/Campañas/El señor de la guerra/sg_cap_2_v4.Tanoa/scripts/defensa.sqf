@@ -6,6 +6,7 @@ if(!isServer) exitWith { };
 private _COMBAT_MODE = "AWARE";
 private _LIMIT_SPEED = 30;
 private _SPEED_MODE = "FULL";
+
 /*
 private _TIME_FST_WAVE = 1;
 private _TIME_SND_WAVE = 1;

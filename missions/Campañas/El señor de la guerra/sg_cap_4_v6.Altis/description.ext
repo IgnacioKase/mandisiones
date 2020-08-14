@@ -83,6 +83,9 @@ class CfgFunctions {
       class removeAccentMark {
         file = "core\functions\fnc_removeAccentMark.sqf";
       };
+      class create_jsonObject {
+        file = "core\functions\create_jsonObject.sqf";
+      };
     };
   };
   class MAC {
@@ -96,28 +99,10 @@ class CfgFunctions {
 
 class CfgSounds {
 	sounds[] = {};
-  class effect_predator
-	{
-    name = "effect_predator";
-    sound[] = {"sounds\predator.ogg", 1, 1};
-    titles[] = {};
-	};
   class effect_intro
 	{
     name = "effect_intro";
     sound[] = {"sounds\effect_intro.ogg", 1, 1};
-    titles[] = {};
-	};
-  class tos
-	{
-    name = "tos";
-    sound[] = {"sounds\tos.ogg", 1, 1};
-    titles[] = {};
-	};
-  class beep
-	{
-    name = "beep";
-    sound[] = {"sounds\beep.ogg", 1, 1};
     titles[] = {};
 	};
 };
