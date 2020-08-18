@@ -1,0 +1,128 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={10271.516,151.907,19210.82};
+		dir[]={0.71479565,-0.39343905,-0.57816583};
+		up[]={0.3058987,0.91935039,-0.24742757};
+		aside[]={-0.62888426,-2.3283064e-008,-0.77750009};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"acfaa_unif"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="acfaa_unif";
+			name="acfaa_unif";
+			author="FAA mod";
+		};
+	};
+};
+randomSeed=216197;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=1;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10282.539,139.2343,19199.115};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="UCAC_UNIFORM_OLIVA_GUE";
+					atlOffset=-0.0004119873;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=-0.0004119873;
+		};
+	};
+};

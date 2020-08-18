@@ -26,15 +26,6 @@ _objectives     = _objectives     joinString "\\n\\n";
 _loadout        = _loadout        joinString "\\n\\n";
 _enemyForces    = _enemyForces    joinString "\\n\\n";
 
-/*
-_situation      = "1";
-_storySituation = "2";
-_intelligence   = "3";
-_objectives     = "4";
-_loadout        = "5";
-_enemyForces    = "6";
-*/
-
 private _missionsValues = [
                             ["mission",_mission],
                             ["date",_date],
@@ -57,13 +48,9 @@ private _missionsValues = [
                             ["worldName",_worldName]
                           ];
 
-private _result = [_missionsValues] call MIV_fnc_create_jsonObject;
+private _result  = [_missionsValues] call MIV_fnc_create_jsonObject;
 
-systemChat count _result;
-
-_result call MIV_log;
-
-_result;
+[_result, "'", "\'"] call MIV_fnc_replaceInString;
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV
