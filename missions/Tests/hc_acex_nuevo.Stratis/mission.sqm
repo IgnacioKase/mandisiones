@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1935.8374,70.122086,5733.1577};
-		dir[]={-0.87673342,-0.42738461,0.22076686};
-		up[]={-0.41448328,0.90405059,0.10437004};
-		aside[]={0.24419034,-4.2910688e-007,0.96975452};
+		pos[]={1785.7675,149.56053,5249.6147};
+		dir[]={-0.72602606,-0.61269313,0.31225315};
+		up[]={-0.56284636,0.79031891,0.24207173};
+		aside[]={0.39509565,8.3236955e-008,0.91864491};
 	};
 };
 binarizationWanted=0;
@@ -32,7 +32,7 @@ addons[]=
 	"ace_parachute",
 	"arga_casco",
 	"arga_uniforme",
-	"ace_medical",
+	"ace_medical_treatment",
 	"ace_hearing",
 	"ace_captives",
 	"ace_trenches",
@@ -93,8 +93,8 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="ace_medical";
-			name="ACE3 - Medical";
+			className="ace_medical_treatment";
+			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -6492,7 +6492,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2983.8057,7.3614225,6078.5396};
+						position[]={2983.8059,7.3614197,6078.54};
 						angles[]={0,1.4535102,0};
 					};
 					side="West";
@@ -6526,7 +6526,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item1
