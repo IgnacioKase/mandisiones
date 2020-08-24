@@ -1,0 +1,1311 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=21;
+	};
+	class Camera
+	{
+		pos[]={21965.979,34.877327,21047.631};
+		dir[]={-0.070045695,-0.13601486,0.98833656};
+		up[]={-0.0096201841,0.99068612,0.13577385};
+		aside[]={0.99760818,-3.6477832e-007,0.070699416};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"PLP_props",
+	"arga_faccion",
+	"rhsusf_c_weapons",
+	"A3_Weapons_F",
+	"ace_parachute",
+	"fm12_respirator",
+	"arga_casco",
+	"arga_uniforme",
+	"ace_medical",
+	"ace_hearing",
+	"ace_captives",
+	"ace_trenches",
+	"arga_chaleco",
+	"A3_Characters_F",
+	"A3_Characters_F_Oldman_Headgear",
+	"A3_Characters_F_Exp",
+	"rhs_c_weapons",
+	"adv_aceSplint"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=18;
+		class Item0
+		{
+			className="PLP_props";
+			name="PLP_props";
+		};
+		class Item1
+		{
+			className="arga_faccion";
+			name="arga_faccion";
+		};
+		class Item2
+		{
+			className="rhsusf_c_weapons";
+			name="RHSUSF Weapons & Accessories";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item5
+		{
+			className="fm12_respirator";
+			name="fm12_respirator";
+		};
+		class Item6
+		{
+			className="arga_casco";
+			name="arga_casco";
+		};
+		class Item7
+		{
+			className="arga_uniforme";
+			name="arga_uniforme";
+		};
+		class Item8
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item9
+		{
+			className="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item10
+		{
+			className="ace_captives";
+			name="ACE3 - Captives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item11
+		{
+			className="ace_trenches";
+			name="ACE3 - Trenches";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item12
+		{
+			className="arga_chaleco";
+			name="arga_chaleco";
+		};
+		class Item13
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Characters_F_Oldman";
+			name="Arma 3 Oldman - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item15
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item16
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item17
+		{
+			className="adv_aceSplint";
+			name="adv_aceSplint";
+			author="[SeL] Belbo // Adrian";
+		};
+	};
+};
+randomSeed=4137154;
+class ScenarioData
+{
+	author="KlosTher";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=5;
+		minute=13;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=11;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={21965.668,34.106091,21052.385};
+				angles[]={0,3.6129031,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=0;
+			type="PLP_doorLock_planks_1";
+			atlOffset=6.3905773;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={21968.34,34.843567,21050.939};
+				angles[]={0,3.6453424,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=3;
+			type="PLP_doorLock_planks_1";
+			atlOffset=6.9140224;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={21968.383,34.042416,21050.932};
+				angles[]={0,3.6520813,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=4;
+			type="PLP_doorLock_planks_2";
+			atlOffset=6.1106739;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21966.789,33.998898,21045.133};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=6;
+					type="arga_s_base_gen3_negro_multicam";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21963.951,33.998898,21049.873};
+						angles[]={0,5.4986715,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=8;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_15""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21964.92,33.998898,21051.35};
+						angles[]={0,1.8718361,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=10;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_1c""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=9;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21962.938,33.998898,21048.223};
+						angles[]={0,2.8911495,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=12;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_1b""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21967.779,33.998898,21050.447};
+						angles[]={0,1.1694728,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=14;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_23""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=13;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21965.939,33.998898,21049.973};
+						angles[]={0,3.9957132,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=16;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_18a""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=15;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21965.412,33.991344,21050.148};
+						angles[]={0,2.4051433,-0};
+					};
+					side="East";
+					flags=3;
+					class Attributes
+					{
+						description="Taeyang";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_O_T_Officer_F";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_9x19_17";
+										count=1;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=9;
+									class Item0
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_epinephrine";
+										count=4;
+									};
+									class Item2
+									{
+										name="ACE_elasticBandage";
+										count=5;
+									};
+									class Item3
+									{
+										name="ACE_packingBandage";
+										count=5;
+									};
+									class Item4
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item5
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item6
+									{
+										name="adv_aceSplint_splint";
+										count=2;
+									};
+									class Item7
+									{
+										name="ACE_bloodIV_250";
+										count=1;
+									};
+									class Item8
+									{
+										name="ACE_CableTie";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Beret_CSAT_01_F";
+						};
+					};
+					id=18;
+					type="O_Soldier_F";
+					atlOffset=4.898386;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""combat_18b""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Taeyang";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AsianHead_A3_05";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=17;
+			atlOffset=4.898386;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={21967.002,33.998898,21050.756};
+						angles[]={0,3.5670424,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_mk18_bk";
+								optics="rhsusf_acc_eotech_552";
+								muzzle="rhsusf_acc_rotex5_grey";
+								flashlight="rhsusf_acc_anpeq15_bk";
+								underBarrel="rhsusf_acc_grip1";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_negro_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_packingBandage";
+										count=4;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_morphine";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=20;
+					type="arga_s_base_gen3_negro_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="PLP_PlayAnim";
+							expression="[_this,_value] spawn {							params ['_unit','_arg'] ;							if (is3DEN) then {								_arg = _arg splitstring ',[] ' ;								_arg set [2,'objNull'] ;								_arg = '[' + (_arg joinString ',') + ']' ;							} ;							([_unit] + call compile _arg) call PLP_fnc_playAnimLegacy						}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[" \n "				""pos_calm_35_radio""," \n "				-1," \n "				objNull," \n "				false," \n "				0," \n "				""""," \n "				""""," \n "				true" \n "]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=19;
+		};
+	};
+};
