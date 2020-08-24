@@ -1,0 +1,272 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=16;
+	};
+	class MarkerIDProvider
+	{
+		nextID=12;
+	};
+	class Camera
+	{
+		pos[]={5468.3784,154.83977,17913.096};
+		dir[]={-0.50778061,-0.85976166,0.055360433};
+		up[]={-0.85469472,0.51069421,0.093182348};
+		aside[]={0.10838617,2.2994209e-007,0.99415523};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Structures_F_Enoch_Industrial_Houses",
+	"A3_Modules_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F_Enoch_Industrial";
+			name="Arma 3 Contact Platform - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=9980338;
+class ScenarioData
+{
+	author="KlosTher";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=11;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={14735.621,17.91,16530.666};
+			name="marker_0";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorWEST";
+			a=400;
+			b=1200;
+			angle=43.999996;
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={14761.746,17.869997,16543.256};
+			name="marker_1";
+			text="Base Rusa";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={4862.3989,345.56,21938.543};
+			name="foca";
+			text="Foca";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=5;
+			atlOffset=0.00042724609;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={21970.711,18.664,21022.951};
+			name="leon";
+			text="León";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=6;
+			atlOffset=-0.00024223328;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={21832.52,14.610791,20955.494};
+			name="marker_7";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=200;
+			b=200;
+			id=7;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={4862.5137,342.32617,21938.445};
+			name="marker_9";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=100;
+			b=100;
+			id=9;
+			atlOffset=-3.2733459;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5421.3496,82.825127,17900.986};
+				angles[]={0,1.5961906,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=11;
+			type="Land_Factory_02_F";
+			atlOffset=0.35934448;
+		};
+		class Item7
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5428.5537,76.196533,17890.033};
+				angles[]={6.2765174,0,6.276526};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=12;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={5421.3398,76.432999,17900.396};
+			name="marker_10";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			fillName="SolidFull";
+			a=25;
+			b=14.5;
+			angle=91.455002;
+			id=13;
+			atlOffset=0.00048828125;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={5404.1953,73.783745,17906.885};
+			name="marker_8";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=100;
+			b=100;
+			id=14;
+			atlOffset=-3.0237808;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={5404.0449,73.517998,17906.734};
+			name="cabra";
+			text="Cabra";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=15;
+			atlOffset=-3.2911301;
+		};
+	};
+};
