@@ -2,23 +2,23 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Capítulo V"                  // Colocar nombre de mision
-#define COMPLETE_NAME "Capítulo V - El Señor de la Guerra v3"  // Nombre y versión de la misión
-#define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
-#define DESCRIPTION "Desactivar la bomba y capturar a Yangyang."                              // Colocar descripcion de la mision entre las comillas
+#define NAME "Capítulo VI"                                      // Colocar nombre de mision
+#define COMPLETE_NAME "Capítulo VI - El Señor de la Guerra v1"  // Nombre y versión de la misión
+#define IMAGE "imgs\portada.paa"                                // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
+#define DESCRIPTION "Capturar a los altos mandos"               // Colocar descripcion de la mision entre las comillas
 
-author = "Maxi e Ignacio";                                    // Editor (Pone tu nombre)
-IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
-COLOR_AUTOR = "#44CC00";                            // formato .paa y en proporcion 2x1 (1024x512)
-ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
+author = "Maxi e Ignacio";                                      // Editor (Pone tu nombre)
+IMG_LOGO = "imgs\logo.paa";                                     // Nota: Las imagenes deberian estar en
+COLOR_AUTOR = "#44CC00";                                        // formato .paa y en proporcion 2x1 (1024x512)
+ES_CAMPANIA = 1;                                                // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "El Señor de la Guerra";
 INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
 INTRO = "scripts\intro_3.sqf";                                          // Intros: 1 y 2. Para desactivar: 0
 
-MAX_DIST_VISION = 200;
-MIN_DIST_VISION = 100;
+MAX_DIST_VISION = 2000;
+MIN_DIST_VISION = 2000;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual
 ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner true. Para que no aparezca poner false
 ACTIVAR_ROL_AUTOMATICO = 0;                         // Habilita la carga de rol al entrar a la misión por descripción de rol
@@ -56,15 +56,15 @@ BRIEFING
 */
 ACTIVAR_BRIEFING = 1;
 CARACTER = "Oficial";
-HORARIO = "1630hrs";
-FECHA = "21/08/2020";
-CLIMA = "Nublado con probabilidad de lluvia";
+HORARIO = "0600hrs";
+FECHA = "24/08/2020";
+CLIMA = "Despejado";
 UBICACION = "Lemnos/Altis";
-SITUACION = ["Nos encontramos en puestos de control Rusos en la entrada de Kavala. Debemos adentrarnos en la ciudad y detener esta bomba. Además, sabemos de la presencia del capitán Yangyang en la zona, debemos capturarlo con vida.", "Se sabe de la presencia de las fuerzas especiales chinas en la ciudad. Tengan cuidado, poseen tecnología muy superior a la nuestra."];               
-SITUACION_HISTORICA = ["La coalición logró capturar toda la playa y la ciudad de Panochori. Corea y China al ver que estaban perdiendo el suoreste de la isla decidió empezar un plan de retirada para hacerse fuerte en otros puestos. Pero no sin antes dejar inhabitable toda la zona. Detonaron una de las nuevas armas biológicas en el centro de Kavala. Debemos actuar rápido antes que se siga expandiendo." ];     
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["Mamut: Desactivar la bomba.", "Cabra: Capturar a Yangyang", "<img image= 'imgs\yangyang.paa' width='323' height='323'/>" ];
-RECURSOS = ["Aparecemos armados y en la entrada de Kavala", "Armamento brindado por la OTAN"];
+SITUACION = ["Gracias a la información obtenida pudimos encontrar todas las casas de seguridad que los coreanos tenían en la isla. Preparamos asaltos coordinados para atacar por sorpresa a todos los AM de la isla y terminar nuestra misión en Lemmons/Altis.", "Cóndor deberá terminar la tarea de capturar al capitán YangYang, quien creemos esta una fabrica abandonada al Nor Este de Kavala, mientras tanto Yaguar deberá capturar al capitán Man-ypung quien se refugio en un castillo al Nor Oeste de la isla. Por ultimo Yaguar 3 capturara al coronel Taeyang quien se oculta en el complejo hotelero abandonado en la bahía de Pefkas. Para la huida de Y3 logramos que civiles locales estacionen vehículos cerca del complejo para facilitar las cosas.", "Una ves todos los pelotones terminen sus misiones deberemos reunirnos en la base Rusa (Aeropuerto principal) para embarcarnos hacía Rügen/Ruguen."];               
+SITUACION_HISTORICA = ["Aun no tenemos mucha informacion de como funciona esta arma química, sin embargo la CIA esta realizando una investigación y pronto nos mandaran un informe detallando el funcionamiento.", "Luego de cumplir la misión de desactivar la bomba química pudimos recuperar archivos de localizaciones de altos mando en isla, entre ellos la posición del coronel Taeyang, quien esta a cargo de todas las operaciones en Lemnos. Lamentablemente a pesar del bloqueo a la ciudad de Kavala no pudimos capturar al capitán; por lo que creemos que escapo a una casa de seguridad." ];     
+EXTRACTO_INTELIGENCIA = ["<img image= 'imgs\taeyang.paa' width='323' height='323'/>", "<img image= 'imgs\manyoung.paa' width='323' height='323'/>", "<img image= 'imgs\yangyang.paa' width='323' height='323'/>", "<img image= 'imgs\pizarra.paa' width='323' height='323'/>"];
+OBJETIVOS = ["<marker name='leon'>León</marker>: Capturar a Taeyang", "<marker name='foca'>Foca</marker>: Capturar a Man-young", "<marker name='cabra'>Cabra</marker>: Capturar a Yangyang",  ];
+RECURSOS = ["Aparecemos armados y el los lugares marcados", "Armamento brindado por la OTAN", "4 SDV", "Vehículos de escape"];
 ENEMIGOS = ["Ejercito coreano bien entrenado", "Vehículos ligeros y medianos", "Fuerzas especiales chinas" ];
 ////////////////////////////////////////////////////////////////////////////////
 
