@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=420;
+		nextID=423;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5703.4502,371.85248,17532.598};
-		dir[]={-0.235525,-0.72588378,0.64643264};
-		up[]={-0.24850258,0.68770701,0.68205893};
-		aside[]={0.93966091,7.1239192e-006,0.34234518};
+		pos[]={5332.231,160.97551,17844.133};
+		dir[]={0.070816919,-0.42590114,0.90212715};
+		up[]={0.033331737,0.90471888,0.42464352};
+		aside[]={0.9970606,9.1310358e-007,-0.078272507};
 	};
 };
 binarizationWanted=0;
@@ -568,7 +568,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			dataType="Marker";
@@ -29447,7 +29447,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=11;
+				items=12;
 				class Item0
 				{
 					dataType="Object";
@@ -31378,6 +31378,18 @@ class Mission
 						};
 						nAttributes=2;
 					};
+				};
+				class Item11
+				{
+					dataType="Waypoint";
+					position[]={5092.8999,317.84988,21851.266};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=420;
+					type="Move";
+					atlOffset=-3.0517578e-005;
 				};
 			};
 			class Attributes
@@ -39099,6 +39111,37 @@ class Mission
 				formation="STAG COLUMN";
 			};
 			id=358;
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6117.6626,102.5273,17911.08};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=422;
+					type="B_helicrew_F";
+					atlOffset=-0.0004119873;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=421;
+			atlOffset=-0.0004119873;
 		};
 	};
 };
