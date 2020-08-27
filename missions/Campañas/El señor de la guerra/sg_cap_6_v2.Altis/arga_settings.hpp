@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Capítulo VI"                                      // Colocar nombre de mision
-#define COMPLETE_NAME "Capítulo VI - El Señor de la Guerra v1"  // Nombre y versión de la misión
+#define COMPLETE_NAME "Capítulo VI - El Señor de la Guerra v2"  // Nombre y versión de la misión
 #define IMAGE "imgs\portada.paa"                                // Colocar nombre y extension de la imagen de portada, ej "core\imgs\portada.jpg"
 #define DESCRIPTION "Capturar a los altos mandos"               // Colocar descripcion de la mision entre las comillas
 
