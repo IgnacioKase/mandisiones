@@ -1,13 +1,13 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFileLineNumbers "core\events\initServer.sqf";
+private _tests = [
+	// [["", "", ""], ""],
+	[["a reemplazar", "reemplazar", "reemplazado"], "a reemplazado"]
+];
 
-waitUntil {time > 0};
-
-execVM "scripts\intro_script_server.sqf"; 
-
+[_tests, "fnc_replaceInString"] call compile preprocessFileLineNumbers "core\tests\decorator.sqf";
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/

@@ -25,6 +25,8 @@ sleep 5;
 
 sleep 2;
 
+execVM "scripts\intro_script.sqf";
+
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6];
 "dynamicBlur" ppEffectCommit 0;

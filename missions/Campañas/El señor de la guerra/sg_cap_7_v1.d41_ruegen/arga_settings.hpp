@@ -17,7 +17,7 @@ INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
 INTRO = "scripts\intro_3.sqf";                      // Intros: 1 y 2. Para desactivar: 0
 
-MAX_DIST_VISION = 4000;
+MAX_DIST_VISION = 2000;
 MIN_DIST_VISION = 800;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual. 0: activado, 1: desactivado
 ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner true. Para que no aparezca poner false
@@ -60,17 +60,17 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 ACTIVAR_BRIEFING = 1;
-CARACTER = "No Oficial";
-HORARIO = "";
-FECHA = "";
-CLIMA = "";
-UBICACION = "";
-SITUACION = [""];               
-SITUACION_HISTORICA = [""];     
+CARACTER = "Oficial";
+HORARIO = "0100hrs";
+FECHA = "25/08/2020";
+CLIMA = "Tormentas fuertes";
+UBICACION = "Ruguen/Rügen";
+SITUACION = ["La coalición esta organizando un ataque en conjunto a posiciones militarizadas con el fin de descubrir información y la posición del arma biológica. Al llegar a destino recibiremos mas información de la misión."];               
+SITUACION_HISTORICA = ["Con la captura de los dos altos mandos en Altis (y el asesinato de un tercero) la coalición dio por finalizada nuestra misión en Lemnos. Ellos terminaran el trabajo.", "Estamos camino a Rügen. Inteligencia con los interrogatorios reveló que Corea piensa detonar una bomba en el centro de la ciudad de Stralsund. Debemos actuar rápido, encontrar esta bomba y desmantelarla. Lamentablemente desconocemos la posición de ella. Pero el capitán Man-ypung dio a conocer varias posiciones militarizadas de corea-china en la isla."];     
 EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["", ""];
-RECURSOS = ["", ""];
-ENEMIGOS = ["", ""];
+OBJETIVOS = ["Desembarcar y recibir el briefing"];
+RECURSOS = ["Arsenal en base de la coalición. Estamos viajando en C-130"];
+ENEMIGOS = ["Ejercito coreano", "Desconocido"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
@@ -83,14 +83,14 @@ RB_DISTANCIA_JUGADORES = 200;                       // Distancia en metros a los
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Camuflaje */
-ACTIVAR_COEFICIENTES_CAMUFLAJE = 0;                 // 1 Activa esta función. 0 la desactiva.
-COEFICIENTE_AUDICION = 1;                           // Valores menores hacen al jugador mas difícil de escuchar. Valores decimales ente 0 y 1.
-COEFICIENTE_CAMUFLAJE = 1;                          // Valores menores hacen al jugador mas difícil de detectar. Valores decimales ente 0 y 1.
+ACTIVAR_COEFICIENTES_CAMUFLAJE = 1;                 // 1 Activa esta función. 0 la desactiva.
+COEFICIENTE_AUDICION = 0.7;                           // Valores menores hacen al jugador mas difícil de escuchar. Valores decimales ente 0 y 1.
+COEFICIENTE_CAMUFLAJE = 0.7;                          // Valores menores hacen al jugador mas difícil de detectar. Valores decimales ente 0 y 1.
 ////////////////////////////////////////////////////////////////////////////////
 
 /* IA - CONFIGURACION */
-DESACTIVAR_IA_DE_GRUPO = 1;                         // 0 No desactiva la IA del Grupo de los jugadores, 1 la desactiva.
-DESACTIVAR_TODO_BLUFOR = 1;                         // 0 No desactiva la IA del Blufor, 1 la desactiva.
+DESACTIVAR_IA_DE_GRUPO = 0;                         // 0 No desactiva la IA del Grupo de los jugadores, 1 la desactiva.
+DESACTIVAR_TODO_BLUFOR = 0;                         // 0 No desactiva la IA del Blufor, 1 la desactiva.
 DIFICULTAD_IA_PERSONALIZADA = 0;
 AIMING_ACCURACY = 0.01;                             //precision de apuntado
 AIMING_SHAKE = 0.99; 	                            //dispersión de apuntado

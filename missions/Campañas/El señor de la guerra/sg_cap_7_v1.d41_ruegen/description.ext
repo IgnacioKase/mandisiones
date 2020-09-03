@@ -97,6 +97,16 @@ class CfgFunctions {
   };
 };
 
+class CfgSounds {
+	sounds[] = {};
+  class effect_intro
+	{
+    name = "effect_intro";
+    sound[] = {"sounds\effect_intro.ogg", 1, 1};
+    titles[] = {};
+	};
+};
+
 class Extended_InitPost_EventHandlers {
     class CAManBase {
         class initpost_units {
