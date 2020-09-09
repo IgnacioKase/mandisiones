@@ -1,0 +1,157 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=9;
+	};
+	class MarkerIDProvider
+	{
+		nextID=7;
+	};
+	class Camera
+	{
+		pos[]={6947.2236,260.7804,6858.5981};
+		dir[]={0.68103164,-0.71157181,0.17347747};
+		up[]={0.6895951,0.70253706,0.17565784};
+		aside[]={0.246876,-1.0012809e-006,-0.96916586};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=2658255;
+class ScenarioData
+{
+	author="KlosTher";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.20999999;
+		startFog=0.0099999998;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.20999999;
+		forecastFog=0.0099999998;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2019;
+		month=6;
+		day=28;
+		hour=16;
+		minute=0;
+		startFogBase=-250;
+		forecastFogBase=-250;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=7;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={7492.7642,69.949669,6578.8765};
+			name="marker_0";
+			text="Zorro";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={7492.7417,69.946983,6578.8413};
+			name="marker_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=450;
+			b=450;
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={9868.3438,14.59,9005.8818};
+			name="marker_2";
+			text="Ardilla";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=2;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={2011.7599,18.900787,11644.113};
+			name="marker_3";
+			text="Lemur";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=3;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={2011.7607,18.749361,11643.199};
+			name="marker_4";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=250;
+			b=250;
+			id=4;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={9868.8447,14.59,9006.2764};
+			name="marker_5";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=700;
+			b=300;
+			angle=33.383892;
+			id=5;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={6494.5767,17.345819,7228.5498};
+			name="marker_6";
+			text="ArgA";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=122.08666;
+			id=8;
+		};
+	};
+};
