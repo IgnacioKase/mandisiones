@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MandI
 *******************************************************************************/
 
-#define NAME "Entrenamiento Ametrallador"
-#define COMPLETE_NAME "Entrenamiento Ametrallador V1"
+#define NAME "Entrenamiento Ametrallador V2"
+#define COMPLETE_NAME "Entrenamiento Ametrallador V2"
 #define IMAGE "imgs\portada.paa"
 #define DESCRIPTION "Escuela de infanteria Oscar Poltronieri"
 
@@ -24,8 +24,8 @@ ACTIVAR_ROL_AUTOMATICO = 0;                         // Habilita la carga de rol 
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
 ACTIVAR_INSIGNIA_AUTOMATICO = 1;                    // Añadir a arga_settings
 INSIGNIA_IR = 0;                                    // establece si las insignias son IR o normales
-CAMPO_CORRER = 1;
-ESCENARIO = 1;
+CAMPO_CORRER = 0;
+ESCENARIO = 0;
 
 /* 
 EQUIPAMIENTO
