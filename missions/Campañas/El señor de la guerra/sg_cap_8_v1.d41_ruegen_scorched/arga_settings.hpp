@@ -17,7 +17,7 @@ INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
 INTRO = "scripts\intro_3.sqf";                      // Intros: 1 y 2. Para desactivar: 0
 
-MAX_DIST_VISION = 2500;
+MAX_DIST_VISION = 1500;
 MIN_DIST_VISION = 800;
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual. 0: activado, 1: desactivado
 ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner true. Para que no aparezca poner false
@@ -68,7 +68,7 @@ UBICACION = "Ruguen/Rügen";
 SITUACION = ["Nos encontramos por desembarcar a las afueras del objetivo Zorro. La coalición decidió capturar este punto clave para cortar el paso norte-sur. Nuestra parte en esta primer objetivo es facilitar la entrada de la OTAN y de la caballería para que se puedan hacer fuertes en la zona.", "El control total de Zorro esta a cargo de la OTAN, por lo que llegado el momento nos relevaran a los siguientes objetivos.", "Objetivo Lémur, un pelotón deberá dirigirse al objetivo Lémur donde inteligencia, mediante los interrogatorios, descubrió unos servidores con información del arma biológica de vital importancia. Deberán llevar un ingeniero hasta la posición, cubrirlo mientras extrae la información y escapar de la zona.", "Objetivo Ardilla, es una posición fuertemente militarizada de China en la isla. Debemos atacarla, sabotear arsenales, vehículos y buscar inteligencia en la zona. Posibilidad de alto mando en la base."];               
 SITUACION_HISTORICA = ["En la última misión los coreanos nos sorprendieron con un ataque a nuestras posiciones en la isla, por lo que perdimos el poco territorio que controlábamos. Hace escasas horas llegó la séptima flota a las cercanías de la isla. Ahora, teniendo el fuerte apoyo armamentístico, la coalición decidió retomar posiciones ventajosas y coordinar unos objetivos prioritarios."];     
 EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["Zorro: Atacar y despejar el objetivo", "Ardilla: Atacar y sabotear", "Lémur: Atacar y extraer información"];
+OBJETIVOS = ["<marker name='zorro'>Zorro</marker>: Atacar y despejar el objetivo", "<marker name='ardilla'>Ardilla</marker>: Atacar y sabotear", "<marker name='lemur'>Lémur</marker>: Atacar y extraer información"];
 RECURSOS = ["Vehículos brindados por la OTAN al llegar al objetivo Zorro"];
 ENEMIGOS = ["Ejercito coreano", "Ejercito Chino", "Desconocido"];
 ////////////////////////////////////////////////////////////////////////////////
