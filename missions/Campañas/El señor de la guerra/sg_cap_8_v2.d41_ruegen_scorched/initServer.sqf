@@ -4,10 +4,6 @@
 
 call compile preprocessFileLineNumbers "core\events\initServer.sqf";
 
-waitUntil {time > 0};
-
-execVM "scripts\intro_script_server.sqf"; 
-
 /*******************************************************************************
                           Realizado por |ArgA|MIV
 *******************************************************************************/
