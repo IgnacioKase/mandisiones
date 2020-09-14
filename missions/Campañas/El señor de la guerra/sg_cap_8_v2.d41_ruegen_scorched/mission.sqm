@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1575;
+		nextID=1580;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={7078.5122,123.62154,6871.894};
-		dir[]={-0.68778622,-0.35153139,-0.63527697};
-		up[]={-0.25837368,0.93610948,-0.23864512};
-		aside[]={-0.67857379,-1.1324883e-006,0.7346673};
+		pos[]={6605.5337,871.24078,6054.7856};
+		dir[]={-0.051486455,-0.71002072,0.70232522};
+		up[]={-0.051911931,0.70417833,0.70812362};
+		aside[]={0.99734396,-8.6173532e-007,0.073116392};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"arga_uniforme",
 	"ace_medical",
 	"ace_hearing",
+	"adv_aceSplint",
 	"ace_maptools",
 	"ace_captives",
 	"arga_chaleco",
@@ -53,6 +54,7 @@ addons[]=
 	"ace_huntir",
 	"A3_Weapons_F_Acc",
 	"ace_optics",
+	"adv_aceCPR",
 	"A3_Weapons_F_Explosives",
 	"ace_explosives",
 	"ace_logistics_wirecutter",
@@ -102105,7 +102107,7 @@ class Mission
 			{
 				sizeA=1200;
 				sizeB=1200;
-				sizeC=1000;
+				sizeC=250;
 				activationBy="ANYPLAYER";
 			};
 			id=1041;
@@ -147950,12 +147952,13 @@ class Mission
 		class Item279
 		{
 			dataType="Marker";
-			position[]={-4270.1909,-91.980598,11044.186};
+			position[]={-4270.1909,-91.981003,11044.186};
 			name="vision";
 			text="Vision";
 			type="Empty";
 			colorName="ColorPink";
 			id=1499;
+			atlOffset=-0.00040435791;
 		};
 		class Item280
 		{
