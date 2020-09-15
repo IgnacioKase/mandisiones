@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1575;
+		nextID=1577;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7078.5122,123.62154,6871.894};
-		dir[]={-0.68778622,-0.35153139,-0.63527697};
-		up[]={-0.25837368,0.93610948,-0.23864512};
-		aside[]={-0.67857379,-1.1324883e-006,0.7346673};
+		pos[]={-389.44815,25.924696,7653.6816};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"arga_uniforme",
 	"ace_medical",
 	"ace_hearing",
+	"adv_aceSplint",
 	"ace_maptools",
 	"ace_captives",
 	"arga_chaleco",
@@ -53,6 +54,7 @@ addons[]=
 	"ace_huntir",
 	"A3_Weapons_F_Acc",
 	"ace_optics",
+	"adv_aceCPR",
 	"A3_Weapons_F_Explosives",
 	"ace_explosives",
 	"ace_logistics_wirecutter",
@@ -657,7 +659,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=330;
+		items=332;
 		class Item0
 		{
 			dataType="Marker";
@@ -148300,9 +148302,9 @@ class Mission
 			{
 				position[]={-498.17599,0.68846893,8247.332};
 			};
-			name="hc";
+			name="hc1";
 			isPlayable=1;
-			description="hc";
+			description="hc1";
 			id=1506;
 			type="HeadlessClient_F";
 			atlOffset=22.201998;
@@ -151584,6 +151586,34 @@ class Mission
 			};
 			id=1574;
 			type="EmptyDetector";
+		};
+		class Item330
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={-371.10101,22.446182,7036.5161};
+			};
+			name="hc2";
+			isPlayable=1;
+			description="hc2";
+			id=1575;
+			type="HeadlessClient_F";
+			atlOffset=31.544001;
+		};
+		class Item331
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={-224.32001,32.34124,6229.2212};
+			};
+			name="hc3";
+			isPlayable=1;
+			description="hc3";
+			id=1576;
+			type="HeadlessClient_F";
+			atlOffset=22.202;
 		};
 	};
 	class Connections
