@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2397;
+		nextID=2401;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3212.8262,301.75507,5794.1284};
-		dir[]={0.64089888,-0.61608392,0.45795348};
-		up[]={0.50127226,0.78767496,0.35818362};
-		aside[]={0.58138996,3.4732511e-007,-0.81364733};
+		pos[]={3209.2854,82.936272,9304.7324};
+		dir[]={0.54710484,-0.41465837,-0.72717965};
+		up[]={0.24930708,0.90996504,-0.33136493};
+		aside[]={-0.79910839,6.5818313e-008,-0.60122204};
 	};
 };
 binarizationWanted=0;
@@ -611,7 +611,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=341;
+		items=342;
 		class Item0
 		{
 			dataType="Marker";
@@ -184696,16 +184696,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3193.511,5.2844987,9491.7178};
+				position[]={3193.511,5.2840705,9491.7178};
 				angles[]={0,0.2617994,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=2376;
 			type="Land_PortableServer_01_black_F";
+			atlOffset=0.3467145;
 		};
 		class Item325
 		{
@@ -184770,6 +184770,7 @@ class Mission
 			};
 			id=2380;
 			type="Land_PortableServer_01_black_F";
+			atlOffset=0.00042819977;
 		};
 		class Item329
 		{
@@ -184808,16 +184809,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3191.3643,5.0390782,9490.7881};
-				angles[]={0,4.1516762,0};
+				position[]={3191.364,5.0390725,9490.7881};
+				angles[]={0,4.1516843,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				name="server";
 			};
 			id=2383;
 			type="Land_Laptop_unfolded_F";
+			atlOffset=0.8130002;
 		};
 		class Item332
 		{
@@ -184889,15 +184891,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3713.8994,8.0525265,6101.6289};
+				position[]={3713.8989,8.05264,6101.6289};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="bomba";
 			};
 			id=2390;
 			type="Land_Device_assembled_F";
+			atlOffset=0.00011348724;
 		};
 		class Item337
 		{
@@ -185200,6 +185204,312 @@ class Mission
 			};
 			id=2396;
 			type="EmptyDetector";
+		};
+		class Item341
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3713.8069,7.332325,6096.5981};
+						angles[]={0,0.0012740904,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";}";
+						name="target_arga_bomb";
+						isPlayable=1;
+						disableSimulation=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_hk416d145_m320";
+								optics="rhsusf_acc_ACOG_RMR";
+								flashlight="rhsusf_acc_wmx_bk";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red";
+									ammoLeft=30;
+								};
+								class secondaryMuzzleMag
+								{
+									name="rhs_mag_M397_HET";
+									ammoLeft=1;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_glock17g4";
+								class primaryMuzzleMag
+								{
+									name="rhsusf_mag_17Rnd_9x19_JHP";
+									ammoLeft=17;
+								};
+							};
+							class binocular
+							{
+								name="Rangefinder";
+							};
+							class uniform
+							{
+								typeName="arga_u_gen3_bosque_multicam";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=10;
+									class Item0
+									{
+										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_epinephrine";
+										count=3;
+									};
+									class Item2
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item4
+									{
+										name="ACE_CableTie";
+										count=3;
+									};
+									class Item5
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item6
+									{
+										name="adv_aceSplint_splint";
+										count=3;
+									};
+									class Item7
+									{
+										name="ACE_tourniquet";
+										count=3;
+									};
+									class Item8
+									{
+										name="ACE_elasticBandage";
+										count=9;
+									};
+									class Item9
+									{
+										name="ACE_packingBandage";
+										count=10;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="arga_c_pesado_negro_liso";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="SmokeShellBlue";
+										count=4;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="ACE_M84";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhsusf_mag_17Rnd_9x19_JHP";
+										count=2;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACRE_PRC152";
+										count=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="arga_m_petate_negro_liso";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_HuntIR_M203";
+										count=4;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="HandGrenade";
+										count=4;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="1Rnd_HE_Grenade_shell";
+										count=15;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_M397_HET";
+										count=3;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="ACE_HuntIR_monitor";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACRE_PRC117F";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							gps="ItemGPS";
+							goggles="avon_fm12";
+							headgear="arga_cas_combate_negro_liso";
+						};
+					};
+					id=2400;
+					type="arga_s_base_gen3_bosque_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="condor_1";
+			};
+			id=2399;
 		};
 	};
 	class Connections

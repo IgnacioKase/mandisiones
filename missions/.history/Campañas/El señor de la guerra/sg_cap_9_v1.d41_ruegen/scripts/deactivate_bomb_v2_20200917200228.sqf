@@ -22,6 +22,13 @@ MENU_PRINCIPAL =
 	["Ingresar código de desactivación (Menú)", "CODIDO_DESACTIVACION"]] call ADD_ACTION;
 };
 
+MANDI_ESTADO_CABLES = false;
+MANDI_PASSOWRD_PREVIO = "NULL";
+MANDI_INTENTOS_FALLIDOS = 0;
+MANDI_ESTADO_PASSWORD = false;
+MANDI_ESTADO_DESACTIVACION = false;
+MANDI_BOMBA_DESACTIVADA = false;
+
 /*******************************************************************************
 								Obtener información
 *******************************************************************************/
@@ -44,8 +51,6 @@ OBTENER_RECUPERACION =
 /*******************************************************************************
 								Menú Cables 
 *******************************************************************************/
-
-MANDI_ESTADO_CABLES = false;
 
 CORTAR_CABLES =
 {
@@ -77,10 +82,6 @@ CORTAR_CABLE =
 /*******************************************************************************
 								Menú Contraseña 
 *******************************************************************************/
-
-MANDI_PASSOWRD_PREVIO = "NULL";
-MANDI_INTENTOS_FALLIDOS = 0;
-MANDI_ESTADO_PASSWORD = false;
 
 INGRESAR_PASSWORD = 
 {
@@ -147,8 +148,6 @@ PULSAR_PASSWORD =
 								Menú Desactivación 
 *******************************************************************************/
 
-MANDI_ESTADO_DESACTIVACION = false;
-
 CODIDO_DESACTIVACION =
 {
 	["1JV86", ["INGRESAR_CODIDO_DESACTIVACION", "1JV86"]] call ADD_ACTION;
@@ -180,7 +179,6 @@ INGRESAR_CODIDO_DESACTIVACION =
 								Bomba 
 *******************************************************************************/
 
-MANDI_BOMBA_DESACTIVADA = false;
 
 CHEQUEAR_DESACTIVACION_COMPLETA =
 {
