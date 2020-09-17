@@ -1,0 +1,38 @@
+/*******************************************************************************
+                          Realizado por |ArgA|MandI
+*******************************************************************************/
+#include "core\private_settings.hpp"
+#include "arga_settings.hpp"
+#include "core\pre_description.hpp"
+
+class CfgFunctions {
+  #include "core\functions.hpp"
+};
+
+#include "core\post_description.hpp"
+
+class CfgSounds {
+	sounds[] = {};
+  class MANDI_TRUMPET
+	{
+    name = "MANDI_TRUMPET";
+    sound[] = {"core\sounds\Track_trumpet.ogg", 1, 1};
+    titles[] = {};
+	};
+  class MANDI_ANTHEM
+	{
+    name = "MANDI_ANTHEM";
+    sound[] = {"core\sounds\Track_anthem.ogg", 1, 1};
+    titles[] = {};
+	};
+  class MANDI_BUS
+	{
+    name = "MANDI_BUS";
+    sound[] = {"core\sounds\Tack_bus.ogg", 1, 1};
+    titles[] = {};
+	};
+};
+
+/*******************************************************************************
+                          Realizado por |ArgA|MandI
+*******************************************************************************/
