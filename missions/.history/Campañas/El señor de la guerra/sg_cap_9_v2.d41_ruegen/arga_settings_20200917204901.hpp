@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Capítulo IX"    
-#define COMPLETE_NAME "Capítulo IX - El Señor de la Guerra v1" 
+#define COMPLETE_NAME "Capítulo IX - El Señor de la Guerra v2" 
 #define IMAGE "imgs\portada.paa"               
 #define DESCRIPTION "Desactivar el dispositivo"
 
@@ -67,7 +67,7 @@ CLIMA = "Parcialmente nublado";
 UBICACION = "Ruguen/Rügen";
 SITUACION = ["Nos encontramos divididos en los tres puntos estratégicos. Se procede a detallar cada objetivo en particular:", "Objetivo Barracuda: el equipo de operaciones especiales de ArgA (Yaguar 3) deberá hacer una incursión a los astilleros de Rügen donde los coreanos están realizando tareas de mantenimiento a un submarino nuclear. Sabemos que Young Mi se encuentra en las instalaciones. Es la persona detrás de todo esto. Deben capturarlo con vida. Encuentren una vía o vehículos de escape.", "Objetivo Gato: el equipo Cóndor se encuentra fuera de unas instalaciones fuertemente defendidas de Corea. Se sabe que en unas instalaciones subterráneas de esta base se encuentra el dispositivo biológico a punto de trasladarse a Stralsund. El dispositivo ya esta activo y dependen de Yaguar para desactivarlo. (Activo pero no detonado). Se sabe que el dispositivo esta programado para detonar a las 0900. Por lo que tenemos exactamente 2 Horas para realizar la operación. Caso contrario habremos fallado y Rügen se encontrara sumergido en una nube toxica matando así a miles de inocentes civiles.", "Objetivo Perro: el equipo Yaguar deberá acceder al laboratorio de Rügen donde deberán acceder a los servidores para descubrir los codigos y procedimientos de desactivación de la bomba.", "Dato de vital importancia: se tarda 15 minutos en el proceso de desactivación. Por lo que tenemos hasta las 0845 horas para iniciar el proceso de desactivación o toda la operación habrá fallado rotundamente.", "Al terminar la operación dirigirse con los aéreos a la séptima flota."];               
 SITUACION_HISTORICA = ["Un equipo especial ruso completo el objetivo Lémur de la pasada operación. Consiguiendo así valiosa información de los servidores coreanos.", "En la información obtenida se detecto que el próximo 3 de septiembre piensan detonar la bomba en la principal ciudad de la isla.", "La coalición preparó un ataque coordinado a tres puntos de vital importancia. No podemos fallar. Rügen depende de nosotros."];     
-EXTRACTO_INTELIGENCIA = [""];
+EXTRACTO_INTELIGENCIA = ["<img image='imgs\youngmi.paa' width='323' height='323'/>"];
 OBJETIVOS = ["<marker name='barracuda'>Barracuda</marker>: Capturar a Young Mi. Escapar de la zona.", "<marker name='perro'>Perro</marker>: Conseguir procedimientos de desactivación en los laboratorios", "<marker name='gato'>Gato</marker>: Encontrar y desactivar el dispositivo biológico"];
 RECURSOS = ["Armamento brindado por la OTAN", "5 M1240 (M2) (MRAP) y 2 UH-60 por pelotón", "Yaguar 3: 4 SVD", "Mascaras de gas."];
 ENEMIGOS = ["Ejercito coreano", "Fuerzas especiales chinas", "Instalaciones fuertemente defendidas", "Vehículos fuertemente blindados"];

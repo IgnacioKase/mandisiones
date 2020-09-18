@@ -16,7 +16,7 @@ switch (_objective) do {
 	case "gato": { 
 		_WAVES = [
 			[1, [e_1, e_2, e_3, e_4, e_5, e_6, b_1, b_2, b_3, b_4, b_5, b_6, v_1, v_2]], 
-			[1, [e_7, e_8, e_9, e_10, e_11, b_7, b_8, b_9, b_10, b_11, v_3, r_1, r_2, r_3, r_4, h_1]],
+			[, [e_7, e_8, e_9, e_10, e_11, b_7, b_8, b_9, b_10, b_11, v_3, r_1, r_2, r_3, r_4, h_1]],
 			[1, [e_12, e_13, e_14, e_15, e_16, e_17, e_18, e_19, e_20, e_21, b_12, b_13, b_14, b_15, b_16, b_17, v_4, v_5, r_5, r_6, r_7, r_8, r_9, r_10, h_2]]
 		];
 		[comandante, "Múltiples objetivos acercandose hacia Gato"] remoteExec ["sideChat", 0, true];
