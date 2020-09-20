@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Capítulo IX"    
-#define COMPLETE_NAME "Capítulo IX - El Señor de la Guerra v3" 
+#define COMPLETE_NAME "Capítulo IX - El Señor de la Guerra v4" 
 #define IMAGE "imgs\portada.paa"               
 #define DESCRIPTION "Desactivar el dispositivo"
 
