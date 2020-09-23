@@ -1,0 +1,318 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=11;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={10839.647,321.80032,12944.206};
+		dir[]={-0.57823926,-0.57319623,0.58062309};
+		up[]={-0.40448898,0.81940705,0.40615585};
+		aside[]={0.70857382,5.3230906e-008,0.7056632};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Characters_F",
+	"A3_Soft_F_Exp_LSV_02"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Soft_F_Exp";
+			name="Arma 3 Apex - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=16763735;
+class ScenarioData
+{
+	author="KlosTher";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=10;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={10501.442,57.383999,14309.998};
+			name="marker_0";
+			text="Kvas";
+			type="mil_objective";
+			colorName="ColorEAST";
+			id=0;
+			atlOffset=0.00040054321;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={10789.419,316.08499,12964.71};
+			name="marker_1";
+			text="Shchi ";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=351.65698;
+			id=1;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={6893.769,278.79599,11434.165};
+			name="marker_2";
+			text="Mors";
+			type="mil_objective";
+			colorName="ColorEAST";
+			angle=161.37799;
+			id=2;
+			atlOffset=-115.65421;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={6956.9971,156.38901,12422.663};
+			name="marker_3";
+			text="Okroshka";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=180.13295;
+			id=3;
+			atlOffset=-0.00022888184;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={13357.86,65.580002,12056.846};
+			name="marker_4";
+			text="Vodka ";
+			type="mil_objective";
+			colorName="ColorEAST";
+			angle=233.57399;
+			id=4;
+			atlOffset=8.392334e-005;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={13859.876,31.069,12797.36};
+			name="marker_5";
+			text="Borsh ";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=225.23099;
+			id=5;
+			atlOffset=0.00013923645;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={3139.936,429.03201,14612.2};
+			name="marker_6";
+			text="Kefir";
+			type="mil_objective";
+			colorName="ColorEAST";
+			angle=196.79399;
+			id=6;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={3497.564,281.258,13760.951};
+			name="marker_7";
+			text="Solianka ";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=333.03201;
+			id=7;
+			atlOffset=-71.132813;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10834.644,316.37561,12952.673};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=9;
+					type="B_Competitor_F";
+					atlOffset=0.00030517578;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+			atlOffset=0.00030517578;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10835.15,319.13745,12947.737};
+				angles[]={0.20635466,0.68139493,6.1954112};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Black";
+			};
+			id=10;
+			type="O_LSV_02_unarmed_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Unarmed_Doors_Hide";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+	};
+};
