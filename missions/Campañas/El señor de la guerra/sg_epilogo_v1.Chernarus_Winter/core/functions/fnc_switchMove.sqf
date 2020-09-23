@@ -1,11 +1,10 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+params["_object","_anim"];
+_object switchMove _anim;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/

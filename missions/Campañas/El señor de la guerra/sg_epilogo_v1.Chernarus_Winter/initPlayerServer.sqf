@@ -2,9 +2,7 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+call compile preprocessFileLineNumbers "core\events\initPlayerServer.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

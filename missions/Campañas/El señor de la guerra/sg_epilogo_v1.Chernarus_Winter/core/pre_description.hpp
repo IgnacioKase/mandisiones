@@ -2,9 +2,18 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+enableDebugConsole = 1;
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+allowFunctionsLog = 1;
+
+//disableChannels[]={{0, true, true}, {1, true, true}, {2, true, true},{3, false, true}, {4, true, true}, {6, true, true}};
+
+respawnOnStart = 0;
+
+class Header {
+    gameType=coop;
+    minPlayers=1;
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

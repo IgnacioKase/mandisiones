@@ -1,11 +1,12 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+params ["_object", "_state"];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+_object enableSimulationGlobal _state;
+_object hideObjectGlobal !_state;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

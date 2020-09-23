@@ -1,11 +1,18 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+params [["_allStands", []]];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+private _rol = "";
+
+{
+	_rol = _x getVariable ["MANDI_STAND_ROL", ""];
+	if (_rol != "") then {
+		[_x, _rol] call MANDI_fnc_setStand;
+	};
+} forEach _allStands;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

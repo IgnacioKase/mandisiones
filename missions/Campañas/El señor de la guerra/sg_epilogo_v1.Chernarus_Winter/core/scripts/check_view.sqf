@@ -1,11 +1,17 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+if (difficultyOption "thirdPersonView" == 1) then {
+    while {true} do {
+        if (cameraView == "External") then
+        {
+            player switchCamera "Internal";
+        };
+        sleep 0.1;
+    };
+};
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|Ignacio
 *******************************************************************************/

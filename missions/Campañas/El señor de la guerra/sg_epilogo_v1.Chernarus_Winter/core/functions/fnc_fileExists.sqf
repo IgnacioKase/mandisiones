@@ -1,11 +1,22 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+params ["_fileName"];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+private _existsFile = true;
+private _fileLoaded = "";
+
+try{
+	_fileLoaded = loadFile _fileName; }
+catch{ 
+	_existsFile = false;
+};
+
+if (_fileLoaded == "") then { _existsFile = false; };
+
+_existsFile
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/

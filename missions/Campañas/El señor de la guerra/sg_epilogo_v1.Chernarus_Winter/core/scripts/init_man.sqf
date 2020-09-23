@@ -1,11 +1,17 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+params ["_unit"];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+if (isNil "_unit") exitWith { };
+
+if (!isPlayer _unit) exitWith { };
+
+_unit action ["SwitchWeapon", _unit, _unit, 100];
+_unit disableAI "ALL";
+//_unit allowDamage false;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

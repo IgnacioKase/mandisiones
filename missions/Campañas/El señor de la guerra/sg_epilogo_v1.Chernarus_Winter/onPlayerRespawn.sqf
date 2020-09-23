@@ -2,9 +2,7 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+call compile preprocessFile "core\events\onPlayerRespawn.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

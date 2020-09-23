@@ -8,6 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
+<<<<<<< HEAD
 		nextID=1301;
 	};
 	class MarkerIDProvider
@@ -24,6 +25,20 @@ class EditorData
 		dir[]={-0.27420089,-0.83477432,0.47750971};
 		up[]={-0.4156954,0.55057687,0.72391862};
 		aside[]={0.86721593,-4.6798959e-008,0.49798051};
+=======
+		nextID=30;
+	};
+	class MarkerIDProvider
+	{
+		nextID=3;
+	};
+	class Camera
+	{
+		pos[]={10094.65,223.48055,13060.04};
+		dir[]={-0.90911919,-0.41113314,0.068143368};
+		up[]={-0.4100039,0.9115569,0.030731754};
+		aside[]={0.07475125,9.8798773e-007,0.99728179};
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 	};
 };
 binarizationWanted=0;
@@ -77,6 +92,7 @@ addons[]=
 	"ace_concertina_wire",
 	"rhs_c_radars",
 	"A3_Characters_F",
+<<<<<<< HEAD
 	"acre_main",
 	"A3_Characters_F_Enoch_Facewear",
 	"po_factions_eu",
@@ -101,12 +117,28 @@ addons[]=
 	"A3_Modules_F_ObjectModifiers",
 	"rhs_c_a2port_armor",
 	"rhs_c_tanks"
+=======
+	"rhsusf_c_weapons",
+	"A3_Weapons_F",
+	"acre_main",
+	"A3_Characters_F_Orange_Facewear",
+	"ace_goggles",
+	"ace_hearing",
+	"A3_Weapons_F_Items",
+	"ace_medical",
+	"A3_Soft_F_Exp_LSV_02",
+	"A3_Structures_F_EPC_Items_Electronics"
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 };
 class AddonsMetaData
 {
 	class List
 	{
+<<<<<<< HEAD
 		items=59;
+=======
+		items=11;
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -294,11 +326,61 @@ class AddonsMetaData
 		};
 		class Item27
 		{
+			className="rhsusf_c_weapons";
+			name="RHSUSF Weapons & Accessories";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="acre_main";
+			name="ACRE2 - Main";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
+		};
+		class Item5
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item7
+		{
+			className="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item9
+		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+<<<<<<< HEAD
 		class Item28
 		{
 			className="acre_sys_radio";
@@ -497,6 +579,15 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+=======
+		class Item10
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 	};
 };
 randomSeed=16763735;
@@ -506,37 +597,70 @@ class ScenarioData
 };
 class CustomAttributes
 {
+<<<<<<< HEAD
+=======
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 };
 class Mission
 {
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.25;
-		startWind=0.1;
+		startWeather=1;
+		startFog=0.087637588;
+		startWind=0.59742439;
 		startWaves=0.1;
-		forecastWeather=0.25;
-		forecastWind=0.1;
+		forecastWeather=1;
+		forecastFog=0.087637588;
+		forecastWind=0.59742439;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		wavesForced=1;
 		windForced=1;
-		year=2008;
-		month=10;
-		day=11;
-		hour=9;
-		minute=20;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		year=2020;
+		month=9;
+		hour=16;
+		startFogBase=308.23001;
+		forecastFogBase=308.23001;
+		startFogDecay=0.0087637594;
+		forecastFogDecay=0.0070976266;
 	};
 	class Entities
 	{
+<<<<<<< HEAD
 		items=283;
+=======
+		items=21;
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 		class Item0
 		{
 			dataType="Marker";
 			position[]={10501.442,57.383999,14309.998};
-			name="marker_0";
+			name="kvas";
 			text="Kvas";
 			type="mil_objective";
 			colorName="ColorEAST";
@@ -559,7 +683,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={6893.769,278.79599,11434.165};
-			name="marker_2";
+			name="mors";
 			text="Mors";
 			type="mil_objective";
 			colorName="ColorEAST";
@@ -582,8 +706,13 @@ class Mission
 		class Item4
 		{
 			dataType="Marker";
+<<<<<<< HEAD
 			position[]={13341.964,66.804688,12075.393};
 			name="marker_4";
+=======
+			position[]={13357.86,65.580002,12056.846};
+			name="vodka";
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 			text="Vodka ";
 			type="mil_objective";
 			colorName="ColorEAST";
@@ -599,7 +728,11 @@ class Mission
 			text="Borsh ";
 			type="mil_start";
 			colorName="ColorWEST";
+<<<<<<< HEAD
 			angle=225.23083;
+=======
+			angle=225.2308;
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 			id=5;
 			atlOffset=0.00013923645;
 		};
@@ -607,7 +740,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3139.936,429.03201,14612.2};
-			name="marker_6";
+			name="kefir";
 			text="Kefir";
 			type="mil_objective";
 			colorName="ColorEAST";
@@ -646,9 +779,88 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+<<<<<<< HEAD
 						description="Líder General (Borsh) @Comandancia";
 						isPlayable=1;
 						class Inventory
+=======
+						isPlayer=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4a1";
+								optics="rhsusf_acc_ACOG_RMR";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_Competitor";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Shades_Green";
+							headgear="H_Cap_headphones";
+						};
+					};
+					id=9;
+					type="B_Competitor_F";
+					atlOffset=0.00030517578;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+			atlOffset=0.00030517578;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10835.15,319.13745,12947.737};
+				angles[]={0.20635466,0.68139493,6.1954112};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Black";
+			};
+			id=10;
+			type="O_LSV_02_unarmed_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+					class Value
+					{
+						class data
+>>>>>>> 501bfc045f99a22f911a93233f697c66327001c1
 						{
 							class primaryWeapon
 							{
@@ -89862,6 +90074,394 @@ class Mission
 					type="Sync";
 				};
 			};
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4399.3613,339.00143,10757.87};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=0.89142674;
+						init="call{this disableAI ""PATH"";}";
+						name="desactivador";
+						description="desactivador";
+					};
+					id=12;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="desactivador";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4397.375,339.00143,10760.594};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=0.89142674;
+						init="call{this disableAI ""PATH"";}";
+						name="comandante";
+						description="comandante";
+					};
+					id=14;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=13;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="comandante";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10506.707,6.7216406,2278.6479};
+				angles[]={0,5.6467509,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="bomba";
+			};
+			id=16;
+			type="Land_Device_assembled_F";
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={10506.282,6,2279.1531};
+			name="sbiten";
+			text="Sbiten";
+			type="mil_objective";
+			colorName="ColorEAST";
+			alpha=0;
+			angle=233.57399;
+			id=17;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={10505.545,6,2273.3689};
+			name="sbiten_area";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			alpha=0;
+			a=250;
+			b=250;
+			id=18;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={6711.54,6,2599.251};
+			name="medovuja";
+			text="Medovuja";
+			type="mil_objective";
+			colorName="ColorEAST";
+			alpha=0;
+			angle=233.57399;
+			id=20;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={6710.8018,6,2593.467};
+			name="medovuja_area";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorEAST";
+			alpha=0;
+			a=450;
+			b=450;
+			id=21;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={134.92218,328.20352,9544.1494};
+			name="vision";
+			text="Vision";
+			type="Empty";
+			colorName="ColorPink";
+			id=26;
+		};
+		class Item18
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={37.952,323.52191,8535.665};
+			};
+			name="hc";
+			isPlayable=1;
+			description="hc";
+			id=27;
+			type="HeadlessClient_F";
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={76.740417,286.30399,6033.8462};
+				angles[]={6.2525311,0,0.06656827};
+			};
+			name="hc_3";
+			isPlayable=1;
+			description="hc_3";
+			id=28;
+			type="HeadlessClient_F";
+		};
+		class Item20
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={37.952271,267.5155,7333.2383};
+				angles[]={5.960238,0,0.18583117};
+			};
+			name="hc_2";
+			isPlayable=1;
+			description="hc_2";
+			id=29;
+			type="HeadlessClient_F";
 		};
 	};
 };
