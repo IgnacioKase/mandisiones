@@ -1,11 +1,13 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+private _tests = [
+	// [["", "", ""], ""],
+	[["a reemplazar", "reemplazar", "reemplazado"], "a reemplazado"]
+];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
-
+[_tests, "fnc_replaceInString"] call compile preprocessFileLineNumbers "core\tests\decorator.sqf";
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                            Realizado por |ArgA|MIV
 *******************************************************************************/

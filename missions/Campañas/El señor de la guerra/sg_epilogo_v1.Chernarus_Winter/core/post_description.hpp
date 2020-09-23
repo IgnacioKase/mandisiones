@@ -2,9 +2,13 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class initpost_units {
+            init = "_this call compile preprocessFileLineNumbers 'core\scripts\init_man.sqf'";
+        };
+    };
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

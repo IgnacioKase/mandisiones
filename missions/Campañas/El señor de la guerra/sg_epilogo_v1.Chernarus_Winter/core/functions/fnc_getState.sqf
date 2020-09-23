@@ -1,11 +1,17 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+params [["_unit", player]];
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+private _state = "alive"; 
+ 
+if (!(alive _unit) || _unit getvariable ["ACE_isUnconscious", false]) then { 
+ _state = "kia"; 
+}; 
+
+_state;
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

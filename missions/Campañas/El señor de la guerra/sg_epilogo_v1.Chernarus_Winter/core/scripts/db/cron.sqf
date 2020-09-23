@@ -2,9 +2,17 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+if (!(call MIV_fnc_isLogSystemEnabled)) exitWith { };
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+private _count = 0;
+
+while { _count < 5000} do {
+	[allPlayers, "info"] execVM "core\scripts\db\querys\write_log.sqf";
+	_count = _count + 1;
+	sleep 120;
+};
+
+execVM "core\scripts\db\cron.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

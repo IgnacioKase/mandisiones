@@ -1,11 +1,13 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
+if (!isServer) exitWith { };
 
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+private _allStands = ["Land_InfoStand_V1_F"] call MANDI_fnc_getObjects_server;
+
+[[_allStands], "core\scripts\handle_stands.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
 
 /*******************************************************************************
-                          Realizado por |ArgA|MIV
+                          Realizado por |ArgA|MandI
 *******************************************************************************/

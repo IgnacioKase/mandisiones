@@ -2,9 +2,7 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFile "core\events\initServer.sqf";
-
-[340,6000,false,false,false,0.6] execvm "AL_dust_storm\al_duststorm.sqf";
+[[player, "respawn"], "core\scripts\db\querys\write_log.sqf"] remoteExec ["BIS_fnc_execVM", 2, false];
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV
