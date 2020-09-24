@@ -68,7 +68,7 @@ CLIMA = "Tormenta";
 UBICACION = "Costas de Rusia/Chernarus";
 SITUACION = ["Para las 1700 horas esta planeado un ataque a las ciudades de Elektrozavodsk y Chernogorsk donde se creen detonaron la bomba.", "Antes de que la infantería entre en las ciudades el grupo Spetsnaz deberá cumplir con cuatro objetivos para facilitar la tarea. Para ello nos dividiremos en cuatro escuadras y realizar un ataque coordinado para que no puedan mandar refuerzos."];               
 SITUACION_HISTORICA = ["Pasó una semana desde la explosión de la bomba en Ruguen. La OTAN logro desarmar la bomba hace cuatro días y ahora se encuentran limpiando la zona sin demasiado éxito.", "Debido a que la coalición estaba centrada en la isla de Ruguen, Corea junto con China aprovechó para mover el resto de sus tropas a las costas de Rusia (Chernarus) donde se fortificaron y detonaron una cuarta bomba. Desconocemos su ubicación y debido a la dispersión de las fuerzas no pudimos responder rápidamente. No podemos contar con el apoyo de la OTAN ni de ArgA, por lo que tendremos que hacernos cargos del asunto nosotros solos."];     
-EXTRACTO_INTELIGENCIA = ["<img image='imgs\youngmi.paa' width='323' height='323'/>"];
+EXTRACTO_INTELIGENCIA = [""];
 OBJETIVOS = ["<marker name='vodka'>Vodka</marker>: Destruir sistema SAM.", "<marker name='kvas'>Kvas</marker>: Destruir antena de comunicaciones.", "<marker name='mors'>Mors</marker>: Destruir radar", "<marker name='kefir'>Kefir</marker>: Destruir Artilleria"];
 RECURSOS = ["Armamento Spetsnaz", "2 LVS Mk. II (por escuadra)", "Mascaras de gas."];
 ENEMIGOS = ["Ejercito coreano", "Fuerzas especiales chinas", "Instalaciones fuertemente defendidas", "Vehículos fuertemente blindados"];
