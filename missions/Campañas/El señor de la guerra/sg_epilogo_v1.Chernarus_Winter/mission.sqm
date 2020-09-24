@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={10168.092,175.41518,2405.302};
-		dir[]={-0.33064887,-0.37770766,0.86487556};
-		up[]={-0.13487984,0.92592466,0.35280415};
-		aside[]={0.9340663,1.3038516e-008,0.35710108};
+		pos[]={12466.419,355.42026,12277.654};
+		dir[]={0.58445048,-0.5319497,-0.61287749};
+		up[]={0.36714569,0.84673518,-0.38500568};
+		aside[]={-0.7237606,9.4436109e-007,-0.69018501};
 	};
 };
 binarizationWanted=0;
@@ -35,7 +35,6 @@ addons[]=
 	"A3_Weapons_F_Acc",
 	"ace_realisticnames",
 	"ace_scopes",
-	"ace_fcs",
 	"A3_Weapons_F",
 	"ace_parachute",
 	"rhs_c_troops",
@@ -522,7 +521,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -639,7 +638,7 @@ class Mission
 			text="Borsh ";
 			type="mil_start";
 			colorName="ColorWEST";
-			angle=225.23073;
+			angle=225.23071;
 			id=5;
 			atlOffset=0.00013923645;
 		};
@@ -693,7 +692,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -819,6 +818,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -887,7 +887,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -1013,6 +1013,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -1081,7 +1082,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -1207,6 +1208,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -1260,7 +1262,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3498.3838,346.88403,13748.713};
+						position[]={3497.3945,348.16351,13751.742};
 						angles[]={0,5.7708611,0};
 					};
 					side="West";
@@ -1274,7 +1276,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -1400,6 +1402,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -1481,7 +1484,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -1607,6 +1610,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -1676,7 +1680,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -1847,6 +1851,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -1916,7 +1921,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -2087,6 +2092,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -2156,7 +2162,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -2298,6 +2304,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -2366,7 +2373,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -2503,6 +2510,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -2571,7 +2579,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -2708,6 +2716,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -2995,7 +3004,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -3107,6 +3116,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -3174,7 +3184,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -3286,6 +3296,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -3354,7 +3365,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -3466,6 +3477,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -3534,7 +3546,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -3646,6 +3658,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -3714,7 +3727,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -3826,6 +3839,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -3908,7 +3922,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -4034,6 +4048,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -4102,7 +4117,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -4273,6 +4288,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -4342,7 +4358,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -4513,6 +4529,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -4581,7 +4598,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -4723,6 +4740,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -4790,7 +4808,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -4927,6 +4945,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -4994,7 +5013,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -5131,6 +5150,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -5416,7 +5436,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -5528,6 +5548,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -5595,7 +5616,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -5707,6 +5728,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -5775,7 +5797,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -5887,6 +5909,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -5955,7 +5978,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -6067,6 +6090,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -6135,7 +6159,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -6247,6 +6271,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -6327,7 +6352,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -6453,6 +6478,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -6521,7 +6547,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -6692,6 +6718,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -6760,246 +6787,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
-								flashlight="rhs_acc_2dpZenit_ris";
-								underBarrel="rhs_acc_grip_rk2";
-								class primaryMuzzleMag
-								{
-									name="rhs_20rnd_9x39mm_SP6";
-									ammoLeft=20;
-								};
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_gorka_r_g";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=8;
-									class Item0
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item2
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item3
-									{
-										name="adv_aceSplint_splint";
-										count=3;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-									class Item5
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item6
-									{
-										name="ACE_packingBandage";
-										count=8;
-									};
-									class Item7
-									{
-										name="ACE_elasticBandage";
-										count=6;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhs_6b13_EMR_6sh92";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_rdg2_black";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgo";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_20rnd_9x39mm_SP6";
-										count=6;
-										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_sgg";
-								isBackpack=1;
-								class ItemCargo
-								{
-									items=13;
-									class Item0
-									{
-										name="ACE_epinephrine";
-										count=20;
-									};
-									class Item1
-									{
-										name="adv_aceCPR_AED";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_surgicalKit";
-										count=1;
-									};
-									class Item3
-									{
-										name="ACE_morphine";
-										count=20;
-									};
-									class Item4
-									{
-										name="adv_aceSplint_splint";
-										count=15;
-									};
-									class Item5
-									{
-										name="ACE_tourniquet";
-										count=8;
-									};
-									class Item6
-									{
-										name="ACE_packingBandage";
-										count=30;
-									};
-									class Item7
-									{
-										name="ACE_elasticBandage";
-										count=30;
-									};
-									class Item8
-									{
-										name="ACE_bloodIV";
-										count=4;
-									};
-									class Item9
-									{
-										name="ACE_bloodIV_250";
-										count=2;
-									};
-									class Item10
-									{
-										name="ACE_bloodIV_500";
-										count=4;
-									};
-									class Item11
-									{
-										name="ACE_salineIV_500";
-										count=2;
-									};
-									class Item12
-									{
-										name="ACE_salineIV_250";
-										count=2;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ACE_Altimeter";
-							headgear="rhs_6b47_bala";
-						};
-					};
-					id=112;
-					type="arga_s_base_gen3_selva_multicam";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6959.7153,156.39439,12424.38};
-						angles[]={0,3.0707266,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{this setVariable [""ACE_IsEngineer"",1,true]; " \n "this setVariable [""ACE_isEOD"",true,true];}";
-						description="Ingeniero";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -7141,6 +6929,218 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
+							headgear="rhs_6b47_bala";
+						};
+					};
+					id=112;
+					type="arga_s_base_gen3_selva_multicam";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6959.7153,156.39439,12424.38};
+						angles[]={0,3.0707266,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this setVariable [""ACE_IsEngineer"",1,true]; " \n "this setVariable [""ACE_isEOD"",true,true];}";
+						description="Ingeniero";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_asval_grip_npz";
+								optics="optic_Hamr";
+								flashlight="rhs_acc_2dpZenit_ris";
+								underBarrel="rhs_acc_grip_rk2";
+								class primaryMuzzleMag
+								{
+									name="rhs_20rnd_9x39mm_SP6";
+									ammoLeft=20;
+								};
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_gorka_r_g";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=8;
+									class Item0
+									{
+										name="ACE_epinephrine";
+										count=3;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item2
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item3
+									{
+										name="adv_aceSplint_splint";
+										count=3;
+									};
+									class Item4
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item5
+									{
+										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_packingBandage";
+										count=8;
+									};
+									class Item7
+									{
+										name="ACE_elasticBandage";
+										count=6;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhs_6b13_EMR_6sh92";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_mag_rdg2_black";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgo";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_20rnd_9x39mm_SP6";
+										count=6;
+										ammoLeft=20;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_Kitbag_sgg";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="SatchelCharge_Remote_Mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhsusf_mine_m14_mag";
+										count=3;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_DefusalKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ToolKit";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACE_wirecutter";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_Clacker";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -7208,7 +7208,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -7345,6 +7345,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -7412,7 +7413,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -7549,6 +7550,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -7835,7 +7837,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -7947,6 +7949,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8014,7 +8017,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -8126,6 +8129,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8193,7 +8197,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -8305,6 +8309,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8372,7 +8377,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -8484,6 +8489,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8551,7 +8557,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -8663,6 +8669,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8743,7 +8750,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -8869,6 +8876,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -8937,7 +8945,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -9108,6 +9116,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -9176,7 +9185,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -9347,6 +9356,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -9415,7 +9425,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -9557,6 +9567,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -9624,7 +9635,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -9761,6 +9772,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -9828,7 +9840,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -9965,6 +9977,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -10250,7 +10263,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -10362,6 +10375,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -10429,7 +10443,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -10541,6 +10555,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -10608,7 +10623,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -10720,6 +10735,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -10787,7 +10803,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -10899,6 +10915,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -10966,7 +10983,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_asval_grip_npz";
-								optics="optic_MRCO";
+								optics="optic_Hamr";
 								flashlight="rhs_acc_2dpZenit_ris";
 								underBarrel="rhs_acc_grip_rk2";
 								class primaryMuzzleMag
@@ -11078,6 +11095,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ACE_Altimeter";
+							gps="ItemGPS";
 							headgear="rhs_6b47_bala";
 						};
 					};
@@ -14648,7 +14666,7 @@ class Mission
 					};
 					id=287;
 					type="rhs_msv_driver";
-					atlOffset=8.0817871;
+					atlOffset=8.081665;
 				};
 			};
 			class Attributes
@@ -14677,7 +14695,7 @@ class Mission
 				};
 			};
 			id=285;
-			atlOffset=8.0817871;
+			atlOffset=8.081665;
 		};
 		class Item87
 		{
@@ -14698,7 +14716,7 @@ class Mission
 			};
 			id=286;
 			type="rhs_prv13_turret_vpvo";
-			atlOffset=8.0817871;
+			atlOffset=8.081665;
 		};
 		class Item88
 		{
@@ -14816,7 +14834,7 @@ class Mission
 					};
 					id=293;
 					type="O_Soldier_F";
-					atlOffset=0.00021362305;
+					atlOffset=9.1552734e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14925,7 +14943,7 @@ class Mission
 				formation="STAG COLUMN";
 			};
 			id=292;
-			atlOffset=0.00021362305;
+			atlOffset=9.1552734e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -85769,6 +85787,7 @@ class Mission
 					};
 					id=1339;
 					type="O_Soldier_F";
+					atlOffset=-1.9073486e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -86525,6 +86544,7 @@ class Mission
 					};
 					id=1345;
 					type="O_Soldier_F";
+					atlOffset=3.8146973e-005;
 				};
 				class Item2
 				{
@@ -88562,6 +88582,7 @@ class Mission
 					};
 					id=1369;
 					type="O_Soldier_F";
+					atlOffset=-0.00012207031;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -89138,6 +89159,7 @@ class Mission
 				formation="STAG COLUMN";
 			};
 			id=1368;
+			atlOffset=-0.00012207031;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -93045,7 +93067,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6189.9565,6.0057135,2154.4695};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -93216,7 +93238,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6190.8232,6.0221434,2153.4961};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -93388,7 +93410,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6192.248,6.0323205,2152.5972};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -93559,7 +93581,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6193.4458,6.0214248,2151.939};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -93780,7 +93802,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6195.8848,5.9958539,2150.1294};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -93952,7 +93974,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6197.0122,5.9855528,2149.4324};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -94140,7 +94162,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6188.144,6.057797,2150.7976};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -94312,7 +94334,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6189.0112,6.0468268,2149.8247};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -94483,7 +94505,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6190.437,6.0325246,2148.9253};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -94655,7 +94677,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6191.6343,6.0210347,2148.2673};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -94877,7 +94899,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6194.0728,5.9944844,2146.4573};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -95048,7 +95070,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6195.2002,5.9829464,2145.7607};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -95234,7 +95256,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6200.4019,5.9533873,2147.0405};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -95406,7 +95428,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6201.2686,5.9437141,2146.0674};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -95578,7 +95600,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6202.6948,5.9298339,2145.1687};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -95749,7 +95771,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6203.8926,5.9108214,2144.51};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -95971,7 +95993,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6206.3315,5.8655014,2142.7002};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -96142,7 +96164,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6207.4585,5.8460555,2142.0042};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -96329,7 +96351,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6198.5903,5.9418058,2143.3684};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -96501,7 +96523,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6199.4565,5.9269547,2142.3958};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -96672,7 +96694,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6200.8828,5.9090528,2141.4966};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -96844,7 +96866,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6202.0801,5.8949218,2140.8376};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -97067,7 +97089,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6204.519,5.8510046,2139.0281};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -97239,7 +97261,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6205.645,5.8310013,2138.3328};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -97427,7 +97449,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6185.2437,6.0386872,2145.261};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -97598,7 +97620,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6186.1108,6.0297003,2144.2878};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -97769,7 +97791,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6187.5356,6.0114079,2143.3887};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -97940,7 +97962,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6188.7344,6.0003099,2142.7302};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -98161,7 +98183,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6191.1719,5.972096,2140.9207};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -98332,7 +98354,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6192.2993,5.9607363,2140.2246};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -98519,7 +98541,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6183.4316,6.0114851,2141.5889};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -98691,7 +98713,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6184.2979,5.9947619,2140.6157};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -98863,7 +98885,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6185.7241,5.9769111,2139.7168};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -99034,7 +99056,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6186.9219,5.9626255,2139.0588};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -99257,7 +99279,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6189.3613,5.9312449,2137.2483};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -99428,7 +99450,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6190.4873,5.9161816,2136.5525};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -99614,7 +99636,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6195.6904,5.9181652,2137.8315};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -99786,7 +99808,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6196.5562,5.8981581,2136.8589};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -99958,7 +99980,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6197.9819,5.8823013,2135.9604};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -100130,7 +100152,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6199.1802,5.8698306,2135.3015};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -100353,7 +100375,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6201.6177,5.8321905,2133.4915};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -100525,7 +100547,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6202.7451,5.8134451,2132.7957};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -100713,7 +100735,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6193.8779,5.8818164,2134.1602};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -100885,7 +100907,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6194.7432,5.8702741,2133.1873};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -101057,7 +101079,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6196.1704,5.854845,2132.2876};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -101229,7 +101251,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6197.3667,5.8455696,2131.6296};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=5;
@@ -101452,7 +101474,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6199.8071,5.8176484,2129.8198};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -101624,7 +101646,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6200.9326,5.7969885,2129.1235};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -101812,7 +101834,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6210.9473,5.7887588,2140.0632};
-						angles[]={0,3.6687548,-0};
+						angles[]={0,3.6687548,0};
 					};
 					side="East";
 					flags=7;
@@ -101984,7 +102006,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6212.0737,5.7671833,2139.3674};
-						angles[]={0,3.6687543,-0};
+						angles[]={0,3.6687543,0};
 					};
 					side="East";
 					flags=5;
@@ -104478,7 +104500,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9482.7041,5.8691845,1989.3406};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=7;
@@ -104649,7 +104671,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9483.1035,5.8487773,1990.5825};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -104821,7 +104843,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9483.1533,5.8217578,1992.2672};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -104993,7 +105015,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9483.1094,5.8167214,1993.6329};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -105215,7 +105237,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9483.4287,5.8089333,1996.6532};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=7;
@@ -105387,7 +105409,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9483.458,5.7947974,1997.9778};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -105575,7 +105597,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9486.7861,5.8987947,1989.6445};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=7;
@@ -105747,7 +105769,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9487.1865,5.8979831,1990.8871};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -105919,7 +105941,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9487.2324,5.8930178,1992.5714};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -106091,7 +106113,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9487.1943,5.8898206,1993.937};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -106314,7 +106336,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9487.5127,5.8706937,1996.9586};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=7;
@@ -106486,7 +106508,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9487.541,5.8565507,1998.2838};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -111047,7 +111069,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9484.8096,7.2910776,1928.0225};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=7;
@@ -111219,7 +111241,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9484.8369,7.1811576,1929.3484};
-						angles[]={0,1.5648594,-0};
+						angles[]={0,1.5648594,0};
 					};
 					side="East";
 					flags=5;
@@ -111516,7 +111538,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10488.11,8.1965704,2303.199};
-				angles[]={-0,0.95999861,0};
+				angles[]={0,0.95999861,0};
 			};
 			side="Empty";
 			flags=4;
@@ -111898,7 +111920,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10522.165,8.1965704,2258.4492};
-				angles[]={-0,0.95999861,0};
+				angles[]={0,0.95999861,0};
 			};
 			side="Empty";
 			flags=4;
@@ -112295,7 +112317,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10507.596,7.2455792,2267.8647};
-				angles[]={-0,5.6209354,0};
+				angles[]={0,5.6209354,0};
 			};
 			side="Empty";
 			flags=4;
