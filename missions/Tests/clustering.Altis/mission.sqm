@@ -1,0 +1,338 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=367;
+	};
+	class MarkerIDProvider
+	{
+		nextID=44;
+	};
+	class Camera
+	{
+		pos[]={16293.696,160.13785,17463.367};
+		dir[]={0.23532192,-0.31727371,-0.9187699};
+		up[]={0.078734025,0.94830418,-0.30740017};
+		aside[]={-0.96881306,-1.6037084e-006,-0.24813914};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=2377433;
+class ScenarioData
+{
+	author="Stherlode";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=29;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22146.621,13.314943,16261.83};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_A_F";
+					atlOffset=-4.7683716e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=-4.7683716e-006;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={13680.042,5.78057,12093.298};
+			name="marker_43";
+			type="mil_dot";
+			id=339;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={13977.716,-19.630796,12472.157};
+			name="marker_44";
+			type="mil_dot";
+			id=340;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={14248.331,-14.726355,12688.648};
+			name="marker_45";
+			type="mil_dot";
+			id=341;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={14518.945,-25.136963,13013.387};
+			name="marker_46";
+			type="mil_dot";
+			id=342;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={19119.387,53.139828,8981.2354};
+			name="marker_47";
+			type="mil_dot";
+			id=343;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={20228.9,52.485718,9847.2031};
+			name="marker_48";
+			type="mil_dot";
+			id=344;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={20391.271,43.737148,10036.632};
+			name="marker_49";
+			type="mil_dot";
+			id=345;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={20553.641,29.439192,10253.123};
+			name="marker_50";
+			type="mil_dot";
+			id=346;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={19525.305,118.95007,9360.0938};
+			name="marker_51";
+			type="mil_dot";
+			id=347;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={8971.6016,45.663658,11097.063};
+			name="marker_52";
+			type="mil_dot";
+			id=348;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={6489.1772,36.617352,15751.611};
+			name="marker_53";
+			type="mil_dot";
+			id=349;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={5364.3291,69.710739,17768.58};
+			name="marker_54";
+			type="mil_dot";
+			id=350;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={16186.146,20.399664,20173.43};
+			name="marker_55";
+			type="mil_dot";
+			id=351;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={16923.115,-13.48052,22151.613};
+			name="marker_56";
+			type="mil_dot";
+			id=352;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={8894.0244,38.579113,20638.883};
+			name="marker_57";
+			type="mil_dot";
+			id=353;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={6760.6934,107.66673,22267.977};
+			name="marker_58";
+			type="mil_dot";
+			id=354;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={11492.813,-161.51544,24284.945};
+			name="marker_59";
+			type="mil_dot";
+			id=355;
+		};
+		class Item18
+		{
+			dataType="Marker";
+			position[]={22314.631,-188.26607,25681.309};
+			name="marker_60";
+			type="mil_dot";
+			id=356;
+		};
+		class Item19
+		{
+			dataType="Marker";
+			position[]={27085.537,23.914831,22733.43};
+			name="marker_61";
+			type="mil_dot";
+			id=357;
+		};
+		class Item20
+		{
+			dataType="Marker";
+			position[]={21500.084,-77.385002,21957.672};
+			name="marker_62";
+			type="mil_dot";
+			id=358;
+		};
+		class Item21
+		{
+			dataType="Marker";
+			position[]={23749.783,13.262173,19863.127};
+			name="marker_63";
+			type="mil_dot";
+			id=359;
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={28055.232,-185.97,14820.701};
+			name="marker_64";
+			type="mil_dot";
+			id=360;
+		};
+		class Item23
+		{
+			dataType="Marker";
+			position[]={27667.357,-185.97,10049.791};
+			name="marker_65";
+			type="mil_dot";
+			id=361;
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={19909.783,63.099308,11407.37};
+			name="marker_66";
+			type="mil_dot";
+			id=362;
+		};
+		class Item25
+		{
+			dataType="Marker";
+			position[]={16108.572,-71.882942,12842.52};
+			name="marker_67";
+			type="mil_dot";
+			id=363;
+		};
+		class Item26
+		{
+			dataType="Marker";
+			position[]={9475.8428,88.3368,16372.218};
+			name="marker_68";
+			type="mil_dot";
+			id=364;
+		};
+		class Item27
+		{
+			dataType="Marker";
+			position[]={10096.448,95.998642,17419.49};
+			name="marker_69";
+			type="mil_dot";
+			id=365;
+		};
+		class Item28
+		{
+			dataType="Marker";
+			position[]={11104.933,85.094292,19203.732};
+			name="marker_70";
+			type="mil_dot";
+			id=366;
+		};
+	};
+};

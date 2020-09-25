@@ -12,11 +12,10 @@ IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberi
 COLOR_AUTOR = "#44CC00";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "El Señor de la Guerra";
-INTRO_PERSONALIZADA = 0;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-// INTRO = "scripts\intro_3.sqf";                      // Intros: 1 y 2. Para desactivar: 0
-INTRO = 0;                      // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_3.sqf";                      // Intros: 1 y 2. Para desactivar: 0
 
 MAX_DIST_VISION = 500;
 MIN_DIST_VISION = 200;                              // Distancia de visión reducida por marcador
@@ -26,7 +25,7 @@ ACTIVAR_ROL_AUTOMATICO = 0;                         // Habilita la carga de rol 
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
 COLOCAR_GPS = 1;                                    // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
 
-ACTIVAR_INSIGNIA_AUTOMATICO = 1;                    // Añadir a arga_settings
+ACTIVAR_INSIGNIA_AUTOMATICO = 0;                    // Añadir a arga_settings
 INSIGNIA_IR = 0;                                    // Establece si las insignias son IR o normales
 
 ACTIVAR_SETUP_PERSONALIZADO_RADIOS = 1;             // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado

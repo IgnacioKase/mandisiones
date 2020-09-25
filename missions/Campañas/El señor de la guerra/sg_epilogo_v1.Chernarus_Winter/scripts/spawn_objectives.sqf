@@ -18,6 +18,10 @@ while { !_spawnObjectives } do {
 "sbiten" setMarkerAlpha 1;
 
 [comandante, "A todas las unidades: necesitamos refuerzos en Medovuja y Sbiten. Dirijanse a la zona, encuentren la bomba e inicien la desactivación."] remoteExec ["sideChat", 0, false];
+
+sleep 420;
+
+[340, 90000, false, false, false, 0.6] execVM "AL_dust_storm\al_duststorm.sqf";
 /*******************************************************************************
                           Realizado por |ArgA|MandI
 *******************************************************************************/

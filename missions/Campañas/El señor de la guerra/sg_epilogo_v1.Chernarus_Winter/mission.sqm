@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=20;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={12466.419,355.42026,12277.654};
-		dir[]={0.58445048,-0.5319497,-0.61287749};
-		up[]={0.36714569,0.84673518,-0.38500568};
-		aside[]={-0.7237606,9.4436109e-007,-0.69018501};
+		pos[]={7895.9419,926.6333,7272.7764};
+		dir[]={0.33330598,-0.41528875,0.84643024};
+		up[]={0.15216067,0.90968782,0.38641292};
+		aside[]={0.9304617,-1.5902333e-007,-0.36639601};
 	};
 };
 binarizationWanted=0;
@@ -521,7 +521,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -551,22 +551,24 @@ class Mission
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.25;
+		startWeather=1;
+		startFog=0.016827771;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.25;
+		forecastWeather=1;
+		forecastFog=0.020992979;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		wavesForced=1;
 		windForced=1;
-		year=2008;
-		month=10;
-		day=11;
-		hour=9;
-		minute=20;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		year=2020;
+		month=9;
+		hour=16;
+		startFogBase=283.23889;
+		forecastFogBase=258.24756;
+		startFogDecay=0.012095976;
+		forecastFogDecay=0.010846393;
 	};
 	class Entities
 	{
@@ -638,7 +640,7 @@ class Mission
 			text="Borsh ";
 			type="mil_start";
 			colorName="ColorWEST";
-			angle=225.23071;
+			angle=225.23067;
 			id=5;
 			atlOffset=0.00013923645;
 		};
@@ -112437,6 +112439,25 @@ class Mission
 						};
 						class Attribute3
 						{
+							property="ENH_allowFleeing";
+							expression="_this allowFleeing _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="hideObject";
 							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 							class Value
@@ -112454,7 +112475,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 			};
@@ -112462,6 +112483,29 @@ class Mission
 			{
 			};
 			id=1609;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="comandante";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item373
 		{
@@ -112573,6 +112617,29 @@ class Mission
 			{
 			};
 			id=1611;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="desactivador";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item374
 		{

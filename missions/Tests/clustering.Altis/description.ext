@@ -1,10 +1,21 @@
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|MIV
 *******************************************************************************/
 
-[player, ""] remoteExec ["MAC_fnc_switchMove"];
-player removeAction standup;
+enableDebugConsole = 1;
+
+allowFunctionsLog = 1;
+
+class CfgFunctions {
+  class MIV {
+    class general {
+		class get_clusters {
+        file = "fnc_get_clusters.sqf";
+      };
+	}
+  }
+};
 
 /*******************************************************************************
-                          Realizado por |ArgA|MandI
+                          Realizado por |ArgA|MIV
 *******************************************************************************/

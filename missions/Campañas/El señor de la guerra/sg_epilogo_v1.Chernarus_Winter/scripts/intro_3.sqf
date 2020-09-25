@@ -11,8 +11,6 @@ private _author = getMissionConfigValue ["author", "ArgA"];
 
 titleCut ["", "BLACK FADED", 999];
 
-sleep 20; // TODO QUITAR EN LA PROXIMA MISION
-
 playSound "effect_intro";
 
 sleep 1;
