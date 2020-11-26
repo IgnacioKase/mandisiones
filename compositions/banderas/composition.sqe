@@ -1,0 +1,273 @@
+version=53;
+center[]={8315.5254,27.82324,9986.5176};
+class items
+{
+	items=12;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.88574219,1.7572746,16.757813};
+			angles[]={-0,4.7135158,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=836;
+		type="Land_HBarrier_5_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.86425781,1.7572746,11.178711};
+			angles[]={-0,4.7135158,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=837;
+		type="Land_HBarrier_5_F";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.82714844,1.7434368,0.051757813};
+			angles[]={-0,4.7135158,0.001544081};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=838;
+		type="Land_HBarrier_5_F";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.84863281,1.7509117,5.6308594};
+			angles[]={6.2816033,4.7135158,0.0015822123};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=839;
+		type="Land_HBarrier_5_F";
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.81933594,1.7287998,-5.4736328};
+			angles[]={6.277586,4.7135158,0.0072011296};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=840;
+		type="Land_HBarrier_5_F";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.79785156,1.697403,-11.052734};
+			angles[]={6.277586,4.7135158,0.0072011296};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=841;
+		type="Land_HBarrier_5_F";
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.78222656,1.7038746,-16.600586};
+			angles[]={0.0071928473,4.7135158,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=843;
+		type="Land_HBarrier_5_F";
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.109375,4.9806347,2.4863281};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=844;
+		type="Flag_White_F";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.12011719,4.9714603,-3.1279297};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=845;
+		type="Flag_White_F";
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.8408203,0.62495613,0.0546875};
+			angles[]={6.277586,0,0.0072011296};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=848;
+		type="Land_Obstacle_Bridge_F";
+		atlOffset=-0.99289322;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.89160156,0.63041115,0.045898438};
+			angles[]={-0,0,0.001544081};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=849;
+		type="Land_Obstacle_Bridge_F";
+		atlOffset=-0.99471855;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.8759766,0.62883759,0.041015625};
+			angles[]={-0,0,0.001544081};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=850;
+		type="Land_Obstacle_Bridge_F";
+		atlOffset=-0.99471664;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
