@@ -12,14 +12,14 @@ class EditorData
 	};
 	class MarkerIDProvider
 	{
-		nextID=12;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={6776.0288,1035.389,6688.9951};
-		dir[]={0.4350554,-0.86856234,0.23736398};
-		up[]={0.76246071,0.49558285,0.41599464};
-		aside[]={0.47894949,-1.7136335e-007,-0.87784725};
+		pos[]={7289.0283,199.76009,6674.8569};
+		dir[]={0.46516553,-0.85780573,0.21863638};
+		up[]={0.77632695,0.51398015,0.36488795};
+		aside[]={0.42537719,2.7939677e-008,-0.90502214};
 	};
 };
 binarizationWanted=0;
@@ -102107,7 +102107,7 @@ class Mission
 			{
 				sizeA=1200;
 				sizeB=1200;
-				sizeC=250;
+				sizeC=1000;
 				activationBy="ANYPLAYER";
 			};
 			id=1041;
@@ -147952,13 +147952,12 @@ class Mission
 		class Item279
 		{
 			dataType="Marker";
-			position[]={-4270.1909,-91.981003,11044.186};
+			position[]={-4270.1909,-91.980598,11044.186};
 			name="vision";
 			text="Vision";
 			type="Empty";
 			colorName="ColorPink";
 			id=1499;
-			atlOffset=-0.00040435791;
 		};
 		class Item280
 		{
