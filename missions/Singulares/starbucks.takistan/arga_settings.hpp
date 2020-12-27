@@ -91,16 +91,16 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
-HORARIO = "";
-FECHA = "";
-CLIMA = "";
-UBICACION = "";
-SITUACION_HISTORICA = [""];
-SITUACION = [""];
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["", ""];
-RECURSOS = ["", ""];
-ENEMIGOS = ["", ""];
+HORARIO = "0000hrs";
+FECHA = "23/12/2020";
+CLIMA = "Despejado";
+UBICACION = "Takistan";
+SITUACION_HISTORICA = ["Nos encontramos en un sector de Takistán, en estos últimos días las fuerzas insurgentes tomaron demasiado poder sobre la zona. La situación se descontroló y la OTAN está planeando un contraataque para estabilizar el sector."];
+SITUACION = ["Para esta operación estaremos divididos en 4 escuadras compuestas de igual forma: Latte, Moka, Espresso y Americano. Cada una se encuentra desplegada en una zona cercana a su objetivo. Debemos tener en cuenta que todo el teatro de operaciones es controlado por el enemigo. Por lo que hay que avanzar con precaución. Tener en cuenta la posibilidad de IEDs.", "Comandancia dispone de aéreos, para hacer logística, traslado, apoyo visual y de fuego ligero. (Comandancia y los pilotos despliegan en base)"];
+EXTRACTO_INTELIGENCIA = ["<img image='imgs\general.paa' width='323' height='323'/>"];
+OBJETIVOS = ["<marker name='virginia'>La Virginia</marker>: Destruir arsenal. (2 Arsenales) (Americano)", "<marker name='dolca'>Dolca</marker>: Capturar alto mando (Con vida). (Espresso)", "<marker name='arlistan'>Arlistán</marker>: Desactiva IEDs de las rutas principales del pueblo. (Moka)", "<marker name='nescafe'>Nescafé</marker>: Rescatar periodístas. (Inteligencia informa que son más de 10) (Latte)"];
+RECURSOS = ["Insurgentes", "Vehiculos livianos y medianos", "IEDs"];
+ENEMIGOS = ["Desplegamos armados y en zona enemiga", "Armamento OTAN", "2 UH-60M (En base)", "2 AH-6M (Littlebird artillado)(En base)", "2 MH-6M (Littlebird)(En base)", "Cajas con provisiones (En base)"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
@@ -109,7 +109,7 @@ RB_TIEMPO_ESPERA_HOMBRES = 120;                     // Tiempo en segundos de esp
 RB_TIEMPO_ESPERA_VEHICULOS = 0;                     // Tiempo en segundos de espera para eliminar vehículos enemigos. 0 Desactiva el borrado de vehículos
 RB_TIEMPO_ESPERA_BLINDADOS = 0;                     // Tiempo en segundos de espera para eliminar blindados enemigos. 0 Desactiva el borrado de blindados
 RB_TIEMPO_ESPERA_AEREOS = 0;                        // Tiempo en segundos de espera para eliminar aereos enemigos. 0 Desactiva el borrado de aereos
-RB_DISTANCIA_JUGADORES = 0;                         // Distancia en metros a los jugadores a partir de la cual se borra. 0 desactiva el borrado por distancia
+RB_DISTANCIA_JUGADORES = 200;                         // Distancia en metros a los jugadores a partir de la cual se borra. 0 desactiva el borrado por distancia
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Camuflaje */
