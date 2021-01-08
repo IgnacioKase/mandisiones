@@ -1,0 +1,151 @@
+version=53;
+center[]={4879.812,339,10063.765};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014343262,0.049804688};
+					angles[]={0,4.4310484,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					isPlayer=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="rhs_weap_ak74m_desert";
+							muzzle="rhs_acc_dtk4short";
+							flashlight="rhs_acc_2dpZenit";
+							class primaryMuzzleMag
+							{
+								name="rhs_30Rnd_545x39_7N22_desert_AK";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="rhs_weap_pb_6p9";
+							muzzle="rhs_acc_6p9_suppressor";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x18_8_57N181S";
+								ammoLeft=8;
+							};
+						};
+						class uniform
+						{
+							typeName="LOP_U_IRA_Fatigue_GRK_DPM";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="rhs_mag_9x18_8_57N181S";
+									count=4;
+									ammoLeft=8;
+								};
+								class Item1
+								{
+									name="rhs_mag_rgn";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_mag_rdg2_black";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_epinephrine";
+									count=5;
+								};
+								class Item1
+								{
+									name="ACE_morphine";
+									count=5;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=16;
+								};
+								class Item3
+								{
+									name="ACE_elasticBandage";
+									count=16;
+								};
+								class Item4
+								{
+									name="ACE_tourniquet";
+									count=2;
+								};
+								class Item5
+								{
+									name="adv_aceSplint_splint";
+									count=6;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=3;
+								};
+								class Item7
+								{
+									name="ACE_EntrenchingTool";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="LOP_V_6Sh92_Radio_OLV";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_30Rnd_545x39_AK_plum_green";
+									count=9;
+									ammoLeft=30;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ACE_Altimeter";
+						goggles="G_Balaclava_TI_blk_F";
+						headgear="LOP_H_Beanie_dpmw";
+					};
+				};
+				id=3;
+				type="arga_s_base_gen3_bosque_multicam";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=2;
+	};
+};
