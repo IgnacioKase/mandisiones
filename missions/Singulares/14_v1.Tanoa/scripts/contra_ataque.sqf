@@ -17,7 +17,7 @@ private _WAVES = [];
 
 MANDI_CALLBACK_WAVE_2 =
 {
-	private _message = "Demasiados enemigos acercandose al puerto, deben escapar, YA!. Tomen los vehículos marcados en mapa y sigan el camino hasta el aeropuerto.";
+	private _message = "Demasiados enemigos acercandose al puerto, deben escapar, YA!. Tomen los vehículos marcados en mapa y sigan el camino hasta el aeropuerto.Una vez allí tomen los aviones y escapen fueran de la isla en cualquier dirección. ";
 	[comandante, _message] remoteExec ["sideChat", 0, true];
 
 	private _color = "ColorUNKNOWN";
@@ -76,8 +76,7 @@ MANDI_SPAWN_WAVE =
 {
 	_x params ["_sleepTime", "_objSyncUnits", "_callback"];
 	private _units = [_objSyncUnits, "MAN", false] call BIS_fnc_synchronizedObjects;
-	// sleep _sleepTime;
-	sleep 5;
+	sleep _sleepTime;
 	["CONTRA ATAQUE:", _objective, "SLEEP TIME:", _sleepTime, _units] call MIV_fnc_log;
 	[_units] call MANDI_SPAWN_WAVE;
 	if(_forEachIndex == 1) then {
