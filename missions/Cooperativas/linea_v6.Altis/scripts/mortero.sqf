@@ -43,6 +43,7 @@ Posicion =
             _pjs = _pjs + [_x];
         };
     }forEach allPlayers;
+
     private _pos = [];
     if (count _pjs > 0) then {
         private _player = selectRandom  _pjs;
@@ -65,7 +66,7 @@ Disparar =
         if (typeName _x isKindOf "OBJECT") then {
             _procesado = _procesado + [_x];
         };
-    }forEach _recibidos;
+    } forEach _recibidos;
 
     for [{private _i = 0;}, {_i <= _MANDI_ROUNDS_PER_WAVE;}, {_i = _i + 1;}] do {
         private _tiempo = 0;
@@ -89,21 +90,23 @@ listos = [];
     private _x2 = _x;
     private _suma = 0;
     private _comparacion = 0;
+
     if (typeOf _x2 in _MANDI_ARTILLERY_TYPE) then {
         _comparacion = _MANDI_ARTILLERY_DISCOVER_DISTANCE;
     };
+    
     if (typeOf _x2 in _MANDI_MORTER_TYPE) then {
         _comparacion = _MANDI_ARTILLERY_MORTER_DISCOVER_DISTANCE;
     };
 
     {
-        if ((_x distance2D _x2) <= _comparacion)then
+        if ((_x distance2D _x2) <= _comparacion) then
         {
             _suma = _suma + 1;
         };
     }forEach allPlayers;
 
-    if (_suma > 0)then
+    if (_suma > 0) then
     {
         private _cuenta = 0;
         private _comptiempo = 0;
@@ -132,7 +135,7 @@ listos = [];
         }forEach freeze;
     };
     sleep 1;
-}forEach artilleria;
+} forEach artilleria;
 
 [listos] call Disparar;
 
