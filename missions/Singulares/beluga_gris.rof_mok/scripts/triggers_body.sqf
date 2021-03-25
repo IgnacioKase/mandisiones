@@ -92,7 +92,6 @@ switch (_trigger) do {
 		sleep 1;
 		"marker_31" execVM "scripts\spawn_bomba.sqf";
 		missionNamespace setVariable ["MANDI_INTRO_WAS_PLAYED", true];
-		execVM "scripts\allow_damage.sqf";
 	};
 };
 /*******************************************************************************
