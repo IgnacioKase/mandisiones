@@ -4,19 +4,19 @@
 
 if (!isServer) exitWith { };
 
-private _MANDI_ARTILLERY_DISTANCIA = 175;
+private _MANDI_ARTILLERY_DISTANCIA = 125;
 private _MANDI_ARTILLERY_DISPERSION = 75;
-private _MANDI_SECURE_AREA = 100;
+private _MANDI_SECURE_AREA = 50;
 
 // Artilleria pesada
-private _MANDI_ARTILLERY_DISCOVER_DISTANCE = 2000;
+private _MANDI_ARTILLERY_DISCOVER_DISTANCE = 1000;
 private _MANDI_ARILLERY_RELOAD_TIME = 60;
 
 // Mortero
 private _MANDI_ARTILLERY_MORTER_DISCOVER_DISTANCE = 1000;
 private _MANDI_ARILLERY_MORTER_RELOAD_TIME = 60;
 
-private _MANDI_ROUNDS_PER_WAVE = 4; // Rondas por orden
+private _MANDI_ROUNDS_PER_WAVE = 2; // Rondas por orden
 
 private _MANDI_ARTILLERY_TYPE = ["rhssaf_army_d30", "B_MBT_01_arty_F", "LOP_TKA_Static_D30", "rhs_2s3_tv", "rhs_D30_msv"];
 private _MANDI_MORTER_TYPE = ["O_Mortar_01_F", "rhs_2b14_82mm_msv", "rhssaf_army_m252"];
