@@ -3,21 +3,21 @@
 *******************************************************************************/
 #define NAME "Beluga Gris"
 #define COMPLETE_NAME "Beluga Gris v1"
-#define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada.jpg"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Tomar la playa y sus cercanías"
 CARACTER = "Oficial";                            // Tipos válidos: "Oficial", "No Oficial", "Entrenamiento", "Entrenamiento reclutas", "Entrenamiento rol", "Persistentes", "TVT"
-author = "Maxi & Ignacio";                                    // Editor (Pone tu nombre)
+author = "Maxi e Ignacio";                                    // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198091139370", "76561198026915573"];                                    // Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
                                                     // Axel: "76561198869072681", Camello: "76561198197706543", Ignacio: "76561198026915573", Joaco: "76561198090717772", Maxi: "76561198091139370", Maxtor: "76561198824233052", Nico: "76561198077670923", Night: "76561198090664588", Nogo: "76561198849038806", Ñato: "76561199027826936", Paco: "76561198030163544", Peta: "76561198279642154", Roke: "76561198883929795", Shaggy: "76561198030188168", Soda: "76561198122043854", Vultur: "76561198010777357", Zorro: "76561198027580786"
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
-COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
+COLOR_AUTOR = "#44CC00";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
-NOMBRE_CAMPANIA = "False";
-INTRO_PERSONALIZADA = 0;                            // 1 Si la deseas cargar una intro personalizada (propia)
+NOMBRE_CAMPANIA = "El Señor de la Guerra";
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = 0;                                          // Intros: 1 y 2. Para desactivar: 0
-MAX_DIST_VISION = 2500;
+INTRO = "scripts\intro_3.sqf";                      // Intros: 1 y 2. Para desactivar: 0
+MAX_DIST_VISION = 2000;
 MIN_DIST_VISION = 800;                              // Distancia de visión reducida por marcador.
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // 1: Permite cargar equipamiento guardado en arsenal virtual, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // 1: Habilita computadora artilleria,0: Desabilita.
@@ -51,7 +51,7 @@ SETUP_PERSONALIZADO_RADIOS = 1;                     // 1: Activa el setup de las
      - Post_Soviético
      - Blanco_Negro
 */
-CORRECION_COLOR = 0;                                // 1: Activa la correción de color, 0: Desactiva.
+CORRECION_COLOR = 1;                                // 1: Activa la correción de color, 0: Desactiva.
 TEMA_CORRECCION_COLOR = "Nightstalkers";
 /* 
 EQUIPAMIENTO
@@ -80,16 +80,16 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
-HORARIO = "0900";
-FECHA = "17/03/2021";
-CLIMA = "False";
+HORARIO = "0930";
+FECHA = "25/03/2021";
+CLIMA = "Nublado";
 UBICACION = "Mull of Kintyre";
-SITUACION_HISTORICA = [];
-SITUACION = [];
+SITUACION_HISTORICA = ["La situación desde la explosión en Ruegen y Chernarus sólo continuó empeorando, China y Corea no dejan de avanzar y tomar nuevos territorios. El conflicto escaló rapidamente a un nivel global.", "", "ArgA con la coalición se encuentra ahora mismo en las costas de Mull of Kintyre, comenzando la invasión de un territorio estrategico para detener a la doble C."];
+SITUACION = ["ArgA está en camino a desembarcar en una de las costas de Mull of Kintyre, nombre en clave de la zona: Playa Zafiro. Esta es una de las zonas mas protegidas de la península, pero por una buena razón: Si la coalición toma la parte norte de la península dejaremos incomunicado al resto del territorio, facilitando así la conquista total.", "", "La misión no será facil, tienen muchos objetivos aunque todos a distancias cercanas de la playa. Tienen libertad de priorizar los objetivos a su parecer, aunque no deben de perder de vista algo clave: la artilleria. Recomendamos: velocidad, puntos fuertes y coordinación entre escuadras.", "", "Si es necesario, podrán utilizar la artillería de los destructores como apoyo. Pero se pide discreción, ya que la munición no es facil de reponer y queda toda una península por conquistar."];
 EXTRACTO_INTELIGENCIA = [];
-OBJETIVOS = [];
-RECURSOS = [];
-ENEMIGOS = [];
+OBJETIVOS = ["Indigo: Eliminar al general Ha Joon (Imagen o cuerpo es necesario)", "Bordo: Destruir artillería", "Caoba: Destruir arsenales", "Zafiro: Capturar playa", "Salmón: Destruir vehículos", "Cobre: Liberar paso de ruta", "Lima: Destruir puesto de control (servidores y estación de comunicación)", "Ambar: Desturir artillería"];
+RECURSOS = ["Armamento ArgA", "Artillería destructores", "Lanchas para desembarco"];
+ENEMIGOS = ["Ejercito coreano", "Artillería", "Puestos fuertes y bunkeres", "Vehículos livianos y medianos", "Posibles campos minados"];
 ////////////////////////////////////////////////////////////////////////////////
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
 RECOLECTOR_BASURA = 1;                              // 1: Activa la funcion que borra las IAs muertas y vehículos destruidos, 0: Desactivado
