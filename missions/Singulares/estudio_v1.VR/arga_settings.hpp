@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Op. Template Basico"                  // Colocar nombre de mision
-#define COMPLETE_NAME "Op. Template Basico v0.9.18" // Nombre y versión de la misión
+#define NAME "Estudio"                              // Colocar nombre de mision
+#define COMPLETE_NAME "estudio v1"                  // Nombre y versión de la misión
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION ""                              // Colocar descripcion de la mision entre las comillas
 
@@ -22,7 +22,7 @@ INTRO_PERSONALIZADA = 0;                            // 1 Si la deseas cargar una
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
 INTRO = 0;                                          // Intros: 1 y 2. Para desactivar: 0
 
-MAX_DIST_VISION = 2500;
+MAX_DIST_VISION = 1500;
 MIN_DIST_VISION = 800;                              // Distancia de visión reducida por marcador.
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // 1: Permite cargar equipamiento guardado en arsenal virtual, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // 1: Habilita computadora artilleria,0: Desabilita.
