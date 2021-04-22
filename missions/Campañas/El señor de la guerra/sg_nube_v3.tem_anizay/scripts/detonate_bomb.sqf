@@ -2,7 +2,9 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-call compile preprocessFileLineNumbers "core\events\initServer.sqf";
+if (!isServer) exitWith { };
+
+execVM "scripts\camara_bomba.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

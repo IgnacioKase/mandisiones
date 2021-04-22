@@ -2,20 +2,20 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#include "core\private_settings.hpp"
-#include "arga_settings.hpp"
-#include "core\pre_description.hpp"
+params ["_time"];
 
-class CfgFunctions {
-  #include "core\functions.hpp"
+if (!isServer) exitWith { };
+
+if (isServer && !isDedicated) then {
+    [_time] call MIV_fnc_log;
+    systemChat str _time;
 };
 
-class CfgSounds {
-	sounds[] = {};
-  #include "core\sounds.hpp"
-};
+waitUntil { time > _time };
 
-#include "core\post_description.hpp"
+if (!MANDI_BOMBA_DESACTIVADA) then {
+	execVM "scripts\detonate_bomb.sqf";	
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

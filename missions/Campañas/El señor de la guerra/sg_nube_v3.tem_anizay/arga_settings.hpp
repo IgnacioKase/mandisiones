@@ -1,23 +1,23 @@
 /*******************************************************************************
                           Realizado por |ArgA|MIV
 *******************************************************************************/
-#define NAME "[Oficial] Nube Amarilla"
-#define COMPLETE_NAME "[Oficial] Nube Amarilla v1"
+#define NAME "Nube Amarilla"
+#define COMPLETE_NAME "Nube Amarilla v3"
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Desactivar el dispositivo"
 CARACTER = "Oficial";                            // Tipos válidos: "Oficial", "No Oficial", "Entrenamiento", "Entrenamiento reclutas", "Entrenamiento rol", "Persistentes", "TVT"
-author = "Maxi & Ignacio";                                    // Editor (Pone tu nombre)
+author = "Maxi y Ignacio";                                    // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198091139370", "76561198026915573"];                                    // Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
                                                     // Axel: "76561198869072681", Camello: "76561198197706543", Ignacio: "76561198026915573", Joaco: "76561198090717772", Maxi: "76561198091139370", Maxtor: "76561198824233052", Nico: "76561198077670923", Night: "76561198090664588", Nogo: "76561198849038806", Ñato: "76561199027826936", Paco: "76561198030163544", Peta: "76561198279642154", Roke: "76561198883929795", Shaggy: "76561198030188168", Soda: "76561198122043854", Vultur: "76561198010777357", Zorro: "76561198027580786"
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
-COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
+COLOR_AUTOR = "#44CC00";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "El Señor de la Guerra";
-INTRO_PERSONALIZADA = 0;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = 0;                                          // Intros: 1 y 2. Para desactivar: 0
-MAX_DIST_VISION = 2500;
+INTRO = "scripts\intro_3.sqf";                                          // Intros: 1 y 2. Para desactivar: 0
+MAX_DIST_VISION = 1500;
 MIN_DIST_VISION = 800;                              // Distancia de visión reducida por marcador.
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // 1: Permite cargar equipamiento guardado en arsenal virtual, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // 1: Habilita computadora artilleria,0: Desabilita.
