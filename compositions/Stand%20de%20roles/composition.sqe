@@ -1,0 +1,71 @@
+version=54;
+center[]={14630.851,17.910002,16757.113};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="sala 2021";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.012695313,0.57536316,0.017578125};
+					angles[]={0,5.4944005,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="call{this setVariable [""MANDI_STAND_ROL"", ""medico""];}";
+				};
+				id=825;
+				type="Land_InfoStand_V1_F";
+				atlOffset=1.9073486e-006;
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.82226563,0.5922184,-0.81445313};
+					angles[]={0,5.4944005,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="call{this setVariable [""MANDI_STAND_ROL"", ""ingeniero""];}";
+				};
+				id=826;
+				type="Land_InfoStand_V1_F";
+				atlOffset=0.016857147;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.80859375,0.57536316,0.79101563};
+					angles[]={0,5.4944005,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="call{this setVariable [""MANDI_STAND_ROL"", ""piloto""];}";
+				};
+				id=827;
+				type="Land_InfoStand_V1_F";
+				atlOffset=1.9073486e-006;
+			};
+		};
+		id=1198;
+		atlOffset=0.025501251;
+	};
+};
