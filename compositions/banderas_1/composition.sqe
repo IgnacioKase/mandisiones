@@ -1,0 +1,208 @@
+version=54;
+center[]={14612.748,16.950211,16809.396};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="entreno altis 2021";
+		class Entities
+		{
+			items=7;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.6533203,4.936594,0.45507813};
+					angles[]={0,2.3803389,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					init="call{this setVariable [""MANDI_FLAG_TYPE"", ""ARG""];}";
+				};
+				id=0;
+				type="Flag_White_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.99804688,4.936594,-2.2890625};
+					angles[]={0,2.3803389,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					init="call{this setVariable [""MANDI_FLAG_TYPE"", ""ARGA""]; }";
+					name="bandera_arga";
+				};
+				id=1;
+				type="Flag_White_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.3144531,0.62495613,-1.2167969};
+					angles[]={0,5.5227122,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="escenario_1";
+				};
+				id=2;
+				type="Land_Obstacle_Bridge_F";
+				atlOffset=-0.95978928;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.0400391,0.62495613,-1.9101563};
+					angles[]={0,5.5227122,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="escenario_2";
+				};
+				id=3;
+				type="Land_Obstacle_Bridge_F";
+				atlOffset=-0.95978928;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.7597656,0.62495613,-2.6054688};
+					angles[]={0,5.5227122,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="escenario_3";
+				};
+				id=4;
+				type="Land_Obstacle_Bridge_F";
+				atlOffset=-0.95978928;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={12.720703,4.4629745,-5.6835938};
+					angles[]={0,5.5227122,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					name="speaker_r";
+				};
+				id=468;
+				type="Land_Loudspeakers_F";
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-5.9550781,4.4629745,13.253906};
+					angles[]={0,2.3811066,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					name="speaker_l";
+				};
+				id=8;
+				type="Land_Loudspeakers_F";
+			};
+		};
+		id=781;
+	};
+};
